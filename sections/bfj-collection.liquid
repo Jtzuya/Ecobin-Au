@@ -1,5 +1,13 @@
 {{ 'section-bfj-collection.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+    #__collectioCase--{{ section.id }} {
+        padding-top: {{ section.settings.padding_top | append: 'px' -}};
+        padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+        background-color: {{ section.settings.bg_color }};
+    }
+{%- endstyle -%}
+
 <div class="__collectionCase common-display --g-px" id="__collectioCase--{{ section.id }}">
     <h3 class="__collectionMainHeading __collectionMainHeading--{{ section.id }}">{{ section.settings.section_heading | escape -}}</h3>
     <div class="__eachCollection">
