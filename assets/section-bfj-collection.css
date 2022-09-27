@@ -9,6 +9,10 @@
     gap: 40px;
 }
 
+.__collection {
+    position: relative;
+}
+
 .__collection img {
     border-radius: 20px;
 }
