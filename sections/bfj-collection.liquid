@@ -11,7 +11,7 @@
 
                     <div class="__collectionContent">
                         <h4 class="__collectionHeading">{{ block.settings.heading | escape }}</h4>
-                        <a href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url }}{%- else -%}#{%- endif -%}">
+                        <a class="__collectionBtn" href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url }}{%- else -%}#{%- endif -%}">
                             {{ block.settings.btn | escape }}
                         </a>
                     </div>
