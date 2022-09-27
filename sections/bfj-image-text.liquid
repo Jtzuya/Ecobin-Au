@@ -2,8 +2,8 @@
 
 {%- style -%}
     .--custom-padding--{{ section.settings.id }} {
-        padding-top: {{ section.settings.padding_top | append: 'px' }}
-        padding-bottom: {{ section.settings.padding_bot | append: 'px' }}
+        padding-top: {{ section.settings.padding_top | append: 'px' -}};
+        padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
     }
 {%- endstyle -%}
 
