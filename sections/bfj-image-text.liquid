@@ -6,16 +6,18 @@
             {%- when 'image' -%}
                 {%- liquid 
                     assign bs = block.settings 
-                    assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio
                 -%}
                 {%- if bs.image != blank -%}
                     {{ bs.image | image_url: width: 'master' | image_tag:
                         class: '__image-textImage',
                         widths: '150, 200, 250, 300, 400, 500',
-                        height: logo_height,
                         width: section.settings.logo_width,
                         alt: bs.image.alt
                     }}
+                {%- else -%}
+                    <div class="__bannerPlaceholder">
+                        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' -}}
+                    </div>
                 {%- endif -%}
             {%- when 'content' -%}
         {%- endcase -%}
