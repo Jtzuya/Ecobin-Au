@@ -71,64 +71,17 @@
             "btn": "Explore",
             "btn_url": ""
           }
-        },
-        "e5b2b5c2-33ec-42b5-a695-290d0c374ee1": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "heading": "Home & home office",
-            "btn": "Explore",
-            "btn_url": ""
-          }
-        },
-        "dce14cc3-cd07-4c7a-b8f7-a51828c1d585": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "heading": "Home & home office",
-            "btn": "Explore",
-            "btn_url": ""
-          }
-        },
-        "712962f0-2681-445f-b35e-804031d8c759": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "heading": "Home & home office",
-            "btn": "Explore",
-            "btn_url": ""
-          }
-        },
-        "95b56271-e6de-4aef-b77d-c1c60d78d7e1": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "heading": "Home & home office",
-            "btn": "Explore",
-            "btn_url": ""
-          }
-        },
-        "f3faa2bf-5a7e-481a-b637-907515e33701": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "heading": "Home & home office",
-            "btn": "Explore",
-            "btn_url": ""
-          }
         }
       },
       "block_order": [
         "fc412a46-550f-4501-a5af-e9753202c720",
         "5ce736df-60e0-4e46-8dd4-595441383276",
-        "c05639aa-4e46-4ae8-9bdc-e90eb0485bf8",
-        "e5b2b5c2-33ec-42b5-a695-290d0c374ee1",
-        "dce14cc3-cd07-4c7a-b8f7-a51828c1d585",
-        "712962f0-2681-445f-b35e-804031d8c759",
-        "95b56271-e6de-4aef-b77d-c1c60d78d7e1",
-        "f3faa2bf-5a7e-481a-b637-907515e33701"
+        "c05639aa-4e46-4ae8-9bdc-e90eb0485bf8"
       ],
       "settings": {
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
         "section_heading": "SHOP BY INDUSTRY"
       }
     },
