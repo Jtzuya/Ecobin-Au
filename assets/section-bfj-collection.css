@@ -22,6 +22,7 @@
     left: 0;
     bottom: 0;
     padding-inline: 40px;
+    padding-bottom: 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +39,6 @@
     text-transform: uppercase;
     max-width: 360px;
     margin: 0px;
-    padding-bottom: 46px;
 }
 
 .__collectionBtn {
