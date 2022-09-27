@@ -9,10 +9,22 @@
       "type": "bfj-image-text",
       "settings": {
       }
+    },
+    "collection": {
+      "type": "bfj-collection",
+      "settings": {
+      }
+    },
+    "image-text-2": {
+      "type": "bfj-image-text",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "image-text-1"
+    "image-text-1",
+    "collection",
+    "image-text-2"
   ]
 }
