@@ -57,3 +57,10 @@
     letter-spacing: -5px;
     margin: 0;
 }
+
+.__bannerBtnCase {
+    width: max-content;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 260px;
+}
