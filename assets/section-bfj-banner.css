@@ -84,3 +84,18 @@
     color: var(--eco-clr);
     border-color: var(--eco-clr);
 }
+
+@media (max-width: 767px) {
+    .__bannerContent {
+        left: 50%;
+        bottom: auto;
+        transform: translateX(-50%);
+    }
+    
+    .__bannerHeading {
+        font-size: 5rem;
+        letter-spacing: 0px;
+        line-height: 85%;
+        text-align: center;
+    }
+}
