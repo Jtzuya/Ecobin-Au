@@ -8,7 +8,48 @@
     }
 {%- endstyle -%}
 
-<header class="__headerCase mx-w --g-px --g-pt --g-pb" id="Header--{{ section.id }}">
+<header class="__headerCase mx-w --g-px --g-pt --g-pb __desktop" id="Header--{{ section.id }}">
+    <nav class="__navigationLinks">
+        <ul class="__navigationCase">
+            {%- for link in ss.menu.links -%}
+                <li id="__aLinkCase--{{ forloop.index }}">
+                    <a class="__aLink" href="{{ link.handle }}">{{ link.title | escape }}</a>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+
+    <div class="__navigationLogo">
+        {%- if ss.logo != blank -%}
+            {%-liquid
+                assign logo_alt = ss.logo.alt | default: shop.name | escape
+                assign logo_height = ss.logo_width | divided_by: ss.logo.aspect_ratio
+            -%}
+            {{ ss.logo | image_url: width: 1500 | image_tag:
+                loading: 'lazy',
+                class: 'header__heading-logo',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                height: logo_height,
+                width: logo_alt,
+                alt: ss.image.alt | escape
+            -}}
+        {%- else -%}
+            {{ shop.name | escape -}}
+        {%- endif -%}
+    </div>
+
+    <div class="__navigationIcons">
+        {%- render 'search-ico' -%}
+        {%- render 'wishlist-ico' -%}
+        {%- render 'account-ico' -%}
+        <div class="__cartIcoCase">
+            {%- render 'cart-ico' -%}
+            <span class="__cartCount">{{ cart.item_count | json -}}</span>
+        </div>
+    </div>
+</header>
+
+<header class="__headerCase mx-w --g-px --g-pt --g-pb __mobile" id="Header--{{ section.id }}">
     <nav class="__navigationLinks">
         <ul class="__navigationCase">
             {%- for link in ss.menu.links -%}

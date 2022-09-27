@@ -13,6 +13,10 @@
     transition: background-color 0.2s ease-in-out;
 }
 
+.__headerCase.__mobile {
+    display: none;
+}
+
 .__headerCase.active {
     background-color: rgb(var(--bg-dark) / 75%);
 }
