@@ -81,8 +81,8 @@
 
     <div class="__navigationIcons">
         {%- render 'search-ico' -%}
-        {%- render 'wishlist-ico' -%}
-        {%- render 'account-ico' -%}
+        {% comment %} {%- render 'wishlist-ico' -%} {% endcomment %}
+        {% comment %} {%- render 'account-ico' -%} {% endcomment %}
         <div class="__cartIcoCase">
             {%- render 'cart-ico' -%}
             <span class="__cartCount">{{ cart.item_count | json -}}</span>
