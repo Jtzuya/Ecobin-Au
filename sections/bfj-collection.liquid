@@ -30,7 +30,9 @@
                             alt: bs.image.alt
                         }}
                     {%- else -%}
-
+                        <div class="__bannerPlaceholder">
+                            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' -}}
+                        </div>
                     {%- endif -%}
 
                     <div class="__collectionContent">
