@@ -10,7 +10,7 @@
 
 <div id="Banner-{{ section.id }}" class="__bannerCase">
     {%- if ss.image != blank -%}
-        <div class="__bannerImage --g-px">
+        <div class="__bannerImage">
         {%-liquid
             assign image_height = ss.image.width | divided_by: ss.image.aspect_ratio
             assign image_class = "_bannerImage _deskImage _mobImage"
