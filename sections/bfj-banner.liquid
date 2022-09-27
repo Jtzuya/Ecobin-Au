@@ -1,0 +1,65 @@
+{{ 'section-bfj-banner.css' | asset_url | stylesheet_tag }}
+
+{%- assign ss = section.settings -%}
+
+{%- style -%}
+    .__bannerImage::before {
+        background-color: rgb(var(--bg-dark) / {{ ss.bg_opacity | append: '%' -}})
+    }
+{%- endstyle -%}
+
+<div id="Banner-{{ section.id }}" class="__bannerCase --g-px">
+    {%- if ss.image != blank -%}
+        <div class="__bannerImage">
+        {%-liquid
+            assign image_height = ss.image.width | divided_by: ss.image.aspect_ratio
+            assign image_class = "_bannerImage _deskImage _mobImage"
+        -%}
+        {{ ss.image | image_url: width: 1440 | image_tag:
+            loading: 'lazy',
+            width: ss.image.width,
+            height: image_height,
+            class: image_class,
+            widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+            alt: ss.image.alt | escape
+        }}
+        </div>
+    {%- else -%}
+        <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' -}}
+        </div>
+    {%- endif -%}
+    <div class="__bannerContent">
+        <h2 class="__bannerHeading">Industry RELATED HEADLINE HERE</h2>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-banner.settings.image.label"
+    },
+    {
+      "type": "range",
+      "id": "bg_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Background Opacity",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}

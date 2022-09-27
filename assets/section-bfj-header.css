@@ -1,0 +1,88 @@
+.__headerCase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    width: 100%;
+    max-width: var(--mx-w);
+    z-index: 5;
+    background-color: rgb(var(--bg-dark) / 0%);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.__headerCase.active {
+    background-color: rgb(var(--bg-dark) / 75%);
+}
+
+.__navigationCase {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+
+    display: flex;
+    gap: 53px;
+}
+
+.__aLink {
+    font-size: 22px;
+    font-family: var(--font);
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.__navigationLogo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__navigationIcons {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.__navigationIcons > * {
+    cursor: pointer;
+}
+
+.__navigationIcons svg path,
+.__navigationIcons svg circle {
+    transition: stroke 0.1s ease-in-out;
+}
+
+.__navigationIcons svg:hover path,
+.__navigationIcons svg:hover circle {
+    stroke: var(--eco-clr);
+}
+
+.__cartIcoCase {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.__cartCount {
+    position: absolute;
+    background-color: var(--eco-clr);
+    font-size: 9.6px;
+    top: -4px;
+    right: -3px;
+    height: 12.8px;
+    width: 12.8px;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 500;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

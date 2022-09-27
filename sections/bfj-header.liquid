@@ -1,0 +1,135 @@
+{{ 'section-bfj-header.css' | asset_url | stylesheet_tag -}}
+
+{%- assign ss = section.settings -%}
+
+{%- style -%}
+    .header__heading-logo {
+        max-width: calc({{ ss.logo_width | append: 'px ' -}} + 4.85px);
+    }
+{%- endstyle -%}
+
+<header class="__headerCase mx-w --g-px --g-pt --g-pb" id="Header--{{ section.id }}">
+    <nav class="__navigationLinks">
+        <ul class="__navigationCase">
+            {%- for link in ss.menu.links -%}
+                <li id="__aLinkCase--{{ forloop.index }}">
+                    <a class="__aLink" href="{{ link.handle }}">{{ link.title | escape }}</a>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+
+    <div class="__navigationLogo">
+        {%- if ss.logo != blank -%}
+            {%-liquid
+                assign logo_alt = ss.logo.alt | default: shop.name | escape
+                assign logo_height = ss.logo_width | divided_by: ss.logo.aspect_ratio
+            -%}
+            {{ ss.logo | image_url: width: 1500 | image_tag:
+                loading: 'lazy',
+                class: 'header__heading-logo',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                height: logo_height,
+                width: logo_alt,
+                alt: ss.image.alt | escape
+            -}}
+        {%- else -%}
+            {{ shop.name | escape -}}
+        {%- endif -%}
+    </div>
+
+    <div class="__navigationIcons">
+        {%- render 'search-ico' -%}
+        {%- render 'wishlist-ico' -%}
+        {%- render 'account-ico' -%}
+        <div class="__cartIcoCase">
+            {%- render 'cart-ico' -%}
+            <span class="__cartCount">{{ cart.item_count | json -}}</span>
+        </div>
+    </div>
+</header>
+
+{% javascript %}
+    const headerCase = document.querySelector('.__headerCase');
+
+    window.addEventListener('scroll', () => {
+        let xNav = Math.round(window.scrollY)
+        console.log('Scrolling...', xNav);
+
+        if (xNav >= 35) {
+            headerCase.classList.add('active')
+        } else {
+            headerCase.classList.remove('active')
+        }
+    });
+{% endjavascript %}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {% if section.settings.logo %}
+      "logo": {{ section.settings.logo | image_url: width: section.settings.logo.width | prepend: "https:" | json }},
+    {% endif %}
+    "sameAs": [
+      {{ settings.social_twitter_link | json }},
+      {{ settings.social_facebook_link | json }},
+      {{ settings.social_pinterest_link | json }},
+      {{ settings.social_instagram_link | json }},
+      {{ settings.social_tiktok_link | json }},
+      {{ settings.social_tumblr_link | json }},
+      {{ settings.social_snapchat_link | json }},
+      {{ settings.social_youtube_link | json }},
+      {{ settings.social_vimeo_link | json }}
+    ],
+    "url": {{ request.origin | append: page.url | json }}
+  }
+</script>
+
+{%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ request.origin | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Header 2",
+  "class": "bfj-section-header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "t:sections.header.settings.logo_width.unit",
+      "label": "t:sections.header.settings.logo_width.label"
+    }
+  ]
+}
+{% endschema %}

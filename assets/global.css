@@ -1,0 +1,35 @@
+/* Desktop Design Resolution 1440px */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+
+:root {
+    --g-px: 50px;
+    --g-pt: 30px;
+    --g-pb: 22px;
+    --bg-dark: 0 0 0;
+    --eco-clr: #0DB14B;
+    
+    --font: 'Inter', sans-serif;
+
+    --mx-w: 1440px;
+}
+
+.--g-px {
+    padding-inline: var(--g-px);
+}
+
+.--g-pt {
+    padding-top: var(--g-pt);
+}
+
+.--g-pb {
+    padding-bottom: var(--g-pb);
+}
+
+.--bg-dark {
+    background-color: rgb(var(--bg-dark) / 25%);
+}
+
+.mx-w {
+    max-width: var(--mx-w);
+    margin-inline: auto;
+}
