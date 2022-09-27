@@ -11,6 +11,7 @@
     text-transform: uppercase;
     margin: 0;
     letter-spacing: -3px;
+    max-width: 353px;
 }
 
 .__eachCollection {
