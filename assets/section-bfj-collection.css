@@ -96,10 +96,6 @@
 }
 
 @media (max-width: 767px) {
-    .__collection::before {
-        max-height: 350px;
-    }
-
     .__collectionCase {
         gap: 40px;
     }
