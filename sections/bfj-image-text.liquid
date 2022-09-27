@@ -20,6 +20,15 @@
                     </div>
                 {%- endif -%}
             {%- when 'content' -%}
+                <div class="__image-textContent">
+                    {%- if bs.heading != blank -%}
+                        <h2 class="__contentHeading">{{ bs.heading | escape -}}</h2>
+                    {%- endif -%}
+
+                    {%- if bs.paragraph != blank -%}
+                        <div class="__contentParagraph">{{ bs.paragraph | escape }}</div>
+                    {%- endif -%}
+                </div>
         {%- endcase -%}
     {%- endfor -%}
 </div>
