@@ -58,4 +58,15 @@
         line-height: 85%;
         padding-top: 0px;
     }
+    
+    .__contentParagraph {
+        padding-top: 24px;
+        padding-bottom: 19.5px;
+    }
+
+    .__image-textImage {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
