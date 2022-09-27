@@ -77,4 +77,10 @@
     padding: 10px 20px;
     border: 2px solid #fff;
     border-radius: 260px;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.__bannerUrl:hover {
+    color: var(--eco-clr);
+    border-color: var(--eco-clr);
 }
