@@ -46,7 +46,7 @@
     height: 100%;
 }
 
-.__collectionPlaceholder svg {
+.collection-svg {
     width: 100%;
     background-color: rgb(var(--bg-dark) / 75%);
     line-height: 0px;
