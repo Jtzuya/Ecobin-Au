@@ -18,11 +18,8 @@
 .__contentHeading {
     color: #202223;
     font-family: var(--font);
-    font-size: 72px;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 64px;
-    letter-spacing: -3px;
     margin: 0;
     padding-top: 44px;
 }
