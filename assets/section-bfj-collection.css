@@ -3,6 +3,15 @@
     gap: 74px;
 }
 
+.__contentHeading {
+    color: #202223;
+    font-family: var(--font);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 44px;
+}
+
 .__eachCollection {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
