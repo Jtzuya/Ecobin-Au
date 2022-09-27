@@ -34,6 +34,14 @@
                     {%- if bs.paragraph != blank -%}
                         <div class="__contentParagraph">{{ bs.paragraph | strip_html }}</div>
                     {%- endif -%}
+
+                    {%- if ss.btn != blank -%}
+                        <div class="__bannerBtnCase">
+                            <a href="{%- if ss.btn_url != blank -%}{{ ss.btn_url -}}{%- else -%}#{%- endif -%}" class="__bannerUrl">
+                            <span class="__bannerText">{{ ss.btn }}</span>
+                            </a>
+                        </div>
+                    {%- endif -%}
                 </div>
         {%- endcase -%}
     {%- endfor -%}
@@ -100,6 +108,17 @@
           "id": "paragraph",
           "label": "Paragraph",
           "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.</p>"
+        },
+        {
+            "type": "text",
+            "id": "btn",
+            "label": "Button Text",
+            "default": "Back to home"
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button URL"
         }
       ]
     }
