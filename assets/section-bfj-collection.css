@@ -32,7 +32,6 @@
     width: 100%;
     background: rgb(var(--bg-dark) / 45%);
     border-radius: 20px;
-    max-height: 656px;
 }
 
 .__collection img {
