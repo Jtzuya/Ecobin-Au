@@ -8,9 +8,9 @@
     }
 {%- endstyle -%}
 
-<div id="Banner-{{ section.id }}" class="__bannerCase --g-px">
+<div id="Banner-{{ section.id }}" class="__bannerCase">
     {%- if ss.image != blank -%}
-        <div class="__bannerImage">
+        <div class="__bannerImage --g-px">
         {%-liquid
             assign image_height = ss.image.width | divided_by: ss.image.aspect_ratio
             assign image_class = "_bannerImage _deskImage _mobImage"
@@ -25,7 +25,7 @@
         }}
         </div>
     {%- else -%}
-        <div class="__bannerPlaceholder">
+        <div class="__bannerPlaceholder --g-px">
         {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' -}}
         </div>
     {%- endif -%}
