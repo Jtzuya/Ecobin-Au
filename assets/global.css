@@ -53,3 +53,7 @@
         padding-inline: calc(var(--g-px) / 2.5);
     }
 }
+
+img {
+    max-width: 100%;
+}
