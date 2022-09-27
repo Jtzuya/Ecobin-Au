@@ -95,6 +95,8 @@
     .__collectionContent {
         flex-direction: column;
         align-items: flex-start;
+        padding-inline: 20px;
+        padding-bottom: 26px;
     }
 
     .__eachCollection {
@@ -103,7 +105,6 @@
     }
     
     .__collectionHeading {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 32px;
     }
 }
