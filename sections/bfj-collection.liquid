@@ -1,5 +1,5 @@
 <div class="__collectionCase" id="__collectioCase--{{ section.id }}">
-    {%- for collection in collections -%}
+    {%- for collection in collections.index0 -%}
         {%- liquid 
             if collection.image
                 assign collection_image = collection.image
@@ -11,7 +11,7 @@
         -%}
             
 
-        <a href="{{ collection.url }}" class="url--{{ forloop.index0 }}">
+        <a href="{{ collection.url }}">
             {{ collection_image | image_url: width: '650' | image_tag: 
                 alt: collection.image.alt
             }}
