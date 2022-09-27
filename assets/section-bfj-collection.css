@@ -84,3 +84,18 @@
     color: var(--eco-clr);
     border-color: var(--eco-clr);
 }
+
+@media (max-width: 767px) {
+    .__collectionContent {
+        flex-direction: column;
+    }
+
+    .__eachCollection {
+        gap: 15px;
+    }
+    
+    .__collectionHeading {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
