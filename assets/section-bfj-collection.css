@@ -45,7 +45,6 @@
 .__collectionPlaceholder {
     height: auto;
     width: 100%;
-    max-width: 1440px;
     background-color: rgb(var(--bg-dark) / 75%);
     line-height: 0px;
     height: 656px;
