@@ -27,7 +27,7 @@
     max-width: 1440px;
     object-fit: cover;
     height: auto;
-    max-height: calc(100vh + 50px);
+    max-height: calc(100vh + 40px);
     margin-inline: auto;
     filter: brightness(0.775) saturate(1.15);
 }
