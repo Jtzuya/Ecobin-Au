@@ -6,13 +6,18 @@
         {%- for block in section.blocks -%}
             {%- case block.type -%}
                 {%- when 'collection' -%}
+                {%- assign bs = block.settings -%}
                 <div class="__collection">
-                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                    {{ bs.image | image_url: width: '805' | image_tag:
+                        loading: 'lazy',
+                        widths: '150, 200, 250, 300, 400, 500',
+                        alt: bs.image.alt
+                    }}
 
                     <div class="__collectionContent">
-                        <h4 class="__collectionHeading">{{ block.settings.heading | escape }}</h4>
-                        <a class="__collectionBtn" href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url }}{%- else -%}#{%- endif -%}">
-                            {{ block.settings.btn | escape }}
+                        <h4 class="__collectionHeading">{{ bs.heading | escape }}</h4>
+                        <a class="__collectionBtn" href="{%- if bs.btn_url != blank -%}{{ bs.btn_url }}{%- else -%}#{%- endif -%}">
+                            {{ bs.btn | escape }}
                         </a>
                     </div>
                 </div>
