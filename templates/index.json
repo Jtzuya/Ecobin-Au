@@ -13,22 +13,22 @@
     "166428837723723fdd": {
       "type": "bfj-image-text",
       "blocks": {
-        "10f0577d-d037-47c3-8426-9047162c015c": {
-          "type": "image",
-          "settings": {
-          }
-        },
         "77d6a724-fe2f-4af6-988c-8b637752ef57": {
           "type": "content",
           "settings": {
             "heading": "HEADLINE GOES HERE",
             "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>"
           }
+        },
+        "10f0577d-d037-47c3-8426-9047162c015c": {
+          "type": "image",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "10f0577d-d037-47c3-8426-9047162c015c",
-        "77d6a724-fe2f-4af6-988c-8b637752ef57"
+        "77d6a724-fe2f-4af6-988c-8b637752ef57",
+        "10f0577d-d037-47c3-8426-9047162c015c"
       ],
       "settings": {
       }
