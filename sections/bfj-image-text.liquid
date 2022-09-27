@@ -4,6 +4,7 @@
     .--custom-padding--{{ section.id }} {
         padding-top: {{ section.settings.padding_top | append: 'px' -}};
         padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+        background-color: {{ section.settings.background_color }};
     }
 {%- endstyle -%}
 
@@ -61,6 +62,12 @@
       "unit": "px",
       "label": "Padding Bottom",
       "default": 100
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
     }
   ],
   "max_blocks": 2,
