@@ -1,7 +1,7 @@
 {{ 'section-bfj-collection.css' | asset_url | stylesheet_tag }}
 
 <div class="__collectionCase common-display --g-px" id="__collectioCase--{{ section.id }}">
-    <h3 class="__contentHeading __contentHeading--{{ section.id }}">{{ section.settings.section_heading | escape -}}</h3>
+    <h3 class="__collectionMainHeading __collectionMainHeading--{{ section.id }}">{{ section.settings.section_heading | escape -}}</h3>
     <div class="__eachCollection">
         {%- for block in section.blocks -%}
             {%- case block.type -%}
