@@ -16,3 +16,9 @@
 .__collection img {
     border-radius: 20px;
 }
+
+.__collectionContent {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
