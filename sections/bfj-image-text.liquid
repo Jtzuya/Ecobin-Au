@@ -11,7 +11,6 @@
                     {{ bs.image | image_url: width: 'master' | image_tag:
                         class: '__image-textImage',
                         widths: '150, 200, 250, 300, 400, 500',
-                        width: section.settings.logo_width,
                         alt: bs.image.alt
                     }}
                 {%- else -%}
