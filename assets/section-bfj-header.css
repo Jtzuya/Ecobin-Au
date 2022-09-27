@@ -90,3 +90,13 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 767px) {
+    .__headerCase.__desktop {
+        display: none;
+    }
+
+    .__headerCase.__mobile {
+        display: flex;
+    }
+}
