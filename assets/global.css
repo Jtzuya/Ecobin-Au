@@ -38,6 +38,7 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+    min-height: 40vh;
 }
 
 .common-display {
