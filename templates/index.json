@@ -33,7 +33,8 @@
       ],
       "settings": {
         "padding_top": 160,
-        "padding_bot": 150
+        "padding_bot": 150,
+        "bg_color": "#ffffff"
       }
     },
     "1664288939006335ab": {
@@ -58,7 +59,8 @@
       ],
       "settings": {
         "padding_top": 100,
-        "padding_bot": 100
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2"
       }
     }
   },
