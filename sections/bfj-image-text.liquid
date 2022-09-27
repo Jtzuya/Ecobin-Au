@@ -28,7 +28,9 @@
                 {%- assign bs = block.settings -%}
                 {%- style -%}
                     .__contentHeading--{{ block.id }} {
-                        font-size: {{ bs.heading_size | append: 'px' -}}
+                        font-size: {{ bs.heading_size | append: 'px' -}};
+                        letter-spacing: {{ bs.heading_letterSpacing | append: 'px' -}};
+                        line-height: {{ bs.heading_lineHeight | append: 'px' -}};
                     }
                 {%- endstyle -%}
                 <div class="__image-textContent">
@@ -119,10 +121,30 @@
             "default": 42
         },
         {
-          "type": "richtext",
-          "id": "paragraph",
-          "label": "Paragraph",
-          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.</p>"
+            "type": "range",
+            "id": "heading_lineHeight",
+            "min": -5,
+            "max": 72,
+            "step": 1,
+            "unit": "px",
+            "label": "Heading Line Height",
+            "default": 64
+        },
+        {
+            "type": "range",
+            "id": "heading_letterSpacing",
+            "min": -5,
+            "max": 72,
+            "step": 1,
+            "unit": "px",
+            "label": "Heading Letter Spacing",
+            "default": -3
+        },
+        {
+            "type": "richtext",
+            "id": "paragraph",
+            "label": "Paragraph",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.</p>"
         },
         {
             "type": "text",
