@@ -42,6 +42,11 @@
         "bg_color": "#ffffff"
       }
     },
+    "16642942140d1bbe5f": {
+      "type": "bfj-collection",
+      "settings": {
+      }
+    },
     "1664288939006335ab": {
       "type": "bfj-image-text",
       "blocks": {
@@ -78,6 +83,7 @@
   "order": [
     "1664284067ae719b03",
     "166428837723723fdd",
+    "16642942140d1bbe5f",
     "1664288939006335ab"
   ]
 }
