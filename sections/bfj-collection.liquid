@@ -10,13 +10,14 @@
             endif 
         -%}
             
-        
+        {%- if forloop.index0 -%}
         <a href="{{ collection.url }}">
             {{ collection_image | image_url: width: '650' | image_tag: 
                 alt: collection.image.alt
             }}
             {{ collection.title }}
         </a>
+        {%- endif -%}
     {%- endfor -%}
 </div>
 
