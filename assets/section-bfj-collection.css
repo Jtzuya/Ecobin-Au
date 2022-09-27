@@ -106,5 +106,7 @@
     
     .__collectionHeading {
         font-size: 32px;
+        line-height: 85%;
+        padding-bottom: 1.75rem;
     }
 }
