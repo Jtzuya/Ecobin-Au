@@ -8,7 +8,7 @@
             {%- when 'image' -%}
                 {%- assign bs = block.settings -%}
                 {%- if bs.image != blank -%}
-                    {{ bs.image | image_url: width: 'master' | image_tag:
+                    {{ bs.image | image_url: width: '805' | image_tag:
                         class: '__image-textImage',
                         widths: '150, 200, 250, 300, 400, 500',
                         alt: bs.image.alt
