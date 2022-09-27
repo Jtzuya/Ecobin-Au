@@ -57,8 +57,7 @@ img {
         padding-inline: calc(var(--g-px) / 2.5);
     }
 
-    .placeholder-svg, 
-    .collection-svg {
+    .placeholder-svg {
         min-height: 300px;
     }
 }
