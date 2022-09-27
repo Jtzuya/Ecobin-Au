@@ -1,32 +1,99 @@
 <div class="__collectionCase" id="__collectioCase--{{ section.id }}">
-    {%- for collection in collections -%}
-        {%- liquid 
-            if collection.image
-                assign collection_image = collection.image
-            elsif collection.products.first and collection.products.first.images != empty
-                assign collection_image = collection.products.first.featured_image
-            else
-                assign collection_image = blank
-            endif 
-        -%}
-            
-        {%- if forloop.index0 -%}
-        <a href="{{ collection.url }}">
-            {{ collection_image | image_url: width: '650' | image_tag: 
-                alt: collection.image.alt
-            }}
-            {{ collection.title }}
-        </a>
-        {%- endif -%}
+    <h3 class="__contentHeading __contentHeading--{{ section.id }}">{{ section.settings.section_heading | escape -}}</h3>
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'collection' -%}
+
+        {%- endcase -%}
     {%- endfor -%}
 </div>
 
 {% schema %}
 {
   "name": "Collections Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Name",
+      "default": "SHOP BY INDUSTRY"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading Text",
+          "default": "Home & home office"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button Text",
+          "default": "Explore"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Collections Section"
+      "name": "Collections Section",
+      "blocks": [
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        {
+          "type": "collection",
+          "settings": {
+          }
+        }
+      ]
     }
   ]
 }
