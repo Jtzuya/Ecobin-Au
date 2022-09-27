@@ -86,6 +86,12 @@
 }
 
 @media (max-width: 767px) {
+    .__collectionMainHeading {
+        font-size: 5rem;
+        line-height: 85%;
+        padding-top: 0;
+    }
+    
     .__collectionContent {
         flex-direction: column;
     }
