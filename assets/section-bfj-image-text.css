@@ -35,3 +35,8 @@
     max-width: 305px;
     font-family: var(--font);
 }
+
+.__bannerUrl.inverse {
+    border-color: #202223;
+    color: #202223;
+}
