@@ -21,4 +21,18 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    padding-inline: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.__collectionHeading {
+    font-size: 42px;
+    font-weight: 800;
+    font-family: var(--font);
+    color: #fff;
+    letter-spacing: -2px;
+    line-height: 40px;
 }
