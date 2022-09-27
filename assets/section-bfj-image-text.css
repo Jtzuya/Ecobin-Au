@@ -5,6 +5,7 @@
 .__image-textImage {
     border-radius: 20px;
     box-shadow: 2px 1px 15px rgb(var(--bg-dark) / 25%);
+    max-width: 100%;
 }
 
 .__imageTextPlaceholder {
