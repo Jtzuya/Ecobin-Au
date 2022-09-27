@@ -1,10 +1,18 @@
 {
-    "sections": {
-        "main": {
-            "type": "bfj-banner"
-        }
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "settings": {
+      }
     },
-    "order": [
-        "main"
-    ]
+    "image-text-1": {
+      "type": "bfj-image-text",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-text-1"
+  ]
 }
