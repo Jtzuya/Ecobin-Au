@@ -36,8 +36,6 @@
 
 .common-display {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-inline: auto;
     max-width: var(--mx-w);
     position: relative;
