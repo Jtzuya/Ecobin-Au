@@ -32,6 +32,13 @@
     filter: brightness(0.775) saturate(1.15);
 }
 
+.__bannerPlaceholder svg {
+    height: auto;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .__bannerContent {
     position: absolute;
     left: 44px;
