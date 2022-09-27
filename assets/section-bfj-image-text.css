@@ -2,6 +2,10 @@
     gap: clamp(40px, 10vw, 130px);
 }
 
+.__image-textImage {
+    border-radius: 20px;
+}
+
 .__imageTextPlaceholder {
     max-width: 805px;
     width: 100%;
