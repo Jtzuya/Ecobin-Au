@@ -8,10 +8,13 @@
                 {%- when 'collection' -%}
                 <div class="__collection">
                     <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
-                    <h4>{{ block.settings.heading | escape }}</h4>
-                    <a href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url }}{%- else -%}#{%- endif -%}">
-                        {{ block.settings.btn | escape }}
-                    </a>
+
+                    <div class="__collectionContent">
+                        <h4>{{ block.settings.heading | escape }}</h4>
+                        <a href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url }}{%- else -%}#{%- endif -%}">
+                            {{ block.settings.btn | escape }}
+                        </a>
+                    </div>
                 </div>
             {%- endcase -%}
         {%- endfor -%}
