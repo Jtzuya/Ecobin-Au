@@ -18,7 +18,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(var(--dark-bg) / 15%);
+    background: rgb(var(--dark-bg) / 45%);
     border-radius: 20px;
 }
 
