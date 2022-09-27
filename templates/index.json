@@ -17,6 +17,7 @@
           "type": "content",
           "settings": {
             "heading": "HEADLINE GOES HERE",
+            "heading_size": 42,
             "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
             "btn": "CONTINUE YOUR JOURNEY",
             "btn_url": ""
@@ -46,6 +47,7 @@
           "type": "content",
           "settings": {
             "heading": "PLanet EartH Cross Promotion CALL OUT HERE",
+            "heading_size": 35,
             "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
             "btn": "CONTINUE YOUR JOURNEY",
             "btn_url": ""
