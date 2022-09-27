@@ -26,9 +26,14 @@
                 {%- endif -%}
             {%- when 'content' -%}
                 {%- assign bs = block.settings -%}
+                {%- style -%}
+                    .__contentHeading--{{ block.id }} {
+                        font-size: {{ bs.font_size | append: 'px' -}}
+                    }
+                {%- endstyle -%}
                 <div class="__image-textContent">
                     {%- if bs.heading != blank -%}
-                        <h3 class="__contentHeading">{{ bs.heading | escape -}}</h3>
+                        <h3 class="__contentHeading __contentHeading--{{ block.id }}">{{ bs.heading | escape -}}</h3>
                     {%- endif -%}
 
                     {%- if bs.paragraph != blank -%}
@@ -102,6 +107,16 @@
           "id": "heading",
           "label": "Heading",
           "default": "HEADLINE GOES HERE"
+        },
+        {
+            "type": "range",
+            "id": "heading_size",
+            "min": 0,
+            "max": 72,
+            "step": 1,
+            "unit": "px",
+            "label": "Heading Font Size",
+            "default": 42
         },
         {
           "type": "richtext",
