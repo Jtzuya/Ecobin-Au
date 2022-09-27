@@ -23,11 +23,15 @@
                 {%- when 'collection' -%}
                 {%- assign bs = block.settings -%}
                 <div class="__collection">
-                    {{ bs.image | image_url: width: '805' | image_tag:
-                        loading: 'lazy',
-                        widths: '150, 200, 250, 300, 400, 500',
-                        alt: bs.image.alt
-                    }}
+                    {%- if bs.image != blank -%}
+                        {{ bs.image | image_url: width: '805' | image_tag:
+                            loading: 'lazy',
+                            widths: '150, 200, 250, 300, 400, 500',
+                            alt: bs.image.alt
+                        }}
+                    {%- else -%}
+
+                    {%- endif -%}
 
                     <div class="__collectionContent">
                         <h4 class="__collectionHeading">{{ bs.heading | escape }}</h4>
