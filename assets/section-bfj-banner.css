@@ -121,4 +121,10 @@
         width: 100%;
         min-height: 100vh;
     }
+
+    .__bannerHeading {
+        font-size: clamp(50px, 10vw, 80px);
+        padding-right: 7rem;
+        line-height: 85%;
+    }
 }
