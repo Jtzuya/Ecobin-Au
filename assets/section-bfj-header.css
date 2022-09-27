@@ -125,4 +125,8 @@
     .__mobile .__navigationLinks::after {
         top: 10px;
     }
+
+    .__navigationLogo {
+        padding-left: 34px;
+    }
 }
