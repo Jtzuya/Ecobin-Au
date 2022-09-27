@@ -39,30 +39,23 @@
     "1664288939006335ab": {
       "type": "bfj-image-text",
       "blocks": {
-        "aa22488e-5c7f-427c-8c43-1c4320a8d94b": {
-          "type": "image",
-          "settings": {
-          }
-        },
         "bcb872a4-0733-4027-85f9-df40d72a130a": {
           "type": "content",
           "settings": {
             "heading": "HEADLINE GOES HERE",
             "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>"
           }
+        },
+        "aa22488e-5c7f-427c-8c43-1c4320a8d94b": {
+          "type": "image",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "aa22488e-5c7f-427c-8c43-1c4320a8d94b",
-        "bcb872a4-0733-4027-85f9-df40d72a130a"
+        "bcb872a4-0733-4027-85f9-df40d72a130a",
+        "aa22488e-5c7f-427c-8c43-1c4320a8d94b"
       ],
-      "settings": {
-        "padding_top": 100,
-        "padding_bot": 100
-      }
-    },
-    "166428955818362b9e": {
-      "type": "bfj-image-text",
       "settings": {
         "padding_top": 100,
         "padding_bot": 100
@@ -72,7 +65,6 @@
   "order": [
     "1664284067ae719b03",
     "166428837723723fdd",
-    "1664288939006335ab",
-    "166428955818362b9e"
+    "1664288939006335ab"
   ]
 }
