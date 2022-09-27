@@ -47,7 +47,7 @@
     font-family: var(--font);
     text-decoration: none;
     width: max-content;
-    padding: 10px 45px;
+    padding: 10px 40px;
     border: 2px solid #fff;
     border-radius: 260px;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
