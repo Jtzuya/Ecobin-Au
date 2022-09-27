@@ -62,12 +62,16 @@
     
     .__contentParagraph {
         padding-top: 24px;
-        padding-bottom: 19.5px;
+        padding-bottom: 35.5px;
     }
 
     .__image-textImage {
         max-width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    .__contentUrl {
+        font-size: 14.5px;
     }
 }
