@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 767px) {
+    .__collectionCase {
+        gap: 40px;
+    }
+    
     .__collectionMainHeading {
         font-size: 5rem;
         line-height: 85%;
