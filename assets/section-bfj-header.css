@@ -117,4 +117,12 @@
         height: 2px;
         background-color: #fff;
     }
+
+    .__mobile .__navigationLinks::before {
+        top: -10px;
+    }
+    
+    .__mobile .__navigationLinks::after {
+        top: 10px;
+    }
 }
