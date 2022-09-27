@@ -3,10 +3,10 @@
 <div class="__imageTextCase" id="Image-Text--{{ ss.id }}">
     {%- for block in section.blocks -%}
         {%- case block.type -%}
+            {%- liquid 
+                assign bs = block.settings 
+            -%}
             {%- when 'image' -%}
-                {%- liquid 
-                    assign bs = block.settings 
-                -%}
                 {%- if bs.image != blank -%}
                     {{ bs.image | image_url: width: 'master' | image_tag:
                         class: '__image-textImage',
