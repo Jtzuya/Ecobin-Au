@@ -48,6 +48,10 @@
     position: relative;
 }
 
+img {
+    max-width: 100%;
+}
+
 @media (max-width: 767px) {
     .--g-px {
         padding-inline: calc(var(--g-px) / 2.5);
@@ -56,8 +60,4 @@
     .placeholder-svg {
         min-height: 300px;
     }
-}
-
-img {
-    max-width: 100%;
 }
