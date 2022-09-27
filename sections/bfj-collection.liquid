@@ -10,7 +10,8 @@
             endif 
         -%}
             
-        <a href="{{ collection.url }}" class="url--{{ forloop.rindex }}">
+
+        <a href="{{ collection.url }}" class="url--{{ forloop.index0 }}">
             {{ collection_image | image_url: width: '650' | image_tag: 
                 alt: collection.image.alt
             }}
