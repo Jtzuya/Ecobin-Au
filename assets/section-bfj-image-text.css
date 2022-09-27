@@ -29,6 +29,7 @@
 
 .__contentParagraph {
     padding-top: 48px;
+    padding-bottom: 39px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -48,5 +49,4 @@
     border: 2px solid #202223;
     border-radius: 260px;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    margin-top: 39px;
 }
