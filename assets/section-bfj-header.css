@@ -99,4 +99,20 @@
     .__headerCase.__mobile {
         display: flex;
     }
+
+    .__mobile .__navigationLinks {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .__mobile .__navigationLinks::before,
+    .__mobile .__navigationLinks::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
 }
