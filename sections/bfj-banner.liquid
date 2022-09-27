@@ -30,12 +30,16 @@
         </div>
     {%- endif -%}
     <div class="__bannerContent">
-        <h2 class="__bannerHeading">
-          Industry RELATED HEADLINE HERE
-        </h2>
-        <div class="__bannerBtnCase">
-          <a href="#" class="__bannerUrl"><span class="__bannerText">Back to Home</span></a>
-        </div>
+        {%- if ss.heading != blank -%}
+          <h2 class="__bannerHeading">{{ ss.heading | escape -}}</h2>
+        {%- endif -%}
+        {%- if ss.btn != blank -%}
+          <div class="__bannerBtnCase">
+            <a href="{%- if ss.btn_url != blank -%}{{ ss.btn_url -}}{%- else -%}#{%- endif -%}" class="__bannerUrl">
+              <span class="__bannerText">{{ ss.btn }}</span>
+            </a>
+          </div>
+        {%- endif -%}
     </div>
 </div>
 
@@ -59,6 +63,23 @@
       "unit": "%",
       "label": "Background Opacity",
       "default": 20
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Banner Headline",
+      "default": "Industry RELATED HEADLINE HERE"
+    },
+    {
+      "type": "text",
+      "id": "btn",
+      "label": "Button Text",
+      "default": "Back to home"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
     }
   ],
   "presets": [
