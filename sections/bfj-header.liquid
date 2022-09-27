@@ -51,13 +51,13 @@
 
 <header class="__headerCase mx-w --g-px --g-pt --g-pb __mobile" id="Header--{{ section.id }}">
     <nav class="__navigationLinks">
-        <ul class="__navigationCase">
+        {% comment %} <ul class="__navigationCase">
             {%- for link in ss.menu.links -%}
                 <li id="__aLinkCase--{{ forloop.index }}">
                     <a class="__aLink" href="{{ link.handle }}">{{ link.title | escape }}</a>
                 </li>
             {%- endfor -%}
-        </ul>
+        </ul> {% endcomment %}
     </nav>
 
     <div class="__navigationLogo">
