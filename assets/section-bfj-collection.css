@@ -42,6 +42,16 @@
     max-height: 656px;
 }
 
+.__collectionPlaceholder {
+    height: auto;
+    width: 100%;
+    max-width: 1440px;
+    background-color: rgb(var(--bg-dark) / 75%);
+    line-height: 0px;
+    height: 656px;
+    border-radius: 20px;
+}
+
 .__collectionContent {
     position: absolute;
     left: 0;
