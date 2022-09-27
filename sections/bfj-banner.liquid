@@ -22,16 +22,16 @@
             class: image_class,
             widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
             alt: ss.image.alt | escape
-        }}
+          }}
+          <div class="__bannerContent">
+              <h2 class="__bannerHeading">Industry RELATED HEADLINE HERE</h2>
+          </div>
         </div>
     {%- else -%}
         <div class="__bannerPlaceholder --g-px">
         {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' -}}
         </div>
     {%- endif -%}
-    <div class="__bannerContent">
-        <h2 class="__bannerHeading">Industry RELATED HEADLINE HERE</h2>
-    </div>
 </div>
 
 {% schema %}
