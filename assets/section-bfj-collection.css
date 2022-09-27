@@ -13,21 +13,20 @@
     position: relative;
 }
 
-.__collection img {
-    border-radius: 20px;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.__collection img::before {
+.__collection::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     background: orange;
     z-index: 1;
+}
+
+.__collection img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .__collectionContent {
