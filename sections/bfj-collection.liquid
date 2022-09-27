@@ -9,13 +9,13 @@
                 assign collection_image = blank
             endif 
         -%}
-
-      <a href="{{ collection.url }}">
-        {{ collection_image | image_url: width: '650' | image_tag: 
-            alt: collection.image.alt 
-        }}
-        {{ collection.title }}
-      </a>
+            
+        <a href="{{ collection.url }}" class="url--{{ forloop.rindex }}">
+            {{ collection_image | image_url: width: '650' | image_tag: 
+                alt: collection.image.alt
+            }}
+            {{ collection.title }}
+        </a>
     {%- endfor -%}
 </div>
 
