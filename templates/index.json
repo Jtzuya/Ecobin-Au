@@ -45,20 +45,20 @@
     "16642942140d1bbe5f": {
       "type": "bfj-collection",
       "blocks": {
-        "5ce736df-60e0-4e46-8dd4-595441383276": {
-          "type": "collection",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Food-manufacturers-collection.png",
-            "heading": "Home & home office",
-            "btn": "Explore",
-            "btn_url": ""
-          }
-        },
         "fc412a46-550f-4501-a5af-e9753202c720": {
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/hospital-collection.png",
-            "heading": "Home & home office",
+            "heading": "Hospitals",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "5ce736df-60e0-4e46-8dd4-595441383276": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Food-manufacturers-collection.png",
+            "heading": "Food manufacturers",
             "btn": "Explore",
             "btn_url": ""
           }
@@ -67,7 +67,7 @@
           "type": "collection",
           "settings": {
             "image": "shopify:\/\/shop_images\/childcarecenters-collection.png",
-            "heading": "Home & home office",
+            "heading": "Childcare centres",
             "btn": "Explore",
             "btn_url": ""
           }
@@ -119,8 +119,8 @@
         }
       },
       "block_order": [
-        "5ce736df-60e0-4e46-8dd4-595441383276",
         "fc412a46-550f-4501-a5af-e9753202c720",
+        "5ce736df-60e0-4e46-8dd4-595441383276",
         "c05639aa-4e46-4ae8-9bdc-e90eb0485bf8",
         "e5b2b5c2-33ec-42b5-a695-290d0c374ee1",
         "dce14cc3-cd07-4c7a-b8f7-a51828c1d585",
