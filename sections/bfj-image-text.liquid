@@ -35,10 +35,10 @@
                         <div class="__contentParagraph">{{ bs.paragraph | strip_html }}</div>
                     {%- endif -%}
 
-                    {%- if ss.btn != blank -%}
+                    {%- if bs.btn != blank -%}
                         <div class="__bannerBtnCase">
-                            <a href="{%- if ss.btn_url != blank -%}{{ ss.btn_url -}}{%- else -%}#{%- endif -%}" class="__bannerUrl">
-                            <span class="__bannerText">{{ ss.btn }}</span>
+                            <a href="{%- if bs.btn_url != blank -%}{{ bs.btn_url -}}{%- else -%}#{%- endif -%}" class="__bannerUrl">
+                            <span class="__bannerText">{{ bs.btn }}</span>
                             </a>
                         </div>
                     {%- endif -%}
