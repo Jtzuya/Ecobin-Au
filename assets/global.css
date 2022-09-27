@@ -47,3 +47,9 @@
     max-width: var(--mx-w);
     position: relative;
 }
+
+@media (max-width: 767px) {
+    .--g-px {
+        padding-inline: calc(var(--g-px) / 2.5);
+    }
+}
