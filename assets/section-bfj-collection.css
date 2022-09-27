@@ -42,6 +42,10 @@
     max-height: 656px;
 }
 
+.__collectionPlaceholder {
+    height: 100%;
+}
+
 .__collectionPlaceholder svg {
     width: 100%;
     background-color: rgb(var(--bg-dark) / 75%);
