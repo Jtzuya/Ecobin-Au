@@ -7,9 +7,9 @@
     color: #202223;
     font-family: var(--font);
     font-weight: 800;
+    font-size: 72px;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 44px;
 }
 
 .__eachCollection {
