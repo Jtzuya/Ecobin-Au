@@ -9,8 +9,8 @@
 
     @media (max-width: 767px) {
         .--custom-padding--{{ section.id }} {
-            padding-top: calc({{ section.settings.padding_top | append: 'px' -}} / 10);
-            padding-bottom: calc({{ section.settings.padding_bot | append: 'px' -}} / 10);
+            padding-top: calc({{ section.settings.padding_top | append: 'px' -}} / 2.5);
+            padding-bottom: calc({{ section.settings.padding_bot | append: 'px' -}} / 2.5);
         }
     }
 {%- endstyle -%}
