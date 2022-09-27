@@ -3,6 +3,7 @@
     "1664284067ae719b03": {
       "type": "bfj-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/banner-optimized.png",
         "bg_opacity": 20
       }
     },
