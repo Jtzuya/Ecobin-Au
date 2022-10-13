@@ -1,0 +1,356 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "04a9a305-d962-4262-ba21-26a50d83612e": {
+          "type": "content_1",
+          "settings": {
+            "heading": "FAQ <br>  HEADLINE",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "04a9a305-d962-4262-ba21-26a50d83612e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-banner.png",
+        "bg_opacity": 20
+      }
+    },
+    "1664875443e22c5814": {
+      "type": "bfj-faq-links",
+      "blocks": {
+        "173c3938-07c3-4328-b8de-5c47c1904dd9": {
+          "type": "acc_link",
+          "settings": {
+            "acc_text": "FAQ TOPIC GOES HERE 1"
+          }
+        },
+        "82556046-a329-4b6a-886f-f16b8fe4881f": {
+          "type": "acc_link",
+          "settings": {
+            "acc_text": "FAQ TOPIC GOES HERE 2"
+          }
+        },
+        "d8a9782d-ae0c-4c6a-9cb8-f13d155841af": {
+          "type": "acc_link",
+          "settings": {
+            "acc_text": "FAQ TOPIC GOES HERE 3"
+          }
+        },
+        "9d3f1ab3-dbf1-449f-ad63-1099616298ab": {
+          "type": "acc_link",
+          "settings": {
+            "acc_text": "FAQ TOPIC GOES HERE 4"
+          }
+        },
+        "f64a6fbe-4940-4d64-91ce-0abc7e4af850": {
+          "type": "acc_link",
+          "settings": {
+            "acc_text": "FAQ TOPIC GOES HERE 5"
+          }
+        }
+      },
+      "block_order": [
+        "173c3938-07c3-4328-b8de-5c47c1904dd9",
+        "82556046-a329-4b6a-886f-f16b8fe4881f",
+        "d8a9782d-ae0c-4c6a-9cb8-f13d155841af",
+        "9d3f1ab3-dbf1-449f-ad63-1099616298ab",
+        "f64a6fbe-4940-4d64-91ce-0abc7e4af850"
+      ],
+      "settings": {
+      }
+    },
+    "166487522884a2d43c": {
+      "type": "bfj-faq",
+      "blocks": {
+        "65225eb3-f35d-4725-8f55-d37d0b09eba3": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "14709d8a-6843-480e-98a3-3471b3ffedb1": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin pra simet aut aut latium quid ut inullors dolor ape nihitib erspientur sitinuptur?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "4c89e9fc-d575-4281-89e1-a549cb43bbdd": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "a2d5a53f-5e72-46e2-af65-0b41b290079b": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "a472664c-3dcb-4d09-9db2-aa374ded5b7a": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "65225eb3-f35d-4725-8f55-d37d0b09eba3",
+        "14709d8a-6843-480e-98a3-3471b3ffedb1",
+        "4c89e9fc-d575-4281-89e1-a549cb43bbdd",
+        "a2d5a53f-5e72-46e2-af65-0b41b290079b",
+        "a472664c-3dcb-4d09-9db2-aa374ded5b7a"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-1.png",
+        "acc_heading": "FAQ TOPIC GOES HERE 1",
+        "open_first_acc": true,
+        "acc_special_id": 1
+      }
+    },
+    "1664875451f360f300": {
+      "type": "bfj-faq",
+      "blocks": {
+        "dfd7f892-d883-40b5-b551-00eeceaeb687": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin pra simet aut aut latium quid ut inullors dolor ape nihitib erspientur sitinuptur?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "3b03bd34-1d4f-492f-92e0-2392d4b66fd3": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "3d296916-8bb1-4e9a-8f91-419813da8851": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "5a0686e5-ec04-434a-8eb7-58bb0e5a9f61": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "dfd7f892-d883-40b5-b551-00eeceaeb687",
+        "3b03bd34-1d4f-492f-92e0-2392d4b66fd3",
+        "3d296916-8bb1-4e9a-8f91-419813da8851",
+        "5a0686e5-ec04-434a-8eb7-58bb0e5a9f61"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-2.png",
+        "acc_heading": "FAQ TOPIC GOES HERE 2",
+        "open_first_acc": false,
+        "acc_special_id": 2
+      }
+    },
+    "16648754927cdc1a6c": {
+      "type": "bfj-faq",
+      "blocks": {
+        "a25250d6-3129-4d50-accb-9ceabc920a42": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin pra simet aut aut latium quid ut inullors dolor ape nihitib erspientur sitinuptur?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "116b16a3-829b-4304-87a5-3e7e012c4a20": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "c8be93a5-b2e1-4ce1-8862-d3947e129d25": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "e28567a9-b7fc-4085-a0ec-825e3beaa86b": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a25250d6-3129-4d50-accb-9ceabc920a42",
+        "116b16a3-829b-4304-87a5-3e7e012c4a20",
+        "c8be93a5-b2e1-4ce1-8862-d3947e129d25",
+        "e28567a9-b7fc-4085-a0ec-825e3beaa86b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-3.png",
+        "acc_heading": "FAQ TOPIC GOES HERE 3",
+        "open_first_acc": false,
+        "acc_special_id": 3
+      }
+    },
+    "16648754950c18bbca": {
+      "type": "bfj-faq",
+      "blocks": {
+        "6fa3376c-8d13-40c0-8218-4d3bfe87dcc6": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin pra simet aut aut latium quid ut inullors dolor ape nihitib erspientur sitinuptur?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "c5e66f3e-f99b-4fda-9d3c-f7a0328fd20d": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "0ec178a9-1a93-4651-a898-1b0c7e4698fc": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6fa3376c-8d13-40c0-8218-4d3bfe87dcc6",
+        "c5e66f3e-f99b-4fda-9d3c-f7a0328fd20d",
+        "0ec178a9-1a93-4651-a898-1b0c7e4698fc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-4.png",
+        "acc_heading": "FAQ TOPIC GOES HERE 4",
+        "open_first_acc": false,
+        "acc_special_id": 4
+      }
+    },
+    "166487550485edbc14": {
+      "type": "bfj-faq",
+      "blocks": {
+        "324d72d6-675d-4a03-a549-cfb30e941337": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin pra simet aut aut latium quid ut inullors dolor ape nihitib erspientur sitinuptur?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "23030ffc-12ae-4d04-8537-3d6f72174f91": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "5b2569a6-4d38-42f9-a3e4-c1eed1f58d72": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "cedc022b-14d9-4aae-a1cf-c32daaa12f52": {
+          "type": "accordion",
+          "settings": {
+            "acc_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?",
+            "acc_para": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br\/><br\/> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "324d72d6-675d-4a03-a549-cfb30e941337",
+        "23030ffc-12ae-4d04-8537-3d6f72174f91",
+        "5b2569a6-4d38-42f9-a3e4-c1eed1f58d72",
+        "cedc022b-14d9-4aae-a1cf-c32daaa12f52"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/faq-5.png",
+        "acc_heading": "FAQ TOPIC GOES HERE 5",
+        "open_first_acc": false,
+        "acc_special_id": 5
+      }
+    },
+    "5bb3eee7-335c-4390-beb3-02aaf7ad0d64": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710917220__5bb3eee7-335c-4390-beb3-02aaf7ad0d64-1665538832a216301f-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "GOT ANOTHER QUESTION?",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": false,
+            "btn_padding": "",
+            "btn": "CONTINUE US",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "535"
+          }
+        },
+        "template--15482710917220__5bb3eee7-335c-4390-beb3-02aaf7ad0d64-1665538832a216301f-1": {
+          "type": "image",
+          "settings": {
+            "heading": "GOT ANOTHER QUESTION?",
+            "image": "shopify:\/\/shop_images\/faq-image.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710917220__5bb3eee7-335c-4390-beb3-02aaf7ad0d64-1665538832a216301f-0",
+        "template--15482710917220__5bb3eee7-335c-4390-beb3-02aaf7ad0d64-1665538832a216301f-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1664875443e22c5814",
+    "166487522884a2d43c",
+    "1664875451f360f300",
+    "16648754927cdc1a6c",
+    "16648754950c18bbca",
+    "166487550485edbc14",
+    "5bb3eee7-335c-4390-beb3-02aaf7ad0d64"
+  ]
+}

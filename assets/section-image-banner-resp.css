@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .banner--large:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {
+        min-height: 634px;
+    }
+
+    .banner__box {
+        flex-direction: column;
+        padding: 20px 19px;
+        align-items: normal;
+    }
+
+    .banner__content {
+        align-items: flex-end;
+    }
+    
+    h2.banner__heading.h0 span {
+        font-size: 55.54px;
+        line-height: 51.3px;
+        letter-spacing: -2.14px;
+    }
+
+    .banner__buttons {
+        flex-wrap: nowrap;
+        max-width: 100%;
+    }
+
+    .banner--content-align-mobile-center .banner__buttons--multiple>* {
+        min-width: 17rem;
+    }
+}

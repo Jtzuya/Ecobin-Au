@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .rich-text {
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
+
+    .rich-text__wrapper {
+    padding: 90px 0px 0px;
+    }
+
+    h2.rich-text__heading.rte.h0 {
+        font-size: 55.54px;
+        line-height: 40px;
+        letter-spacing: -2.14px;
+    }
+
+    .rich-text__heading span {
+        font-size: 42px!important;
+        letter-spacing: -2px!important;
+    }
+}

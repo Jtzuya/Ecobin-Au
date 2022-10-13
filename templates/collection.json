@@ -1,0 +1,288 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "424ecb60-d408-42b7-9704-e33438445d23": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15308319916132__424ecb60-d408-42b7-9704-e33438445d23-1665124833ed0a8695-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SHOP all HEADLINE HERE",
+            "heading_size": "h0"
+          }
+        },
+        "template--15308319916132__424ecb60-d408-42b7-9704-e33438445d23-1665124833ed0a8695-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BACK TO HOME",
+            "button_link_1": "\/",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15308319916132__424ecb60-d408-42b7-9704-e33438445d23-1665124833ed0a8695-0",
+        "template--15308319916132__424ecb60-d408-42b7-9704-e33438445d23-1665124833ed0a8695-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_39966_1.png",
+        "video": "",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "ff9d5a47-baaf-4c38-9b8a-95e470eb822e": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710491236__ff9d5a47-baaf-4c38-9b8a-95e470eb822e-1665549297f6033ce0-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "HEADLINE GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": false,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15482710491236__ff9d5a47-baaf-4c38-9b8a-95e470eb822e-1665549297f6033ce0-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Rectangle_28.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710491236__ff9d5a47-baaf-4c38-9b8a-95e470eb822e-1665549297f6033ce0-0",
+        "template--15482710491236__ff9d5a47-baaf-4c38-9b8a-95e470eb822e-1665549297f6033ce0-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "1e93b06d-f5c0-4688-bfc8-04bd954805c6": {
+      "type": "numbers-hero",
+      "settings": {
+        "left_text": "SIAMET consectetur adipiscing elit",
+        "number": "2000000000",
+        "right_text": "SIAMET consectetur adipiscing elit"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 8,
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "33542af2-bd24-41e4-9c4b-90f02446b097": {
+      "type": "bfj-banner",
+      "blocks": {
+        "74fc734a-6823-4bab-a9df-0c2736f7a042": {
+          "type": "content_2",
+          "settings": {
+            "heading": "“Product Review or testimonials Can Go here for specific Products and\/or link to case studies pages”",
+            "paragraph": "<p>O’SHEA FAMILY — Purchased HOME BINS<\/p>",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "74fc734a-6823-4bab-a9df-0c2736f7a042"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eco-banner-2.png",
+        "bg_opacity": 20
+      }
+    },
+    "76b6a373-3a03-4ecb-b6fa-7cdb376ae589": {
+      "type": "bfj-collection",
+      "blocks": {
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Product_Name_2_1.png",
+            "heading": "INDOORS",
+            "btn": "SHOP NOW",
+            "btn_url": ""
+          }
+        },
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-1": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bike_more_bins-beige-brown-black_1.png",
+            "heading": "OUTDOORS",
+            "btn": "SHOP NOW",
+            "btn_url": ""
+          }
+        },
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-2": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/squadink_card__2Q2A2955-1_1.png",
+            "heading": "Home & home office",
+            "btn": "SHOP NOW",
+            "btn_url": ""
+          }
+        },
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-3": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/standard_resolution_1.png",
+            "heading": "COMMERCIAL",
+            "btn": "SHOP NOW",
+            "btn_url": ""
+          }
+        },
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-4": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JJ_GoRecycle-46litre-Recycling-Collector-Set_Blue_30112_IU3_1.png",
+            "heading": "GLASS",
+            "btn": "SHOP NOW",
+            "btn_url": ""
+          }
+        },
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-5": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/standard_resolution_1_1.png",
+            "heading": "ORGANIC",
+            "btn": "SHOP NOW",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-0",
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-1",
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-2",
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-3",
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-4",
+        "template--15308319916132__76b6a373-3a03-4ecb-b6fa-7cdb376ae589-166512515498c504b6-5"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "section_heading": "SHOP BY INDUSTRY"
+      }
+    },
+    "bcc39251-67c4-436f-a6fd-cb8b362d250a": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710491236__bcc39251-67c4-436f-a6fd-cb8b362d250a-166554973665183871-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "PLANET EARTH  CROSS PROMOTION CALL OUT HERE",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": false,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15482710491236__bcc39251-67c4-436f-a6fd-cb8b362d250a-166554973665183871-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/03-02-image-2.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710491236__bcc39251-67c4-436f-a6fd-cb8b362d250a-166554973665183871-0",
+        "template--15482710491236__bcc39251-67c4-436f-a6fd-cb8b362d250a-166554973665183871-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "424ecb60-d408-42b7-9704-e33438445d23",
+    "ff9d5a47-baaf-4c38-9b8a-95e470eb822e",
+    "1e93b06d-f5c0-4688-bfc8-04bd954805c6",
+    "product-grid",
+    "33542af2-bd24-41e4-9c4b-90f02446b097",
+    "76b6a373-3a03-4ecb-b6fa-7cdb376ae589",
+    "bcc39251-67c4-436f-a6fd-cb8b362d250a"
+  ]
+}

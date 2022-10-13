@@ -1,0 +1,106 @@
+{{ 'section-bfj-collection-carousel.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-featured-products-resp.css' | asset_url | stylesheet_tag }}
+
+<div class="__recommendationCase __featuredProducts">
+  <div class="page-width --g-px">
+  <div class="__headingCase">
+    <h2 class="__recoHeading">{{ section.settings.title }}</h2>
+    {% if section.settings.text_btn != blank %}
+      <a href="{{ section.settings.link_btn }}" class="button button--primary"><span>{{ section.settings.text_btn | escape }}</span></a>
+    {% endif %}
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper product-swiper __productRecoCase">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.prod]%}
+      <div class="swiper-slide __recoEachSlide">
+        {% comment %} image {% endcomment %}
+        <a class="card-link" href="{{ product.url}}">
+            <div class="__imageSwiperCase" style="background-image: url('{{ product.featured_image | img_url: 'large' }}'); background-repeat: no-repeat; background-position: center; background-size: cover;">&nbsp;</div>
+
+            {% comment %} product title {% endcomment %}
+            <h4 class="__productTitle">{{ product.title}}</h4>
+            <div class="prod-type"><span class="type-bullet">&nbsp;</span>ORGANIC</div>
+            <div class="prod-tags">INDOORS HOME</div>
+            <div class="btn-n-price">
+                <div class="shop-btn button button--primary">SHOP NOW</div>
+                <div class="price">From {{ product.price | money}}</div>
+            </div>
+            
+        </a>
+      </div><!-- end of each slide -->
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="__miscCase">
+    <div class="product-button-prev">{%- render 'arrow-prev' -%}</div>
+    <div class="product-pagination"></div>
+    <div class="product-button-next">{%- render 'arrow-next' -%}</div>
+  </div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Featured products",
+  "tag": "section",
+  "class": "collections-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Featured collections",
+      "label": "Collections slider title"
+    },
+    {
+      "type": "url",
+      "id": "link_btn",
+      "label": "Link",
+      "info": "Add the external link to button"
+    },
+    {
+      "type": "text",
+      "id": "text_btn",
+      "default": "BROWSE ALL PRODUCTS",
+      "label": "Products Button"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Products slide",
+      "settings": [
+        {
+          "type": "product",
+          "id": "prod",
+          "label": "image",
+          "info": "Choose the product"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection title",
+          "info": "Add the name of the collection"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Add the external link to the company"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Featured products"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,24 @@
+{% style %}
+    {%- if block.settings.tag_padding != blank -%}
+        #ArticleTags--{{ block.id }} {
+            margin-bottom: {{ block.settings.tag_padding | times: 1 | append: 'px' -}};
+        }
+    {% endif %}
+{% endstyle %}
+
+<div class="__eachArticleTags __overRide--{{ block.id }}" id="ArticleTags--{{ block.id }}">
+    {%- for tag in article.tags -%}
+        {%- assign tagName = tag | replace: '_', ' ' | split: ', ' -%}
+        {%- if tag != blank -%}
+            <span class="__contentTag __tag">{{ tagName -}}</span>
+        {%- endif -%}
+    {%- endfor -%}
+</div> 
+
+{%- if article.title != blank -%}
+    <h3 class="__contentHeading __contentHeading--{{ block.id }}">{{ article.title | escape -}}</h3>
+{%- endif -%}
+
+{%- if article.content != blank -%}
+    <div class="__contentParagraph __pageParagraph __overRide--{{ block.id }}">{{ article.content }}</div>
+{%- endif -%}

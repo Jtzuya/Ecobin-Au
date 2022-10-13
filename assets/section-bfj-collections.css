@@ -1,0 +1,221 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    overflow-y: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.__recoPlaceholder {
+    height: 320px;
+    /* width: 256px; */
+    object-fit: cover;
+    
+}
+
+.__collectionsCase,
+.__flipcardCase,
+.__articlesCase {
+    padding-top: 143px;
+    padding-bottom: 144px;
+}
+
+.__headingCase {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.__recoHeading {
+    margin: 0px;
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 42px;
+    color: #202223;
+    letter-spacing: -2px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.__allProductsUrl {
+    font-family: var(--font);
+    font-size: 22px;
+    font-weight: 500;
+    color: #202223;
+    padding: 10px 20px;
+    border-radius: 260px;
+    border: 2px solid #202223;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.__productRecoCase,
+.__flipSwiper {
+    padding-bottom: 69px;
+}
+
+.__flipSwiper,
+.__flipBlock,
+.__defaultCardBlocks,
+.__productRecoCase {
+    padding-top: 63px;
+}
+
+.__textBlocksCase {
+    padding-top: 29px;
+    font-size: 16px;
+    font-family: var(--g-font);
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 330px;
+}
+
+.__recoEachSlide {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+}
+
+.__imageSwiperCase {
+    /* padding: 32px 24.5px; */
+    border-radius: 20px;
+    background-color: rgb(var(--clr-dark) / 45%);
+    margin-bottom: 23.57px;
+    border-radius: 20px;
+    background-color: rgb(var(--clr-dark) / 45%);
+    margin-bottom: 23.57px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.__imageSwiperCase img {
+    border-radius: 20px;
+    min-height: 383.43px;
+}
+
+.__ratingCase {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #202223;
+    display: flex;
+    align-items: center;
+    gap: 9.52px;
+}
+
+.__productTitle {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--font);
+    letter-spacing: -1px;
+    line-height: 36px;
+    color: #202223;
+}
+
+.__priceCase {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--font);
+    color: #202223;
+}
+
+.__miscCase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.__miscCase > div {
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--eco-clr);
+}
+
+.swiper-pagination-bullet {
+    height: 20px;
+    width: 20px;
+    background-color: #c9c9c9;
+}
+
+.swiper-button-disabled svg > path:first-child {
+    stroke: rgb(32 34 35 / 45%);
+}
+
+.swiper-button-disabled svg>path:last-child {
+    fill: rgb(32 34 35 / 45%);
+}
+
+.__recoEachSlide:hover .__productTitle {
+    color: var(--eco-clr);
+}
+
+@media (max-width: 767px) {
+    .__headingCase {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.75rem;
+    }
+
+    .__productRecoCase,
+    .__flipSwiper {
+        padding-bottom: 30px;
+    }
+
+    .__collectionsCase,
+    .__flipcardCase,
+    .__articlesCase {
+        padding-top: 23px;
+        padding-bottom: 24px;
+    }
+
+    .__flipSwiper,
+    .__flipBlock,
+    .__defaultCardBlocks {
+        padding-top: 2.75rem;
+    }
+
+    .__textBlocksCase {
+        padding-top: 0px;
+    }
+}

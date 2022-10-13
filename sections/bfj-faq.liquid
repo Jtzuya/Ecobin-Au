@@ -1,0 +1,93 @@
+{{ 'section-faq-accordion.css' | asset_url | stylesheet_tag }}
+
+<div class="__faqCase --g-px mx-w" id="{{ section.settings.acc_heading | downcase | handleize -}}--{{ section.settings.acc_special_id -}}">
+    <div class="__faqImageCase">
+        {%- if section.settings.image != blank -%}
+            {%-liquid
+                assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+            -%}
+            {{ section.settings.image | image_url: width: 1440 | image_tag:
+                loading: 'lazy',
+                width: section.settings.image.width,
+                height: image_height,
+                widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                alt: section.settings.image.alt | escape
+            }}
+        {%- else -%}
+            {{ 'lifestyle-1' | placeholder_svg_tag -}}
+        {%- endif %}
+    </div>
+    <div class="__faqAccordionCase">
+        <h2 class="__h3">{{ section.settings.acc_heading | escape -}}</h2>
+        <div class="accordion">
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'accordion' -%}
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" class="__accordionBtn" aria-expanded="{%- if forloop.first and section.settings.open_first_acc == true -%}true{%- else -%}false{%- endif -%}" data-index="{{ forloop.index }}">
+                                <span class="accordion-title">{{ block.settings.acc_title | escape -}}</span>
+                                <span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">{{ block.settings.acc_para -}}</div>
+                        </div>
+                {%- endcase %}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - FAQ ACCORDION",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "acc_heading",
+      "label": "Accordion Heading",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first_acc",
+      "label": "Open First Accordion?",
+      "default": false
+    },
+    {
+      "type": "number",
+      "id": "acc_special_id",
+      "label": "Accordion Unique ID",
+      "info": "Set unique ID for each FAQ ACCORDION, this will connect to ACCORDION LINKS section"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "Accordion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "acc_title",
+          "label": "Accordion Title",
+          "default": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin?"
+        },
+        {
+          "type": "richtext",
+          "id": "acc_para",
+          "label": "Accordion Paragraph",
+          "default": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam. <br><br> harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - FAQ ACCORDION"
+    }
+  ]
+}
+{% endschema %}

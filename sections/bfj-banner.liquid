@@ -1,0 +1,211 @@
+{{ 'section-bfj-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    .banner__case::before {
+        background-color: rgb(var(--bg-dark) / {{ section.settings.bg_opacity | append: '%' -}})
+    }
+{%- endstyle -%}
+
+<div class="banner__case Banner--{{ section.id }}">
+  {%- if section.settings.image != blank -%}
+    <div class="image__case">
+      {%-liquid
+          assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+      -%}
+      {{ section.settings.image | image_url: width: 1440 | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+          alt: section.settings.image.alt | escape
+      }}
+    </div>
+  {%- else -%}
+    <div class="image__case">
+      {{ 'lifestyle-2' | placeholder_svg_tag -}}
+    </div>
+  {%- endif -%}
+
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'content_1' -%}
+        <div class="content__case __pageWidth">
+          <div class="content__wrapper">
+            {%- if template == 'blog.blogs' -%}
+              {%- if blog.title != blank -%}<h2 class="__h1">{{ blog.title }}</h2>{%- endif -%}
+
+              <div class="__ctas">
+                {%- if block.settings.btn != blank -%}
+                  <a href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url -}}{%- else -%}{{ shop.url }}{%- endif -%}">{{ block.settings.btn | escape -}}</a>
+                {%- endif -%}
+                {%- if block.settings.btn_2 != blank -%}
+                  <a href="{%- if block.settings.btn_url_2 != blank -%}{{ block.settings.btn_url_2 -}}{%- else -%}{{ shop.url }}{%- endif -%}">{{ block.settings.btn_2 | escape -}}</a>
+                {%- endif -%}
+              </div>
+            {% comment %} {%- elsif template == 'page' -%}
+              yes this is page a page template {% endcomment %}
+            {%- else -%}
+              {%- if block.settings.heading != blank -%}<h2 class="__h1">{{ block.settings.heading }}</h2>{%- endif -%}
+
+              <div class="__ctas">
+                {%- if block.settings.btn != blank -%}
+                  <a href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url -}}{%- else -%}#{%- endif -%}">{{ block.settings.btn | escape -}}</a>
+                {%- endif -%}
+                {%- if block.settings.btn_2 != blank -%}
+                  <a href="{%- if block.settings.btn_url_2 != blank -%}{{ block.settings.btn_url_2 -}}{%- else -%}#{%- endif -%}">{{ block.settings.btn_2 | escape -}}</a>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- comment -%}
+        ==============================
+            END OF CONTENT_1 BLOCK
+        ==============================
+      {%- endcomment -%}
+
+      {%- when 'content_2' -%}
+        <div class="content__case--2 __pageWidth">
+          <div class="content__wrapper">
+            {%- if block.settings.heading != blank -%}<h2 class="__h2">{{ block.settings.heading | escape -}}</h2>{%- endif -%}
+
+            {%- if block.settings.paragraph != blank -%}
+              <div class="__paragraphCase">
+                {{ block.settings.paragraph -}}
+              </div>
+            {%- endif -%}
+
+            <div class="__ctas">
+              {%- if block.settings.btn != blank -%}
+                <a href="{%- if block.settings.btn_url != blank -%}{{ block.settings.btn_url -}}{%- else -%}#{%- endif -%}">{{ block.settings.btn | escape -}}</a>
+              {%- endif -%}
+              {%- if block.settings.btn_2 != blank -%}
+                <a href="{%- if block.settings.btn_url_2 != blank -%}{{ block.settings.btn_url_2 -}}{%- else -%}#{%- endif -%}">{{ block.settings.btn_2 | escape -}}</a>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- comment -%}
+        ==============================
+            END OF CONTENT_2 BLOCK
+        ==============================
+      {%- endcomment -%}        
+      {%- endcase -%}
+    {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Hero Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-banner.settings.image.label"
+    },
+    {
+      "type": "range",
+      "id": "bg_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Background Opacity",
+      "default": 20
+    }
+  ],
+  "max_blocks": 1,
+  "blocks": [
+    {
+      "type": "content_1",
+      "name": "Content v.1",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Banner Headline",
+          "default": "Industry RELATED HEADLINE HERE"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button Text",
+          "default": "Back to home"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "btn_2",
+          "label": "Button Text",
+          "info": "Leave empty to hide the button"
+        },
+        {
+          "type": "url",
+          "id": "btn_url_2",
+          "label": "Button URL"
+        }
+      ]
+    },
+    {
+      "type": "content_2",
+      "name": "Content v.2",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Banner Headline",
+          "default": "“Product Review or testimonials Can Go here for specific Products and/or link to case studies pages”"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "<p>O’SHEA FAMILY — Purchased HOME BINS</p>"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button Text",
+          "default": "Back to home"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "btn_2",
+          "label": "Button Text",
+          "info": "Leave empty to hide the button"
+        },
+        {
+          "type": "url",
+          "id": "btn_url_2",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Hero Banner",
+      "blocks": [
+        {
+          "type": "content_1",
+          "settings": {
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

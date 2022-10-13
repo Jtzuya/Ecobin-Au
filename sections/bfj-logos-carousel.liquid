@@ -1,0 +1,91 @@
+{{ 'section-bfj-logos-carousel.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-logos-carousel-resp.css' | asset_url | stylesheet_tag }}
+
+<div class="logos-section-slider">
+  <div class="page-width">
+  <h6 class="logos-title">{{ section.settings.title | escape }}</h6>
+
+
+
+  <div class="__miscCase">
+    <div class="logos-button-prev __logoPrevBtn">{%- render 'arrow-prev' -%}</div>
+  <!-- Slider main container -->
+  <div class="swiper logos-swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for block in section.blocks %}
+      <div class="swiper-slide logos-slide">
+        {% comment %} image {% endcomment %}
+        <a class="card-link" href="{{ block.settings.link }}">
+            <img src="{{ block.settings.image | img_url: 'large' }}">     
+        </a>
+      </div><!-- end of each slide -->
+      {% endfor %}
+
+    </div>
+  </div>
+    <div class="logos-button-next __logoNextBtn">{%- render 'arrow-next' -%}</div>
+  </div>
+    <div class="logos-pagination"></div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJ - Logos Carousel",
+  "tag": "section",
+  "class": "collections-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "AS USED BY",
+      "label": "Logos carousel title"
+    },
+    {
+      "type": "url",
+      "id": "link_btn",
+      "label": "Link",
+      "info": "Add the external link to button"
+    },
+    {
+      "type": "text",
+      "id": "text_btn",
+      "default": "BROWSE ALL PRODUCTS",
+      "label": "Collections Button"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Collections slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image",
+          "info": "278 x 240 white background jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection title",
+          "info": "Add the name of the collection"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Add the external link to the company"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Logos Carousel"
+    }
+  ]
+}
+{% endschema %}

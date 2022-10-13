@@ -1,0 +1,30 @@
+.product-recommendations {
+  display: block;
+}
+
+.product-recommendations:not(.product-recommendations--loaded) {
+  padding: 0;
+  margin: 0;
+}
+
+.product-recommendations .quick-add product-form {
+  display: none;
+}
+
+.wrapp-title-recommendations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-recommendations__heading {
+  margin: 0;
+  margin-bottom: 5rem;
+  font-size: 42px;
+  line-height: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  word-break: break-word;
+  max-width: 25%;
+}

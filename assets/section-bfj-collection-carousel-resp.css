@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+    .__recommendationCase {
+        padding-top: 75px!important;
+        padding-bottom: 80px !important;
+    }
+
+    .__recommendationCase .__headingCase {
+        padding-bottom: 0px!important;
+    }
+
+    .__headingCase > a.button.button--primary {
+        display: none;
+    }
+
+    .__productRecoCase {
+        padding-top: 43.45px!important;
+        padding-bottom: 33.43px!important;
+    }
+
+    .collection-swiper .card-link .__imageSwiperCase {
+        min-height: 364.57px!important;
+    }
+
+    .__collectionBtnCase.mob {
+        padding-top: 40.02px;
+    }
+
+    .__collectionBtnCase.mob,
+    .__collectionBtnCase.mob > a.button.button--primary {
+        display: block!important;
+    }
+
+    .__collectionBtnCase.mob > a.button.button--primary {
+        width: 100%;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+}

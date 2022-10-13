@@ -1,0 +1,61 @@
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .__halvedBlocksCase {
+        gap: clamp(4rem, 2vw, 6rem);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    /* Fallback CSS (Safari) */
+    .__halvedBlocksCase {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .__halvedBlocksCase {
+        gap: clamp(2rem, 2vw, 4rem);
+    }
+
+    .__halvedBlocksCase>.__image-textContent {
+        width: 40%;
+    }
+
+    .__contentHeading>br:first-of-type {
+        display: none;
+    }
+
+    .__contentHeading {
+        font-size: 4rem !important;
+        line-height: 113% !important;
+    }
+
+    .__contentParagraph {
+        padding-top: 1.75rem;
+    }
+
+    .__contentBtnCase {
+        padding-top: 3rem;
+    }
+
+    .__contentUrl .__contentText {
+        font-size: 16px;
+    }
+
+    .__halvedBlocksCase .__imageSwiperCase {
+        min-height: 350px;
+    }
+
+    .__halvedBlocksCase .__imageSliderCase {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .__contentParagraph {
+        font-size: 16px;
+        line-height: 113%;
+        max-width: 350px;
+    }
+}

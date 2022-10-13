@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "a2140c41-dae0-44ee-95ef-6042c9d9eaea": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15442474664036__a2140c41-dae0-44ee-95ef-6042c9d9eaea-1665391467c224d2e6-1": {
+          "type": "image",
+          "settings": {
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15442474664036__a2140c41-dae0-44ee-95ef-6042c9d9eaea-1665391467c224d2e6-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "39",
+            "heading": "HEADLINE GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "47",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15442474664036__a2140c41-dae0-44ee-95ef-6042c9d9eaea-1665391467c224d2e6-1",
+        "template--15442474664036__a2140c41-dae0-44ee-95ef-6042c9d9eaea-1665391467c224d2e6-0"
+      ],
+      "settings": {
+        "dynamic_page_content": true,
+        "padding_top": 140,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start"
+      }
+    },
+    "each_blog_content": {
+      "type": "bfj-article",
+      "settings": {
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/video-thumbnail.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c2eec4ab-f995-4d1e-9543-1ac081bb019f": {
+      "type": "bfj-featured-articles",
+      "settings": {
+        "blogs": "blog",
+        "heading": "You Might Also Like",
+        "heading_width": 508,
+        "btn_text": "All Articles",
+        "btn_url": "",
+        "bg_clr": "#f4f4f2",
+        "cards_per_view": "3",
+        "limit": "3"
+      }
+    },
+    "b543acf8-5226-4fc8-8ba2-e2af12d3c7ea": {
+      "type": "bfj-banner",
+      "blocks": {
+        "a254055d-b1db-4093-8c0e-45c5b352c0c7": {
+          "type": "content_2",
+          "settings": {
+            "heading": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”",
+            "paragraph": "<p>LOREM IPSUM DOLOR<\/p>",
+            "btn": "CTA BUTTON",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "a254055d-b1db-4093-8c0e-45c5b352c0c7"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eco-banner-2.png",
+        "bg_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "a2140c41-dae0-44ee-95ef-6042c9d9eaea",
+    "each_blog_content",
+    "video",
+    "c2eec4ab-f995-4d1e-9543-1ac081bb019f",
+    "b543acf8-5226-4fc8-8ba2-e2af12d3c7ea"
+  ]
+}

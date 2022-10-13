@@ -1,0 +1,111 @@
+{{ 'section-bfj-collection-carousel.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-collection-carousel-resp.css' | asset_url | stylesheet_tag }}
+
+<div class="__recommendationCase">
+  <div class="page-width --g-px">
+  <div class="__headingCase">
+    <h2 class="__recoHeading">{{ section.settings.title | escape }}</h2>
+    <a href="{{ section.settings.link_btn }}" class="button button--primary "><span>{{ section.settings.text_btn | escape }}</span></a>
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper collection-swiper __productRecoCase">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {% for block in section.blocks %}
+      <div class="swiper-slide __recoEachSlide">
+        {% comment %} image {% endcomment %}
+        <a class="card-link" href="{{ block.settings.link }}">
+            <div class="__imageSwiperCase" style="background-image: url('{{ block.settings.image | img_url: 'large' }}'); 
+              background-repeat: no-repeat; 
+              background-position: center; 
+              background-size: cover; 
+              background-color: {{ block.settings.bg_item_clr }};">&nbsp;</div>
+
+            {% comment %} product title {% endcomment %}
+            <h4 class="__productTitle">{{ block.settings.collection_title }}</h4>
+            
+        </a>
+      </div><!-- end of each slide -->
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <div class="__miscCase">
+    <div class="collection-button-prev">{%- render 'arrow-prev' -%}</div>
+    <div class="collection-pagination"></div>
+    <div class="collection-button-next">{%- render 'arrow-next' -%}</div>
+  </div>
+
+  <div class="__collectionBtnCase mob">
+    <a href="{{ section.settings.link_btn }}" class="button button--primary "><span>{{ section.settings.text_btn | escape }}</span></a>
+  </div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Collections slider",
+  "tag": "section",
+  "class": "collections-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Featured collections",
+      "label": "Collections slider title"
+    },
+    {
+      "type": "url",
+      "id": "link_btn",
+      "label": "Link",
+      "info": "Add the external link to button"
+    },
+    {
+      "type": "text",
+      "id": "text_btn",
+      "default": "BROWSE ALL PRODUCTS",
+      "label": "Collections Button"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Collections slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image",
+          "info": "278 x 240 white background jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Collection title",
+          "info": "Add the name of the collection"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Add the external link to the company"
+        },
+        {
+          "type": "color",
+          "id": "bg_item_clr",
+          "label": "Products Background Color",
+          "default": "#fff"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Collections slider"
+    }
+  ]
+}
+{% endschema %}

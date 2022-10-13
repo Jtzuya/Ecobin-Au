@@ -1,0 +1,136 @@
+{
+  "sections": {
+    "8a062f52-a835-4c0c-a40b-4622644e78ce": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482711179364__8a062f52-a835-4c0c-a40b-4622644e78ce-16655432945e1e956d-1": {
+          "type": "image",
+          "settings": {
+            "heading": "STORY TITLE  GOES HERE",
+            "image": "shopify:\/\/shop_images\/stories-img.png",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        },
+        "template--15482711179364__8a062f52-a835-4c0c-a40b-4622644e78ce-16655432945e1e956d-0": {
+          "type": "content",
+          "settings": {
+            "tag": "Search Tag",
+            "tag_padding": "39",
+            "heading": "STORY TITLE  GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "29",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "535"
+          }
+        }
+      },
+      "block_order": [
+        "template--15482711179364__8a062f52-a835-4c0c-a40b-4622644e78ce-16655432945e1e956d-1",
+        "template--15482711179364__8a062f52-a835-4c0c-a40b-4622644e78ce-16655432945e1e956d-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 140,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "1664619393fda494eb": {
+      "type": "bfj-image-text",
+      "blocks": {
+        "0cb68c40-f5cc-4142-b5e1-a29833c769f1": {
+          "type": "content_v2",
+          "settings": {
+            "long_text_1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis mattis euismod aenean vel sapien in vitae. A, aliquam in ut non, blandit. Vel pretium tincidunt et vulputate ullamcorper. Purus nunc at dictumst mauris. Velit cursus est venenatis nullam est. Pulvinar sit consequat nascetur aliquam consequat odio. Quam sit donec arcu nec pulvinar pretium dictum lectus mattis. Ac a eget tincidunt sollicitudin luctus a suspendisse amet mi. Id integer odio faucibus dui, volutpat vestibulum.<\/p><p><\/p><p>Egestas et placerat ornare nulla netus pellentesque. Feugiat sed in diam aliquet tristique purus mattis aliquet id. Adipiscing amet varius cursus est. Est dignissim habitasse varius elit volutpat rhoncus urna. Eget semper id ullamcorper vel, vitae. Erat velit purus mauris, bibendum lacus, magna justo adipiscing netus. Nam arcu dignissim integer orci, risus tempor dolor. Elit fames interdum auctor ut mus sem. Suspendisse dictum quisque eleifend donec commodo ut aenean.<\/p><p><\/p><p>Elit, diam aliquet nec quis in suscipit tristique morbi eu. Lectus vel pulvinar enim, tortor, integer mauris. Eget lacus, turpis facilisis sed lorem. Tempus, facilisis orci erat tincidunt ullamcorper viverra molestie. Libero tellus auctor eleifend habitant. Aliquam ullamcorper quam aliquam nisl leo feugiat leo ut. Augue lorem facilisis faucibus at tincidunt faucibus sed nunc. Quam turpis pellentesque ipsum, porta.<\/p>",
+            "heading_v2": "“Idullamcorper vel, vitae. Erat velit purus mauris, bibendum lacus, magna justo adipiscing netu integer.”",
+            "heading_size_v2": 38,
+            "heading_lineHeight_v2": 44,
+            "heading_letterSpacing_v2": -1,
+            "long_text_2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis mattis euismod aenean vel sapien in vitae. A, aliquam in ut non, blandit. Vel pretium tincidunt et vulputate ullamcorper. Purus nunc at dictumst mauris. Velit cursus est venenatis nullam est. Pulvinar sit consequat nascetur aliquam consequat odio. Quam sit donec arcu nec pulvinar pretium dictum lectus mattis. Ac a eget tincidunt sollicitudin luctus a suspendisse amet mi. Id integer odio faucibus dui, volutpat vestibulum.<\/p><p><\/p><p>Egestas et placerat ornare nulla netus pellentesque. Feugiat sed in diam aliquet tristique purus mattis aliquet id. Adipiscing amet varius cursus est. Est dignissim habitasse varius elit volutpat rhoncus urna. Eget semper id ullamcorper vel, vitae. Erat velit purus mauris, bibendum lacus, magna justo adipiscing netus. Nam arcu dignissim integer orci, risus tempor dolor. Elit fames interdum auctor ut mus sem. Suspendisse dictum quisque eleifend donec commodo ut aenean.<\/p><p><\/p><p>Elit, diam aliquet nec quis in suscipit tristique morbi eu. Lectus vel pulvinar enim, tortor, integer mauris. Eget lacus, turpis facilisis sed lorem. Tempus, facilisis orci erat tincidunt ullamcorper viverra molestie. Libero tellus auctor eleifend habitant. Aliquam ullamcorper quam aliquam nisl leo feugiat leo ut. Augue lorem facilisis faucibus at tincidunt faucibus sed nunc. Quam turpis pellentesque ipsum, porta.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0cb68c40-f5cc-4142-b5e1-a29833c769f1"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "gap": 110
+      }
+    },
+    "1664619477b59516d6": {
+      "type": "bfj-collections",
+      "settings": {
+        "product_collection": "indoor",
+        "heading": "RECOMMENDED <br> products",
+        "heading_width": 500,
+        "btn_text": "All products",
+        "btn_url": "",
+        "bg_clr": "#f4f4f2"
+      }
+    },
+    "6b2f5e9e-a1fa-42f2-8610-d36d2b826aac": {
+      "type": "bfj-featured-articles",
+      "settings": {
+        "blogs": "blog",
+        "heading": "MORE LIKE THIS",
+        "heading_width": 700,
+        "btn_text": "All stories",
+        "btn_url": "",
+        "bg_clr": "#ffffff",
+        "cards_per_view": "3",
+        "limit": "5"
+      }
+    },
+    "1664619617e00be209": {
+      "type": "bfj-banner",
+      "blocks": {
+        "10505764-ca44-419a-bc01-e1bea7bfe7c9": {
+          "type": "content_2",
+          "settings": {
+            "heading": "“Product Review or testimonials Can Go here for specific Products and\/or link to case studies pages”",
+            "paragraph": "<p>O’SHEA FAMILY — Purchased HOME BINS<\/p>",
+            "btn": "READ THEIR STORY",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "10505764-ca44-419a-bc01-e1bea7bfe7c9"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eco-banner-2.png",
+        "bg_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "8a062f52-a835-4c0c-a40b-4622644e78ce",
+    "1664619393fda494eb",
+    "1664619477b59516d6",
+    "6b2f5e9e-a1fa-42f2-8610-d36d2b826aac",
+    "1664619617e00be209"
+  ]
+}

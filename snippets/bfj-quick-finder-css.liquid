@@ -1,0 +1,39 @@
+{{ 'section-bfj-image-text.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-quick-finder.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-quick-finder-resp.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    .__quickFinderHeading {
+        font-weight: 800;
+    }
+
+    .__quickFinderHeading.__mob {
+        display: none;
+    }
+
+    .--custom-padding--{{ section.id }} {
+        padding-top: {{ section.settings.padding_top | append: 'px' -}};
+        padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+        background-color: {{ section.settings.bg_color }};
+    }
+
+    @media (min-width: 900px) {
+        {%- if section.settings.block_width == 'equal' -%}
+            #Image-Text--{{ section.id }} > * {
+                width: 50%;
+            }
+        {%- endif -%}
+    }
+
+    @media (max-width: 767px) {
+        {% if section.settings.reversed != false %}
+        #Image-Text--{{ section.id }} {
+            flex-direction: column-reverse;
+        }
+        {% endif %}
+
+        .__stretchBtn--{{ section.id }} {
+            width: 100%; 
+        }
+    }
+{%- endstyle -%}

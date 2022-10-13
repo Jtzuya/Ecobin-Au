@@ -1,0 +1,193 @@
+{%- comment -%}
+  Most styling of this section is commonly used from section-bfj-collection
+{%- endcomment -%}
+{%- render 'bfj-flipcard-css', section: section -%}
+{{ 'section-bfj-collections.css' | asset_url | stylesheet_tag }}
+{%- assign ss = section.settings -%}
+
+<div class="__bgWrapper--{{ section.id }}">
+  <div class="__flipcardCase __setDefaults--{{ section.id }} --g-px mx-w">
+    <div class="__headingCase __desk">
+      {%- if ss.heading != blank -%}
+        <h3 class="__recoHeading">{{ ss.heading -}}</h3>
+      {%- endif -%}
+
+      {%- if ss.btn_text != blank -%}
+        <a href="{% if ss.btn_url != blank %}{{ ss.btn_url -}}{%- else -%}#{%- endif -%}" class="__allProductsUrl">
+            <span>{{ ss.btn_text -}}</span>
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.format == 'default_blocks' and section.settings.text_extra != blank -%}
+      <div class="__textBlocksCase">{{ section.settings.text_extra -}}</div>
+    {%- endif -%}
+
+    {%- if section.settings.format == 'slider' -%}
+      <div class="swiper-wrapper __flipSwiper">
+        <!-- Slides -->
+          {%- render 'flip-items', section: section, block: block -%}
+      </div>
+    {%- elsif section.settings.format == 'default_flip_blocks' -%}
+      <div class="__flipBlock">
+        <!-- Default card flip blocks -->
+        {%- render 'flip-items', section: section, block: block -%}
+      </div>
+    {%- else -%}
+      <div class="__defaultCardBlocks">
+        <!-- Default card flip blocks -->
+        {%- render 'card-items', section: section, block: block -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.format == 'slider' -%}
+      <div class="__miscCase">
+        <div class="flip-button-prev">{%- render 'arrow-prev' -%}</div>
+        <div class="flip-pagination pagination"></div>
+        <div class="flip-button-next">{%- render 'arrow-next' -%}</div>
+      </div>
+    {%- endif -%}
+
+    <div class="__headingCase __mob">
+      {%- if ss.btn_text != blank -%}
+        <a href="{% if ss.btn_url != blank %}{{ ss.btn_url -}}{%- else -%}#{%- endif -%}" class="__allProductsUrl">
+            <span>{{ ss.btn_text -}}</span>
+        </a>
+      {%- endif -%}
+      {%- if ss.btn_text_2 != blank -%}
+        <a href="{% if ss.btn_url_2 != blank %}{{ ss.btn_url_2 -}}{%- else -%}#{%- endif -%}" class="__allProductsUrl">
+            <span>{{ ss.btn_text_2 -}}</span>
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Flip Cards",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "RECOMMENDED products"
+    },
+    {
+      "type": "number",
+      "id": "heading_width",
+      "label": "Set width for your heading",
+      "default": 331
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text",
+      "default": "All products",
+      "info": "Leave button text empty to hide the button"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "btn_text_2",
+      "label": "Button Text (mobile)",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "btn_url_2",
+      "label": "Button URL (mobile)"
+    },
+    {
+      "type": "color",
+      "id": "bg_clr",
+      "label": "Background color",
+      "default": "#fff"
+    },
+    {
+      "type": "select",
+      "id": "format",
+      "options": [
+        {
+          "value": "slider",
+          "label": "Slider"
+        },
+        {
+          "value": "default_blocks",
+          "label": "Default blocks"
+        },
+        {
+          "value": "default_flip_blocks",
+          "label": "Default Flip blocks"
+        }
+      ],
+      "default": "slider",
+      "label": "Select Format"
+    },
+    {
+      "type": "richtext",
+      "id": "text_extra",
+      "label": "Show Extra Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "flip",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Front Card"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "span_text",
+          "label": "Span Text",
+          "default": "GOAL  01 / 05"
+        },
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading Text",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum."
+        },
+        {
+          "type": "header",
+          "content": "Back Card"
+        },
+        {
+          "type": "richtext",
+          "id": "back_text",
+          "label": "Back Text",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.</p>"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Flip Cards"
+    }
+  ]
+}
+{% endschema %}

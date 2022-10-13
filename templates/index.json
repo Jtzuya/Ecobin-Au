@@ -1,0 +1,659 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE SHOP YOU’VE BIN WAITING FOR",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "Which bin?",
+            "button_link_2": "#",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Eco_Bins_91.jpg",
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/57065962fb9644f8aa4ba34d85adcc53.mp4",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "16644365479e81eac9": {
+      "type": "numbers-hero",
+      "settings": {
+        "left_text": "Every year in Australia,",
+        "number": "2000000000",
+        "right_text": "tonnes of waste ends up in landfill."
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>COMING TOGETHER TO KEEP THINGS SEPERATE.<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "select_option": "default_state"
+      }
+    },
+    "efb08557-723a-4150-b0b3-df411dc0df02": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15476188119140__efb08557-723a-4150-b0b3-df411dc0df02-16654566735be91633-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Purposeful waste separation is kind of a big deal to us. It is at the heart of everything we do and it’s no exaggeration to say it is what gets us out of bed in the morning. <\/p><p><\/p><p>Before you roll your eyes, hear us out!<\/p><p><\/p><p>With millions of tonnes of waste ending up in landfill every year, we’re here to help you do your bit. Small, easy changes can be revolutionary. <\/p><p><\/p><p>We’re not asking you to live off the grid and forage for food to keep your carbon footprint down. We’re simply here to help you be a little more conscious of how you dispose of waste. <\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "Let Us Explain",
+            "btn_url": "shopify:\/\/pages\/about-us",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15476188119140__efb08557-723a-4150-b0b3-df411dc0df02-16654566735be91633-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/ECO_IMAGE_SQUARE_1.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15476188119140__efb08557-723a-4150-b0b3-df411dc0df02-16654566735be91633-0",
+        "template--15476188119140__efb08557-723a-4150-b0b3-df411dc0df02-16654566735be91633-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "1664436567cbaac1b3": {
+      "type": "bfj-collection-carousel",
+      "blocks": {
+        "5458f831-d755-4183-83d5-13b031731f7c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/60L-Ecobin-Flip_Blue_MAIN-1_1.png",
+            "collection_title": "Indoors",
+            "link": "",
+            "bg_item_clr": "#ffffff"
+          }
+        },
+        "c191345b-2772-4b4b-8cf4-daf4b6973a89": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ecobin-Terminus-clear-wheelie-bin-enclosure_topper_web_WS2-decal_yellow_2.png",
+            "collection_title": "Outdoors",
+            "link": "",
+            "bg_item_clr": "#ffffff"
+          }
+        },
+        "9c87c3a7-b8f7-4c4e-85ce-89713da20226": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_5_2.png",
+            "collection_title": "Accessories",
+            "link": "",
+            "bg_item_clr": "#ffffff"
+          }
+        },
+        "9ba839a7-ecc1-47ba-9fc4-ab614e66d005": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/60L-Ecobin-Flip_Blue_MAIN-1_1.png",
+            "collection_title": "Indoors",
+            "link": "",
+            "bg_item_clr": "#ffffff"
+          }
+        },
+        "5c80fe99-9428-4550-8a05-38210c8b8d46": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/60L-Ecobin-Flip_Blue_MAIN-1_1.png",
+            "collection_title": "Indoors",
+            "link": "",
+            "bg_item_clr": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "5458f831-d755-4183-83d5-13b031731f7c",
+        "c191345b-2772-4b4b-8cf4-daf4b6973a89",
+        "9c87c3a7-b8f7-4c4e-85ce-89713da20226",
+        "9ba839a7-ecc1-47ba-9fc4-ab614e66d005",
+        "5c80fe99-9428-4550-8a05-38210c8b8d46"
+      ],
+      "settings": {
+        "title": "MEET THE FAMILY",
+        "link_btn": "",
+        "text_btn": "BROWSE ALL PRODUCTS"
+      }
+    },
+    "21364a3b-b764-4086-a50c-22b0a2db4580": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710786148__21364a3b-b764-4086-a50c-22b0a2db4580-166562597054eea16e-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Eco_Bins_70.jpg",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15482710786148__21364a3b-b764-4086-a50c-22b0a2db4580-166562597054eea16e-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "NEW PRODUCT OR ANNOUNCEMENT",
+            "heading_size": 40,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec quam fringilla, lacinia diam vitae, consequat elit. Nullam magna magna, iaculis vitae metus a, suscipit fringilla ipsum. <\/p><p><\/p><p>Ut quis ex sit amet justo rhoncus pretium hendrerit a sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui nunc, faucibus vitae scelerisque non, pretium et erat. Phasellus sit amet pretium nulla. Aliquam erat volutpat. Quisque at laoreet felis.<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "PRE-REGISTER NOW",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710786148__21364a3b-b764-4086-a50c-22b0a2db4580-166562597054eea16e-1",
+        "template--15482710786148__21364a3b-b764-4086-a50c-22b0a2db4580-166562597054eea16e-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "e9d64493-b1c6-4f7c-82c2-104d4fe04580": {
+      "type": "bfj-halved-blocks",
+      "disabled": true,
+      "blocks": {
+        "template--15476188119140__e9d64493-b1c6-4f7c-82c2-104d4fe04580-1665461566c361d6e0-1": {
+          "type": "image",
+          "settings": {
+            "heading": "NEWS OR  PRODUCT  ANNOUNCE MENT",
+            "image": "shopify:\/\/shop_images\/bin_image.webp",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15476188119140__e9d64493-b1c6-4f7c-82c2-104d4fe04580-1665461566c361d6e0-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "NEWS OR  Product  AnnouncE MENT",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing <\/p><p>elit. Aliquet ut mi lobortis aliquet commodo nullam. <\/p><p>Orci, laoreet pharetra, elementum, urna, sit. Tellus eu <\/p><p>egestas tristique adipiscing urna, egestas interdum.<\/p><p><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing <\/p><p>elit. Aliquet ut mi lobortis aliquet commodo nullam. <\/p><p>Orci, laoreet pharetra, elementum, urna, sit. Tellus eu <\/p><p>egestas tristique adipiscing urna, egestas interdum.<\/p>",
+            "para_padding": "49",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "PRE-REGISTER NOW",
+            "btn_url": "",
+            "stretch_btn": true,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "651"
+          }
+        }
+      },
+      "block_order": [
+        "template--15476188119140__e9d64493-b1c6-4f7c-82c2-104d4fe04580-1665461566c361d6e0-1",
+        "template--15476188119140__e9d64493-b1c6-4f7c-82c2-104d4fe04580-1665461566c361d6e0-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "166452047096e4da82": {
+      "type": "bfj-featured-products",
+      "blocks": {
+        "3b3e5d41-1d18-44ca-8e17-dd326e04b4a5": {
+          "type": "image",
+          "settings": {
+            "prod": "12-litre-compostable-tidy-bags-12-rolls-per-box",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "6c4f7b5e-370f-4259-b4cf-9f7b210098d1": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-bin-yellow-ecobin-25-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "8d484add-fe2c-4abf-bd7a-e496203710b2": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-wheelie-bin-enclosure-art-series-urban-st-yellow-to-suit-120-litre-or-240-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "d6708e91-5e14-438c-9a5d-434bbef789ef": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-wheelie-bin-yellow-240-litres",
+            "collection_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3b3e5d41-1d18-44ca-8e17-dd326e04b4a5",
+        "6c4f7b5e-370f-4259-b4cf-9f7b210098d1",
+        "8d484add-fe2c-4abf-bd7a-e496203710b2",
+        "d6708e91-5e14-438c-9a5d-434bbef789ef"
+      ],
+      "settings": {
+        "title": "Here’s What You’ve Bin Loving",
+        "link_btn": "shopify:\/\/collections",
+        "text_btn": "BROWSE ALL PRODUCTS"
+      }
+    },
+    "2be8ae21-a57f-41bd-bda2-686515d68952": {
+      "type": "bfj-quick-finder",
+      "blocks": {
+        "template--15308319981668__2be8ae21-a57f-41bd-bda2-686515d68952-1664954515169ff990-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "heading": "SPOILT FOR CHOICE? FIND THE BIN THAT’S RIGHT FOR YOU.",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "",
+            "btn": "SHOP ALL",
+            "stretch_btn": true,
+            "btn_url": "#",
+            "btn2": "SHOP BY INDUSTRY",
+            "btn_url2": "#"
+          }
+        },
+        "template--15308319981668__2be8ae21-a57f-41bd-bda2-686515d68952-1664954515169ff990-1": {
+          "type": "image",
+          "settings": {
+            "heading": "SPOILT FOR CHOICE? <br> FIND THE BIN THAT’S RIGHT FOR YOU."
+          }
+        }
+      },
+      "block_order": [
+        "template--15308319981668__2be8ae21-a57f-41bd-bda2-686515d68952-1664954515169ff990-0",
+        "template--15308319981668__2be8ae21-a57f-41bd-bda2-686515d68952-1664954515169ff990-1"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "gap": 113,
+        "reversed": true
+      }
+    },
+    "33fd78d9-2a6b-409a-92df-16771cf0abb8": {
+      "type": "bfj-reviews",
+      "blocks": {
+        "d1c7ec77-67b9-43fe-9ed1-dfc90245c8e6": {
+          "type": "slider",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/blog_image.png",
+            "card_name": "Jane Smith",
+            "card_date": "02\/06\/2022",
+            "card_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin",
+            "review_text": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "74782a25-1b8b-479d-b47c-b6627c45bce6": {
+          "type": "slider",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/Rectangle_47.png",
+            "card_name": "Jane Smith",
+            "card_date": "02\/06\/2022",
+            "card_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin",
+            "review_text": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "f3cc3744-6195-4056-b783-765d6a4ea99b": {
+          "type": "slider",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/blog_image.png",
+            "card_name": "Jane Smith",
+            "card_date": "02\/06\/2022",
+            "card_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin",
+            "review_text": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        },
+        "b64405b4-6466-433c-a4a4-a19e6f734287": {
+          "type": "slider",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/Rectangle_47_bc12200e-e3fb-440d-803b-dd1d6861a95c.png",
+            "card_name": "Jane Smith",
+            "card_date": "02\/06\/2022",
+            "card_title": "Optia qui dusa quo doloreptis dolor ape nihitib erspientur sitin",
+            "review_text": "<p>pra simet aut aut latium quid ut inulloruptur apedisciam harum in providem ent acero essx eiundiate reptis t inulloruptur apedisciam hardolpedisciam harum in providem ent acero esserio et auditis eos dolupta ne equiaepro que pe.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d1c7ec77-67b9-43fe-9ed1-dfc90245c8e6",
+        "74782a25-1b8b-479d-b47c-b6627c45bce6",
+        "f3cc3744-6195-4056-b783-765d6a4ea99b",
+        "b64405b4-6466-433c-a4a4-a19e6f734287"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2",
+        "block_width": "unset",
+        "align_items": "start",
+        "gap": 113,
+        "tag": "",
+        "heading": "Why We Do What We Do...",
+        "heading_size": 42,
+        "heading_lineHeight": 40,
+        "heading_letterSpacing": -2,
+        "paragraph": "<p>Spoiler: It’s For Moments Like These!<\/p>",
+        "btn": "",
+        "btn_url": ""
+      }
+    },
+    "9a12a59d-de32-4ea8-9506-1eaaa276a318": {
+      "type": "bfj-logos-carousel",
+      "blocks": {
+        "cf5d23da-7112-4866-b4e8-37e60d859634": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_40215.png",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "d58c5b6e-25bd-43ed-ae16-daa3eec4c61e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tersano-logo.png",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "9c9b5aa7-1abc-42b7-8dc1-6c03bcd1cec6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_40214.png",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "2290625f-a830-451a-bb76-777a0c05af83": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wavelogo.png",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "c1704ad5-9830-43e7-97c5-d07109f18923": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_40213.png",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "6d0496c2-5da8-4a46-bda7-4cf3fa1e856f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_40215.png",
+            "collection_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cf5d23da-7112-4866-b4e8-37e60d859634",
+        "d58c5b6e-25bd-43ed-ae16-daa3eec4c61e",
+        "9c9b5aa7-1abc-42b7-8dc1-6c03bcd1cec6",
+        "2290625f-a830-451a-bb76-777a0c05af83",
+        "c1704ad5-9830-43e7-97c5-d07109f18923",
+        "6d0496c2-5da8-4a46-bda7-4cf3fa1e856f"
+      ],
+      "settings": {
+        "title": "SOME OF OUR FAMOUS FRIENDS:",
+        "link_btn": "shopify:\/\/collections",
+        "text_btn": "BROWSE ALL PRODUCTS"
+      }
+    },
+    "1664520424acc52c92": {
+      "type": "rich-text",
+      "blocks": {
+        "1664520424c8385bbc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WANT TO KNOW MORE ABOUT WASTE SEPARATION?<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "1664520424c8385bbc-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "select_option": "default_state"
+      }
+    },
+    "92cbc906-cbf8-45b9-af80-45d8653f67fd": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15476188119140__92cbc906-cbf8-45b9-af80-45d8653f67fd-1665469187edcebfa3-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "<br>",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>By the looks of things, you were a ‘turn in assignments early and with a few extra pages’ kind of student at school. Luckily, we love people who are hungry for knowledge! <\/p><p><\/p><p>We’ve written some blogs on the importance of waste separation, a few things that you can and can’t recycle and a few more nuggets of information. Plus, we’ve put together some of our favourite resources for some extra credit reading. <\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "READ MORE",
+            "btn_url": "shopify:\/\/blogs\/blog",
+            "stretch_btn": true,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15476188119140__92cbc906-cbf8-45b9-af80-45d8653f67fd-1665469187edcebfa3-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Eco_Bins_98.jpg",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15476188119140__92cbc906-cbf8-45b9-af80-45d8653f67fd-1665469187edcebfa3-0",
+        "template--15476188119140__92cbc906-cbf8-45b9-af80-45d8653f67fd-1665469187edcebfa3-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 0,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "b33d370e-6154-4792-8c30-be893023403f": {
+      "type": "bjf-flipcard",
+      "blocks": {
+        "61e856d9-d616-496f-a9f2-aa9950ea3b75": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eco_Bins_92.jpg",
+            "span_text": "RECYCLING FACT CHECK #01",
+            "heading_text": "Not all plastics are recyclable ... just because it has the recycling sign doesn’t mean it actually gets recycled.",
+            "back_text": "<p>Not all plastics are recyclable ... just because it has the recycling sign doesn’t mean it actually gets recycled.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "4476635a-422e-4eef-915e-56ac89c902d7": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eco_Bins_70.jpg",
+            "span_text": "RECYCLING FACT CHECK #02",
+            "heading_text": "Not all plastics are recyclable ... just because it has the recycling sign doesn’t mean it actually gets recycled.",
+            "back_text": "<p>Not all plastics are recyclable ... just because it has the recycling sign doesn’t mean it actually gets recycled.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "3fd22f95-a0ed-49b3-a66b-cef3ef9a7ce7": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eco_Bins_91.jpg",
+            "span_text": "RECYCLING FACT CHECK #03",
+            "heading_text": "Not all plastics are recyclable ... just because it has the recycling sign doesn’t mean it actually gets recycled.",
+            "back_text": "<p>Not all plastics are recyclable ... just because it has the recycling sign doesn’t mean it actually gets recycled.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "61e856d9-d616-496f-a9f2-aa9950ea3b75",
+        "4476635a-422e-4eef-915e-56ac89c902d7",
+        "3fd22f95-a0ed-49b3-a66b-cef3ef9a7ce7"
+      ],
+      "settings": {
+        "heading": "RECYCLING JOURNEY INFORMATION WILL GO RIGHT HERE.",
+        "heading_width": 442,
+        "btn_text": "BLOG",
+        "btn_url": "",
+        "btn_text_2": "Learn More",
+        "btn_url_2": "",
+        "bg_clr": "#f4f4f2",
+        "format": "slider",
+        "text_extra": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "16644365479e81eac9",
+    "rich_text",
+    "efb08557-723a-4150-b0b3-df411dc0df02",
+    "1664436567cbaac1b3",
+    "21364a3b-b764-4086-a50c-22b0a2db4580",
+    "e9d64493-b1c6-4f7c-82c2-104d4fe04580",
+    "166452047096e4da82",
+    "2be8ae21-a57f-41bd-bda2-686515d68952",
+    "33fd78d9-2a6b-409a-92df-16771cf0abb8",
+    "9a12a59d-de32-4ea8-9506-1eaaa276a318",
+    "1664520424acc52c92",
+    "92cbc906-cbf8-45b9-af80-45d8653f67fd",
+    "b33d370e-6154-4792-8c30-be893023403f"
+  ]
+}

@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+    .__imageTextCase.reviews-section-slider {
+        padding-top: 0px;
+        gap: 0px!important;
+    }
+
+    .__reviews + .__contentParagraph {
+        padding-top: 24px;
+    }
+
+    .reviews + .__contentBtnCase {
+        margin-top: 0px;
+        padding-top: 44px;
+    }
+
+    .reviews-swiper {
+        width: 100%;
+        overflow-x: hidden;
+        padding-top: 78px;
+    }
+
+    .dn-wrapper .name {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .reviews-swiper .swiper-wrapper {
+        padding-bottom: 128px;
+    }
+
+    .__contentHeading.__reviews {
+        display: block!important;
+    }
+}

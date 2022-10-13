@@ -1,0 +1,110 @@
+{%- render 'bfj-featured-articles-css', section: section -%}
+
+{%- liquid 
+  assign ss = section.settings
+  assign setBlog = blogs[ss.blogs]
+  assign allBlog = setBlog.articles
+  assign limit = ss.limit | times: 1
+-%}
+
+{%- comment -%}
+    NOTE: 0 based indexing 
+    if length equals 11 then there are 12 products
+    {{ product_length | json }}
+
+    limit attribute sets how many products are allowed to be render
+{%- endcomment -%}
+
+<div class="__bgWrapper--{{ section.id }}">
+  <div class="__articlesCase __setDefaults--{{ section.id }} --g-px mx-w" data-cards="{{ ss.cards_per_view }}">
+    <div class="__headingCase">
+      {%- if ss.heading != blank -%}
+        <h3 class="{%- if template.name == 'article' -%}__h5{%- else -%}__h2 --inverse-clr{%- endif -%}">{{ ss.heading -}}</h3>
+      {%- endif -%}
+
+      {%- if ss.btn_text != blank -%}
+          <a href="{% if ss.blogs != blank %}{{ shop.url | append: '/blogs/' | append: 'blog' }}{%- else -%}{{ ss.btn_url }}{%- endif -%}" class="__allProductsUrl">
+              <span>{{ ss.btn_text | escape -}}</span>
+          </a>
+      {%- endif -%}
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-wrapper __productRecoCase">
+      <!-- Slides -->
+      {%- if setBlog != blank -%}
+        {%- render 'article-items', section: section, block: block, setBlog: setBlog, allBlog: allBlog, limit: limit -%}
+      {%- else -%}
+        {%- render 'article-placeholder', section: section -%}
+      {%- endif -%}
+    </div>
+
+    {%- if limit > 3 -%}
+      <div class="__miscCase">
+          <div class="article-button-prev">{%- render 'arrow-prev' -%}</div>
+          <div class="article-pagination pagination"></div>
+          <div class="article-button-next">{%- render 'arrow-next' -%}</div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Featured Articles",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blogs",
+      "label": "Choose blogs"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "RECOMMENDED products"
+    },
+    {
+      "type": "number",
+      "id": "heading_width",
+      "label": "Set width for your heading",
+      "default": 331
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text",
+      "default": "All products",
+      "info": "Leave button text empty to hide the button"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "bg_clr",
+      "label": "Background color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "cards_per_view",
+      "label": "Cards per slide",
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "limit",
+      "label": "Set Limit",
+      "default": "5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Featured Articles"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,87 @@
+.__headingCase.__mob {
+    display: none;
+}
+
+.__headingCase.__desk {
+    display: flex;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .__flipSwiper .__cardWrapper,
+    .__flipBlock .__cardWrapper {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .__flipBlock .__h4,
+    .__flipSwiper .__h4 {
+        font-size: 21px;
+        line-height: 121%;
+    }
+
+    .__flipSwiper .__cardWrapper {
+        height: 450px;
+    }
+
+    .__flipSwiper .__h6 {
+        padding-top: 2.25rem;
+        padding-left: 2.75rem;
+        padding-right: 1rem;
+        padding-bottom: 1.75rem;
+    }
+
+    .__flipSwiper .__h4 {
+        padding-left: 2.75rem;
+        padding-right: 1rem;
+    }
+
+    .__flipSwiper .__flipBtn {
+        margin-left: 2.75rem ;
+        margin-right: 2.75rem ;
+        font-size: 16px;
+        padding: 5px 10px;
+        max-width: 60%;
+    }
+
+    .__flipSwiper .__closeBtn {
+        right: 5px;
+        top: 5px;
+        transform: scale(0.75);
+    }
+
+    .__flipSwiper .__bodyText {
+        padding-left: 2.25rem ;
+        padding-right: 2.75rem ;
+    }
+}
+
+@media (max-width: 767px) {
+    .__cardWrapper {
+        height: 450px;
+    }
+    
+    .__flipSwiper .__h6 {
+        padding: 2.75rem 2.25rem 1.25rem;
+    }
+    
+    .__flipSwiper .__h4,
+    .__flipSwiper .__bodyText {
+        padding-inline: 2.25rem;
+    }
+
+    .__flipSwiper .__flipBtn {
+        margin-left: 2.75rem;
+        margin-right: 2.75rem;
+        font-size: 16px;
+        padding: 5px 10px;
+        max-width: 60%;
+        margin-bottom: 2.75rem;
+    }
+
+    .__flipBlock .__front,
+    .__flipBlock .__back {
+        height: 100%;
+    }
+}

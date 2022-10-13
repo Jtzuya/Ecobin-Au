@@ -1,0 +1,40 @@
+{{ 'section-faq-links.css' | asset_url | stylesheet_tag }}
+
+<div class="__faqLinksCase --g-px mx-w">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'acc_link' -%}
+            {%- liquid 
+                assign text =  block.settings.acc_text
+                assign id =  forloop.index
+                assign handleizeText = text | handleize
+            -%}
+                <a class="__eachLink" href="#{{ handleizeText }}--{{ id }}">{{ text }}</a>
+        {%- endcase -%}
+    {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - ACCORDION LINKS",
+  "blocks": [
+    {
+      "type": "acc_link",
+      "name": "Accordion Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "acc_text",
+          "label": "Accordion Link Text",
+          "info": "Use the same heading from FAQ ACCORDION (copy and paste here)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - ACCORDION LINKS"
+    }
+  ]
+}
+{% endschema %}

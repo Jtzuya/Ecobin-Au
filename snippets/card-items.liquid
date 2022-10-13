@@ -1,0 +1,38 @@
+{{ 'component-flip-items.css' | asset_url | stylesheet_tag }}
+{%- render 'bfj-flipcard-css', section: section -%}
+
+{%- for block in section.blocks -%}
+    {%- case block.type %}
+        {%- when 'flip' -%}
+            {%- liquid 
+                assign bs = block.settings
+            -%}
+            <div class="__recoEachBlock">
+                {% comment %} image {% endcomment %}
+                <div class="__blockImageCase">
+                    {%- if bs.image != blank -%}
+                        {%-liquid
+                            assign image_height = bs.image.width | divided_by: bs.image.aspect_ratio
+                        -%}
+                        {{ bs.image | image_url: width: 1440 | image_tag:
+                            loading: 'lazy',
+                            width: bs.image.width,
+                            height: image_height,
+                            widths: '375, 550, 750, 1440, 1500, 1780',
+                            alt: bs.image.alt | escape
+                        -}}
+                    {%- else -%}
+                        {{ 'lifestyle-2' | placeholder_svg_tag -}}
+                    {%- endif -%}
+                    <div class="__teamContent">
+                        <h5 class="__teamMember">{{ bs.heading_text }}</h5>
+                        <span class="__jobTitle">{{ bs.span_text }}</span>
+                        
+                        {%- if bs.btn_text != blank -%}
+                        <a href="{%- if bs.btn_url != blank -%}{{ bs.btn_url -}}{%- else -%}#{%- endif -%}" class="__teamMemberUrl"><span class="__teamMemberInfo">{{ bs.btn_text -}}</span></a>
+                        {%- endif -%}
+                    </div>
+                </div>
+            </div><!-- end of each slide -->
+    {%- endcase -%}
+{%- endfor -%}

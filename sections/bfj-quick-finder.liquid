@@ -1,0 +1,452 @@
+{%- render 'bfj-quick-finder-css', section: section -%}
+
+<div class="__imageTextCase __quickFinderCase common-display --g-px --custom-padding--{{ section.id }}
+    {%- if section.settings.align_items == 'center' -%}__flexCenter
+    {%- elsif section.settings.align_items == 'end' -%}__flexEnd
+    {%- else -%}__flexStart{%- endif -%}" id="Image-Text--{{ section.id }}">
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'image' -%}
+              <div class="__quickFinderOuterWrapper">
+                {%- if block.settings.heading != blank -%}
+                  <h3 class="__quickFinderHeading __mob __contentHeading--{{ block.id }}">{{ block.settings.heading -}}</h3>
+                {%- endif -%}
+
+                <div class="quick-finder">
+                  <div class="quick-finder-wrapper">
+                    <h6>USE OUR HANDY QUICK FINDER!</h6>
+                    {%- form 'localization', id: quick_finder_id, class: 'quick-finder-form' -%}
+                      <p>I am looking for a bin/s for my <select><option>home</option></select> to be used <select><option>anywhere</option></select> and can store a <select><option>medium</option></select> amount of <select><option>organinc</option></select> waste.</p>
+                      <button type="submit" class="button button--primary __stretchBtn--{{ section.id }}">FIND MY BIN</button>
+                    {%- endform -%}
+                  </div>
+                </div>
+              </div>
+
+            {%- when 'content' -%}
+                {%- assign bs = block.settings -%}
+                {%- style -%}
+                    .__contentHeading--{{ block.id }} {
+                        font-size: {{ bs.heading_size | append: 'px' -}};
+                        letter-spacing: {{ bs.heading_letterSpacing | append: 'px' -}};
+                        line-height: {{ bs.heading_lineHeight | append: 'px' -}};
+                    }
+
+                    @media (max-width: 767px) {
+                      .__contentHeading--{{ block.id }} {
+                          font-size: 5rem;
+                          letter-spacing: {{ bs.heading_letterSpacing | append: 'px' -}};
+                          line-height: 85%;
+                      } 
+                    }
+                {%- endstyle -%}
+                <div class="__image-textContent">
+                    {%- if bs.tag != blank -%}
+                      <span class="__contentTag">{{ bs.tag | escape }}</span>
+                    {%- endif -%}
+
+                    {%- if bs.heading != blank -%}
+                        <h3 class="__quickFinderHeading __contentHeading--{{ block.id }}">{{ bs.heading | escape -}}</h3>
+                    {%- endif -%}
+
+                    {%- if bs.paragraph != blank -%}
+                        <div class="__contentParagraph">{{ bs.paragraph | strip_html }}</div>
+                    {%- endif -%}
+
+                    <div class="__contentBtnCase">
+                      {%- if bs.btn != blank -%}
+                        <a href="{%- if bs.btn_url != blank -%}{{ bs.btn_url -}}{%- else -%}#{%- endif -%}" class="button button--primary {% if bs.stretch_btn != false %}__stretchBtn--{{ section.id }}{% endif %}">
+                        <span class="__contentText">{{ bs.btn }}</span>
+                        </a>
+                      {%- endif -%}
+                      {%- if bs.btn2 != blank -%}
+                        <a href="{%- if bs.btn_url2 != blank -%}{{ bs.btn_url2 -}}{%- else -%}#{%- endif -%}" class="button button--primary {% if bs.stretch_btn != false %}__stretchBtn--{{ section.id }}{% endif %}">
+                          <span class="__contentText">{{ bs.btn2 }}</span>
+                        </a>
+                      {%- endif -%}
+                    </div>
+                </div>
+            {%- comment -%} End of content {%- endcomment -%}
+
+            {%- when 'content_v2' -%}
+              {%- assign bs = block.settings -%}
+                <div class="__contentV2">
+                  {%- if bs.long_text_1 != blank -%}
+                    <div class="__longText">{{ bs.long_text_1 -}}</div>
+                  {%- endif -%}
+
+                  {%- if bs.heading_v2 != blank -%}
+                    <h3 class="__HeadingV2 __contentHeading--{{ block.id }}">{{ bs.heading_v2 | escape -}}</h3>
+                  {%- endif -%}
+
+                  {%- if bs.long_text_2 != blank -%}
+                    <div class="__longText">{{ bs.long_text_2 -}}</div>
+                  {%- endif -%}
+                </div>
+            {%- comment -%} End of Content_v2 {%- endcomment -%}
+
+            {%- when 'slider' -%}
+              {%- liquid 
+                  assign bs = block.settings 
+                  assign image_1 = block.settings.image_1
+                  assign image_2 = block.settings.image_2
+                  assign image_3 = block.settings.image_3
+                  assign image_4 = block.settings.image_4
+              -%}
+              <div class="__imageSliderCase">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="__imageSwiperCase">
+                        {%-liquid
+                            assign image_height = image_1.width | divided_by: image_1.aspect_ratio
+                        -%}
+                        {{ image_1 | image_url: width: 1440 | image_tag:
+                            loading: 'lazy',
+                            width: image_1.width,
+                            height: image_height,
+                            widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                            alt: image_1.alt | escape
+                        }}
+                    </div>
+                  </div><!-- end of slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="__imageSwiperCase">
+                        {%-liquid
+                            assign image_height = image_2.width | divided_by: image_2.aspect_ratio
+                        -%}
+                        {{ image_2 | image_url: width: 1440 | image_tag:
+                            loading: 'lazy',
+                            width: image_2.width,
+                            height: image_height,
+                            widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                            alt: image_2.alt | escape
+                        }}
+                    </div>
+                  </div><!-- end of slide 2 -->
+                  <div class="swiper-slide">
+                    <div class="__imageSwiperCase">
+                        {%-liquid
+                            assign image_height = image_3.width | divided_by: image_3.aspect_ratio
+                        -%}
+                        {{ image_3 | image_url: width: 1440 | image_tag:
+                            loading: 'lazy',
+                            width: image_3.width,
+                            height: image_height,
+                            widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                            alt: image_3.alt | escape
+                        }}
+                    </div>
+                  </div><!-- end of slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="__imageSwiperCase">
+                        {%-liquid
+                            assign image_height = image_4.width | divided_by: image_4.aspect_ratio
+                        -%}
+                        {{ image_4 | image_url: width: 1440 | image_tag:
+                            loading: 'lazy',
+                            width: image_4.width,
+                            height: image_height,
+                            widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                            alt: image_4.alt | escape
+                        }}
+                    </div>
+                  </div><!-- end of slide 4 -->
+                </div>
+
+                <div class="__miscCase">
+                  <div class="__imageSliderPrevBtn">{%- render 'arrow-prev' -%}</div>
+                  <div class="__imageSliderPagination"></div>
+                  <div class="__imageSliderNextBtn">{%- render 'arrow-next' -%}</div>
+                </div>
+              </div>
+        {%- endcase -%}
+    {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "BFJ - Quick Finder",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bot",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "block_width",
+      "options": [
+        {
+          "value": "equal",
+          "label": "Equal Width Each Block"
+        },
+        {
+          "value": "unset",
+          "label": "Unset Width"
+        }
+      ],
+      "default": "unset",
+      "label": "Set Width"
+    },
+    {
+      "type": "select",
+      "id": "align_items",
+      "options": [
+        {
+          "value": "start",
+          "label": "Flex Start"
+        },
+        {
+          "value": "center",
+          "label": "Flex Center"
+        },
+        {
+          "value": "end",
+          "label": "Flex End"
+        }
+      ],
+      "default": "start",
+      "label": "Align Items"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 100,
+      "max": 200,
+      "step": 1,
+      "unit": "px",
+      "label": "Gap Between Each Block",
+      "default": 113
+    },
+    {
+      "type": "checkbox",
+      "id": "reversed",
+      "label": "reverse blocks",
+      "default": false
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading (mobile)",
+          "default": "HEADLINE GOES HERE"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "HEADLINE GOES HERE"
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Font Size",
+          "default": 42
+        },
+        {
+          "type": "range",
+          "id": "heading_lineHeight",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Line Height",
+          "default": 64
+        },
+        {
+          "type": "range",
+          "id": "heading_letterSpacing",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Letter Spacing",
+          "default": -3
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.</p>"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button Text",
+          "default": "CONTINUE YOUR JOURNEY",
+          "info": "Just remove the text above in order to hide the button"
+        },
+        {
+          "type": "checkbox",
+          "id": "stretch_btn",
+          "label": "Stretch Button (mobile)",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "btn2",
+          "label": "Button 2 Text",
+          "default": "CONTINUE YOUR JOURNEY",
+          "info": "Just remove the text above in order to hide the button"
+        },
+        {
+          "type": "url",
+          "id": "btn_url2",
+          "label": "Button 2 URL"
+        }
+      ]
+    },
+    {
+      "type": "content_v2",
+      "name": "content_v2",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "long_text_1",
+          "label": "Paragraph"
+        },
+        {
+          "type": "text",
+          "id": "heading_v2",
+          "label": "Heading",
+          "default": "HEADLINE GOES HERE"
+        },
+        {
+          "type": "range",
+          "id": "heading_size_v2",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Font Size",
+          "default": 42
+        },
+        {
+          "type": "range",
+          "id": "heading_lineHeight_v2",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Line Height",
+          "default": 64
+        },
+        {
+          "type": "range",
+          "id": "heading_letterSpacing_v2",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Letter Spacing",
+          "default": -3
+        },
+        {
+          "type": "richtext",
+          "id": "long_text_2",
+          "label": "Paragraph"
+        }
+      ]
+    },
+    {
+      "type": "slider",
+      "name": "slider",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJ - Quick Finder",
+      "blocks": [
+        {
+          "type": "content",
+          "settings": {
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

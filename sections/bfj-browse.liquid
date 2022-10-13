@@ -1,0 +1,139 @@
+{% comment %} https://shopify.github.io/liquid-code-examples/example/blog-article-list {% endcomment %}
+{{ 'section-browse.css' | asset_url | stylesheet_tag -}}
+
+{%- style -%}
+    .--custom-styles--{{ section.id }} {
+      padding-top: {{ section.settings.padding_top | append: 'px' -}};
+      padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+    }
+      
+    .__bgWrapper--{{ section.id }} {
+      background-color: {{ section.settings.bg_color }};
+    }
+{%- endstyle -%}
+
+{% liquid 
+  assign allBlogs = section.settings.blogs.title | downcase 
+  assign limit = section.settings.limit | times: '1'
+%}
+
+{% comment %} {{ blogs[allBlogs] | json }} {% endcomment %}
+<div class="__bgWrapper--{{ section.id }}">
+  <div class="__articleCase common-display --g-px --custom-styles--{{ section.id }} __browse">
+      <h2 class="__articleHeading __h2 --inverse-clr">{{ section.settings.heading -}}</h2>
+
+      <div class="__eachArticleTags __uniqArticleTagsCase">
+          {%- for article in blogs[allBlogs].articles -%}
+              {%- if article.tags != blank -%}
+                  {%- for tag in article.tags -%}
+                      {%- assign tagName = tag | replace: '_', ' ' | split: ', ' | uniq -%}
+                      {% comment %} {{ tagName | json }} {% endcomment %}
+                      <span class="__tag __tagHidden">{{ tagName -}}</span>
+                  {%- endfor -%}
+              {%- endif -%}
+          {%- endfor -%}
+      </div>
+
+      {% paginate blogs[allBlogs].articles by limit %}
+        <div class="__articleContent" data-orig-url="{{ shop.url }}" data-next-url="{{ shop.url }}{{ paginate.next.url }}" data-all-pages="{{ paginate.page_size }}" data-current-page="{{ paginate.current_page }}" data-all-items="{{ paginate.items }}">
+            {%- for article in blogs[allBlogs].articles -%}
+                <div class="__eachArticle" data-article-id="{{ article.id }}">
+                    <a href="{{ article.url }}" target="blank">
+                        {%- if article.image != blank -%}
+                            {{ article.image | image_url: width: '805' | image_tag:
+                                class: '__articlesImage',
+                                loading: 'lazy',
+                                widths: '150, 200, 250, 300, 400, 500',
+                                alt: article.image.alt
+                            }}
+                        {%- else -%}
+                            <div class="__articleImagePlaceholder">
+                                {{ 'lifestyle-2' | placeholder_svg_tag -}}
+                            </div>
+                        {%- endif -%}
+                        <h5 class="__h5">{{ article.title -}}</h5>
+                    </a>
+                    <div class="__eachArticleTags">
+                        {% for tag in article.tags %}
+                            <span class="__tag">{{ tag | replace: '_', ' ' }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+
+        {%- comment -%}
+          Reference for pagination {{- paginate | default_pagination -}}
+
+          ~ Error "Liquid error (sections/bfj-browse.liquid line 69): comparison of String with 12 failed"
+          [paginate.items] returns an empty string since we didn't or can't add a default blog type
+          see here: https://shopify.dev/themes/architecture/settings/input-settings#blog
+          Once this section has a blog, then the error goes off
+        {%- endcomment -%}
+        {%- if paginate.items > limit -%}
+          <div class="__readMoreCtaCase">
+            <button class="__articleReadMoreBtn">Read More</button>
+            <div class="__readMoreSpinner"></div>
+          </div>
+        {%- endif -%}
+      {% endpaginate %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - BROWSE",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blogs",
+      "label": "Choose Blog"
+    },
+    {
+      "type": "number",
+      "id": "limit",
+      "label": "Set limit of items to be rendered",
+      "default": 12
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Browse the archive"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bot",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - BROWSE"
+    }
+  ]
+}
+{% endschema %}
+
+<script src="{{ 'load-more.js' | asset_url }}" async></script>

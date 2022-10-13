@@ -1,0 +1,245 @@
+{
+  "sections": {
+    "694b2df0-496c-4032-bb59-277573e76505": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420090253412__694b2df0-496c-4032-bb59-277573e76505-16653853552f863f09-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/img.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15420090253412__694b2df0-496c-4032-bb59-277573e76505-16653853552f863f09-0": {
+          "type": "content",
+          "settings": {
+            "tag": "Home & home office",
+            "tag_padding": "38",
+            "heading": "PAGE TITLE <br>  GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "48",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "536"
+          }
+        }
+      },
+      "block_order": [
+        "template--15420090253412__694b2df0-496c-4032-bb59-277573e76505-16653853552f863f09-1",
+        "template--15420090253412__694b2df0-496c-4032-bb59-277573e76505-16653853552f863f09-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 140,
+        "padding_bot": 0,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "b7810995-01f7-4f6c-a296-ad78c2797018": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420090253412__b7810995-01f7-4f6c-a296-ad78c2797018-16653859577da6c120-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "HEADLINE <br> GOES HERE",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "29",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        },
+        "87a9f92e-750c-4d4a-b656-1aa4a765e49e": {
+          "type": "content_v2",
+          "settings": {
+            "long_text_1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis mattis euismod aenean vel sapien in vitae. A, aliquam in ut non, blandit. Vel pretium tincidunt et vulputate ullamcorper. Purus nunc at dictumst mauris. Velit cursus est venenatis nullam est. Pulvinar sit consequat nascetur aliquam consequat odio. Quam sit donec arcu nec pulvinar pretium dictum lectus mattis. Ac a eget tincidunt sollicitudin luctus a suspendisse amet mi. Id integer odio faucibus dui, volutpat vestibulum.<\/p><p><\/p><p>Egestas et placerat ornare nulla netus pellentesque. Feugiat sed in diam aliquet tristique purus mattis aliquet id. Adipiscing amet varius cursus est. Est dignissim habitasse varius elit volutpat rhoncus urna. Eget semper id ullamcorper vel, vitae. Erat velit purus mauris, bibendum lacus, magna justo adipiscing netus. Nam arcu dignissim integer orci, risus tempor dolor. Elit fames interdum auctor ut mus sem. Suspendisse dictum quisque eleifend donec commodo ut aenean.<\/p><p><\/p><p>Elit, diam aliquet nec quis in suscipit tristique morbi eu. Lectus vel pulvinar enim, tortor, integer mauris. Eget lacus, turpis facilisis sed lorem. Tempus, facilisis orci erat tincidunt ullamcorper viverra molestie. Libero tellus auctor eleifend habitant. Aliquam ullamcorper quam aliquam nisl leo feugiat leo ut. Augue lorem facilisis faucibus at tincidunt faucibus sed nunc. Quam turpis pellentesque ipsum, porta.<\/p>",
+            "heading_v2": "“Idullamcorper vel, vitae. Erat velit purus mauris, bibendum lacus, magna justo adipiscing netu integer.”",
+            "heading_size_v2": 36,
+            "heading_lineHeight_v2": 42,
+            "heading_letterSpacing_v2": -3,
+            "long_text_2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis mattis euismod aenean vel sapien in vitae. A, aliquam in ut non, blandit. Vel pretium tincidunt et vulputate ullamcorper. Purus nunc at dictumst mauris. Velit cursus est venenatis nullam est. Pulvinar sit consequat nascetur aliquam consequat odio. Quam sit donec arcu nec pulvinar pretium dictum lectus mattis. Ac a eget tincidunt sollicitudin luctus a suspendisse amet mi. Id integer odio faucibus dui, volutpat vestibulum.<\/p><p><\/p><p>Egestas et placerat ornare nulla netus pellentesque. Feugiat sed in diam aliquet tristique purus mattis aliquet id. Adipiscing amet varius cursus est. Est dignissim habitasse varius elit volutpat rhoncus urna. Eget semper id ullamcorper vel, vitae. Erat velit purus mauris, bibendum lacus, magna justo adipiscing netus. Nam arcu dignissim integer orci, risus tempor dolor. Elit fames interdum auctor ut mus sem. Suspendisse dictum quisque eleifend donec commodo ut aenean.<\/p><p><\/p><p>Elit, diam aliquet nec quis in suscipit tristique morbi eu. Lectus vel pulvinar enim, tortor, integer mauris. Eget lacus, turpis facilisis sed lorem. Tempus, facilisis orci erat tincidunt ullamcorper viverra molestie. Libero tellus auctor eleifend habitant. Aliquam ullamcorper quam aliquam nisl leo feugiat leo ut. Augue lorem facilisis faucibus at tincidunt faucibus sed nunc. Quam turpis pellentesque ipsum, porta.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15420090253412__b7810995-01f7-4f6c-a296-ad78c2797018-16653859577da6c120-0",
+        "87a9f92e-750c-4d4a-b656-1aa4a765e49e"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 150,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "0843c176-39f1-4fe0-b474-fc300efce313": {
+      "type": "bfj-featured-products",
+      "blocks": {
+        "d8a1a03d-02a5-4dd1-9ab0-07e3779270be": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-bin-black-ecobin-optional-yellow-lid-60-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "f0a42ed0-6e07-4035-94ad-7f285516eb92": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-wheelie-bin-enclosure-art-series-urban-st-yellow-to-suit-120-litre-or-240-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "63fc4d1c-ea8e-437c-a3cf-0f5959df5b1d": {
+          "type": "image",
+          "settings": {
+            "prod": "glass-recycling-bin-purple-60-litre-1",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "57c80284-87c5-4dc5-a304-c89007f781b9": {
+          "type": "image",
+          "settings": {
+            "prod": "landfill-office-waste-flip-bin-red-ecobin-60-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "37923363-7347-4031-9292-9f13eea9b968": {
+          "type": "image",
+          "settings": {
+            "prod": "landfill-office-waste-bin-red-ecobin-60-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "d8a1a03d-02a5-4dd1-9ab0-07e3779270be",
+        "f0a42ed0-6e07-4035-94ad-7f285516eb92",
+        "63fc4d1c-ea8e-437c-a3cf-0f5959df5b1d",
+        "57c80284-87c5-4dc5-a304-c89007f781b9",
+        "37923363-7347-4031-9292-9f13eea9b968"
+      ],
+      "settings": {
+        "title": "RECOMMENDED <br> products",
+        "link_btn": "",
+        "text_btn": "ALL PRODUCTS"
+      }
+    },
+    "1664619617e00be209": {
+      "type": "bfj-banner",
+      "blocks": {
+        "10505764-ca44-419a-bc01-e1bea7bfe7c9": {
+          "type": "content_2",
+          "settings": {
+            "heading": "“Product Review or testimonials Can Go here for specific Products and\/or link to case studies pages”",
+            "paragraph": "<p>O’SHEA FAMILY — Purchased HOME BINS<\/p>",
+            "btn": "READ THEIR STORY",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "10505764-ca44-419a-bc01-e1bea7bfe7c9"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eco-banner-2.png",
+        "bg_opacity": 20
+      }
+    },
+    "6d1e1515-f38e-4f6d-9a8b-0c9927613383": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710982756__6d1e1515-f38e-4f6d-9a8b-0c9927613383-1665536725f7196d98-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "<br> PLanet EartH  <br>Cross Promotion CALL OUT HERE",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "29",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "442"
+          }
+        },
+        "template--15482710982756__6d1e1515-f38e-4f6d-9a8b-0c9927613383-1665536725f7196d98-1": {
+          "type": "image",
+          "settings": {
+            "heading": "PLanet EartH  <br>Cross Promotion CALL OUT HERE",
+            "image": "shopify:\/\/shop_images\/03-02-image-2.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710982756__6d1e1515-f38e-4f6d-9a8b-0c9927613383-1665536725f7196d98-0",
+        "template--15482710982756__6d1e1515-f38e-4f6d-9a8b-0c9927613383-1665536725f7196d98-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": true
+      }
+    }
+  },
+  "order": [
+    "694b2df0-496c-4032-bb59-277573e76505",
+    "b7810995-01f7-4f6c-a296-ad78c2797018",
+    "0843c176-39f1-4fe0-b474-fc300efce313",
+    "1664619617e00be209",
+    "6d1e1515-f38e-4f6d-9a8b-0c9927613383"
+  ]
+}

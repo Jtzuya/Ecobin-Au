@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "6bfaf951-31c9-4e19-af30-cdb659208233": {
+          "type": "content_1",
+          "settings": {
+            "heading": "Industry RELATED HEADLINE HERE",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "6bfaf951-31c9-4e19-af30-cdb659208233"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/blog-banner.png",
+        "bg_opacity": 20
+      }
+    },
+    "777c4304-48e1-4cb5-9f2c-73b207e12c50": {
+      "type": "bfj-blog-search",
+      "settings": {
+        "padding_top": 130,
+        "padding_bot": 130
+      }
+    },
+    "926267c5-b229-4746-88ef-adeda6fac0b2": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15442318032996__926267c5-b229-4746-88ef-adeda6fac0b2-1665391467c224d2e6-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blog-image.png",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        },
+        "template--15442318032996__926267c5-b229-4746-88ef-adeda6fac0b2-1665391467c224d2e6-0": {
+          "type": "content",
+          "settings": {
+            "tag": "Education",
+            "tag_padding": "43",
+            "heading": "HEADLINE <br>GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "48",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "66",
+            "btn": "READ MORE",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15442318032996__926267c5-b229-4746-88ef-adeda6fac0b2-1665391467c224d2e6-1",
+        "template--15442318032996__926267c5-b229-4746-88ef-adeda6fac0b2-1665391467c224d2e6-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start"
+      }
+    },
+    "fa3f5777-80bf-4515-9f9a-adbc89e4a317": {
+      "type": "bfj-featured-articles",
+      "settings": {
+        "blogs": "blog",
+        "heading": "FEATURED  <br> Articles",
+        "heading_width": 769,
+        "btn_text": "",
+        "btn_url": "",
+        "bg_clr": "#f4f4f2",
+        "cards_per_view": "2.25",
+        "limit": "5"
+      }
+    },
+    "09c0e069-9f42-42b9-8643-07b53b3ca70e": {
+      "type": "bfj-browse",
+      "settings": {
+        "blogs": "blog",
+        "limit": 12,
+        "heading": "Browse the archive",
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "777c4304-48e1-4cb5-9f2c-73b207e12c50",
+    "926267c5-b229-4746-88ef-adeda6fac0b2",
+    "fa3f5777-80bf-4515-9f9a-adbc89e4a317",
+    "09c0e069-9f42-42b9-8643-07b53b3ca70e"
+  ]
+}

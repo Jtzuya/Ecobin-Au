@@ -1,0 +1,113 @@
+{{ 'section-bfj-collections.css' | asset_url | stylesheet_tag }}
+
+{%- liquid 
+  assign ss = section.settings
+  assign setCollection = collections[ss.product_collection]
+  assign product_collection = setCollection.products
+  assign url = setCollection.url
+  assign product_length = product_collection.length
+  assign limit = 6
+-%}
+
+{%- comment -%}
+    NOTE: 0 based indexing 
+    if length equals 11 then there are 12 products
+    {{ product_length | json }}
+
+    limit attribute sets how many products are allowed to be render
+{%- endcomment -%}
+
+{%- style -%}
+  .__setDefaults--{{ section.id }} {
+    background-color: {{ ss.bg_clr -}};
+  }
+
+  .__setDefaults--{{ section.id }} .__recoHeading {
+    max-width: {{ ss.heading_width | append: 'px' -}};
+  }
+{%- endstyle -%}
+
+
+<div class="__collectionsCase __setDefaults--{{ section.id }} --g-px mx-w">
+  <div class="__headingCase">
+    {%- if ss.heading != blank -%}
+      <h3 class="__recoHeading">{{ ss.heading -}}</h3>
+    {%- endif -%}
+
+    {%- if product_length > limit -%}
+      <a href="{% if url != blank %}{{ url -}}{%- endif -%}" target="blank" class="__allProductsUrl">
+        <span>{{ ss.btn_text | escape -}}</span>
+      </a>
+    {% else %}
+      {%- if ss.btn_text != blank -%}
+        <a href="{% if ss.btn_url != blank %}{{ ss.btn_url -}}{%- else -%}#{%- endif -%}" class="__allProductsUrl">
+          <span>{{ ss.btn_text | escape -}}</span>
+        </a>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper-wrapper __productRecoCase">
+    <!-- Slides -->
+    {%- if setCollection != blank -%}
+      {%- render 'product-items', section: section, block: block, setCollection: setCollection, product_collection: product_collection, product_length: product_length, limit: limit -%}
+    {%- else -%}
+      {%- render 'product-placeholder', section: section -%}
+    {%- endif -%}
+  </div>
+
+  <div class="__miscCase">
+    <div class="product-button-prev">{%- render 'arrow-prev' -%}</div>
+    <div class="product-pagination pagination"></div>
+    <div class="product-button-next">{%- render 'arrow-next' -%}</div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Collections",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "product_collection",
+      "label": "Product Collection"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "RECOMMENDED products"
+    },
+    {
+      "type": "number",
+      "id": "heading_width",
+      "label": "Set width for your heading",
+      "default": 331
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button text",
+      "default": "All products",
+      "info": "Leave button text empty to hide the button"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "bg_clr",
+      "label": "Background color",
+      "default": "#fff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Collections"
+    }
+  ]
+}
+{% endschema %}

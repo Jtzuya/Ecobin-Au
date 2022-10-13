@@ -1,0 +1,21 @@
+{{ 'section-bfj-collections.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-collections-resp.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .__bgWrapper--{{ section.id }} {
+    background-color: {{ section.settings.bg_clr -}};
+  }
+
+  .__setDefaults--{{ section.id }} .__h2.--inverse-clr,
+  .__setDefaults--{{ section.id }} .__h5 {
+    max-width: {{ section.settings.heading_width | append: 'px' -}};
+  }
+
+  {%- if section.settings.cards_per_view == '2.25' -%}
+    .__articlesCase .swiper-slide,
+    .__articlesCase .__articlesImage {
+        width: 100%;
+        max-width: 535px;
+    }
+  {%- endif -%}
+{%- endstyle -%}

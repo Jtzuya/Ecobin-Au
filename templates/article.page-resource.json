@@ -1,0 +1,156 @@
+{
+  "sections": {
+    "efc35f21-985b-4983-ae2a-0bb7ecced5e6": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15448617123940__efc35f21-985b-4983-ae2a-0bb7ecced5e6-16653911790cc29680-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        },
+        "template--15448617123940__efc35f21-985b-4983-ae2a-0bb7ecced5e6-16653911790cc29680-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "39",
+            "heading": "HEADLINE GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "47",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "535"
+          }
+        }
+      },
+      "block_order": [
+        "template--15448617123940__efc35f21-985b-4983-ae2a-0bb7ecced5e6-16653911790cc29680-1",
+        "template--15448617123940__efc35f21-985b-4983-ae2a-0bb7ecced5e6-16653911790cc29680-0"
+      ],
+      "settings": {
+        "dynamic_page_content": true,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "each_blog_content": {
+      "type": "bfj-article",
+      "settings": {
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/video-thumbnail.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "c2eec4ab-f995-4d1e-9543-1ac081bb019f": {
+      "type": "bfj-featured-articles",
+      "settings": {
+        "blogs": "blog",
+        "heading": "You Might Also Like",
+        "heading_width": 508,
+        "btn_text": "All Articles",
+        "btn_url": "",
+        "bg_clr": "#f4f4f2",
+        "cards_per_view": "3",
+        "limit": "3"
+      }
+    },
+    "d5387f2a-e57c-4cd7-8617-c9b3daf6aaf3": {
+      "type": "bfj-collections",
+      "settings": {
+        "product_collection": "bundles",
+        "heading": "RELATED products",
+        "heading_width": 331,
+        "btn_text": "All products",
+        "btn_url": "",
+        "bg_clr": "#ffffff"
+      }
+    },
+    "ee18b1a9-3d7e-4f24-aaf8-446b1f8ba483": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15448617123940__ee18b1a9-3d7e-4f24-aaf8-446b1f8ba483-16653911790cc29680-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "Need help to work things out? Jump on the phone!",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Our Customer service team is available <\/p><p>Mon-Fri from 9am to 5pm EST at 1800 701 582<\/p>",
+            "para_padding": "44",
+            "font_weight": true,
+            "p_sm": false,
+            "btn_padding": "54",
+            "btn": "Call Us",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "Email Support",
+            "btn_url_2": "",
+            "heading_width": "535"
+          }
+        },
+        "template--15448617123940__ee18b1a9-3d7e-4f24-aaf8-446b1f8ba483-16653911790cc29680-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/contact-banner.png",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15448617123940__ee18b1a9-3d7e-4f24-aaf8-446b1f8ba483-16653911790cc29680-0",
+        "template--15448617123940__ee18b1a9-3d7e-4f24-aaf8-446b1f8ba483-16653911790cc29680-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    }
+  },
+  "order": [
+    "efc35f21-985b-4983-ae2a-0bb7ecced5e6",
+    "each_blog_content",
+    "video",
+    "c2eec4ab-f995-4d1e-9543-1ac081bb019f",
+    "d5387f2a-e57c-4cd7-8617-c9b3daf6aaf3",
+    "ee18b1a9-3d7e-4f24-aaf8-446b1f8ba483"
+  ]
+}

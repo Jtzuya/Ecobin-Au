@@ -1,0 +1,60 @@
+{{ 'component-flip-items.css' | asset_url | stylesheet_tag }}
+
+{%- for block in section.blocks -%}
+    {%- case block.type %}
+        {%- when 'flip' -%}
+            {%- liquid 
+                assign bs = block.settings
+            -%}
+            <div class="__cardCase swiper-slide">
+                <div class="__cardWrapper" data-flipcard>
+                    <div class="__frontier" style="">
+                        <div class="__flipCardImageCase">
+                            {%- if bs.image != blank -%}
+                                {%-liquid
+                                    assign image_height = bs.image.width | divided_by: bs.image.aspect_ratio
+                                -%}
+                                {{ bs.image | image_url: width: 1440 | image_tag:
+                                    class: '__flipCardImage',
+                                    loading: 'lazy',
+                                    width: bs.image.width,
+                                    height: image_height,
+                                    widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                                    alt: bs.image.alt | escape
+                                -}}
+                            {%- else -%}
+                                {%- liquid 
+                                    capture num
+                                    cycle 1, 2, 3, 4, 5, 6
+                                    endcapture    
+                                -%}
+                                <div class="image__case">
+                                    {{ 'collection-' | append: num | placeholder_svg_tag -}}
+                                </div>
+                            {%- endif -%}
+                        </div>
+                        <div class="__flipCardContent">
+                            <p class="__goal __h6">GOAL  01 / 05</p>
+                            <h2 class="__h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.</h2>
+                            <button class="__flipBtn" data-flip>Flip for more</button>
+                        </div>
+                    </div><!-- end of front -->
+                    <div class="__backtier">
+                        <div class="__content">
+                        <div class="__goalCloseBtn">
+                            <button class="__closeBtn" data-close>x</button>
+                            <p class="__goal __h6">GOAL  01 / 05</p>
+                        </div>
+                        <p class="__bodyText">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum. <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum. <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.
+                        </p>
+                        </div>
+                    </div><!-- end of front -->
+                </div>
+            </div>
+    {%- endcase -%}
+{%- endfor -%}
+
+<script src="{{ 'flip.js' | asset_url }}" async></script>

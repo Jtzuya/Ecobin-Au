@@ -1,0 +1,35 @@
+{%- for i in (1..6) -%}
+    {%- capture num -%}{%- cycle 1, 2, 3, 4, 5, 6 -%}{%- endcapture -%}
+    {%- capture title -%}
+        {%- cycle 
+            'Landfill Office Waste Bin – 60 litres',
+            'Mixed Recycling Bin – 12 litres',
+            'Paper & Cardboard Recycling Bin – 60 litres',
+            'Landfill Office Waste Bin – 60 litres',
+            'Mixed Recycling Bin – 12 litres',
+            'Paper & Cardboard Recycling Bin – 60 litres'
+        -%}
+    {%- endcapture -%}
+
+    <div class="swiper-slide __recoEachSlide">
+        {% comment %} image {% endcomment %}
+        <div class="__imageSwiperCase">
+        {{ 'product-' | append: num | placeholder_svg_tag: '__recoPlaceholder' -}}
+        </div>
+        
+        {% comment %} product rating {% endcomment %}
+        <div class="__ratingCase">
+        {%- render 'star-rating-ico' -%}
+        <span class="__ratingCount">128</span>
+        </div>
+
+        {% comment %} product title {% endcomment %}
+        <h5 class="__productTitle">{{ title }}</h5>
+        
+        {% comment %} product starting price  {% endcomment %}
+        <div class="__priceCase">
+        <span class="__from">From</span>
+        <span class="__price">$137.95</span>
+        </div>
+    </div><!-- end of each slide -->
+{%- endfor -%}

@@ -1,0 +1,507 @@
+.__flipBlock {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+}
+
+.__flipBlock .__content {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.__flipBlock .__front,
+.__flipBlock .__back {
+    height: 540px;
+}
+
+.__flipSwiper .__cardCase,
+.__flipBlock .__cardCase {
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.__flipSwiper .__cardWrapper {
+    width: 100%;
+    max-width: 535px;
+    height: 700px;
+}
+
+.__flipBlock .__cardWrapper {
+    width: 100%;
+    max-width: 420px;
+    min-height: 570px;
+}
+
+/* FRONT FACE */
+.__flipSwiper .__front,
+.__flipBlock .__front {
+    position: absolute;
+}
+
+.__flipSwiper .__imageCase,
+.__flipBlock .__imageCase {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.__flipSwiper .__imageCase::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 35%);
+    z-index: 3;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+.__flipBlock .__imageCase::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #202223;
+    z-index: 3;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+.__flipSwiper .__imageCase img,
+.__flipSwiper .__imageCase svg,
+.__flipBlock .__imageCase img,
+.__flipBlock .__imageCase svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.__flipSwiper .__content {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.__flipBlock .__content {
+    position: relative;
+    z-index: 5;
+    padding: 50px 41px 37px 39px;
+}
+
+/* BACK FACE */
+.__flipSwiper .__back {
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    background-color: #202223;
+}
+
+.__flipBlock .__back {
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    background-color: var(--eco-clr);
+}
+
+.__flipSwiper .__goalCloseBtn,
+.__flipBlock .__goalCloseBtn {
+    position: relative;
+}
+
+.__flipSwiper .__closeBtn,
+.__flipBlock .__closeBtn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: white;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    line-height: 1rem;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.__flipSwiper .__bodyText {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding-left: 49px;
+    padding-right: 51px;
+}
+
+.__flipBlock .__bodyText {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 1;
+    margin: 0;
+}
+
+.__bodyText > p {
+    margin-top: 0px;
+}
+
+.__bodyText > p:last-child {
+    margin-bottom: 0px;
+}
+
+/* front */
+.__flipSwiper .__h6,
+.__flipBlock .__h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(var(--clr-light));
+    color: white;
+    padding-bottom: 44px;
+    margin: 0;
+}
+
+.__flipSwiper .__h6 {
+    padding-top: 50.3px;
+    padding-left: 49px;
+    padding-right: 21px;
+}
+
+.__flipSwiper .__h4 {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 44px;
+    color: rgb(var(--clr-light));
+    color: white;
+    margin: 0;
+    flex: 1;
+    padding-left: 49px;
+    padding-right: 54px;
+}
+
+.__flipBlock .__h4 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 36px;
+    color: rgb(var(--clr-light));
+    color: white;
+    margin: 0;
+    flex: 1;
+}
+
+.__flipSwiper .__flipBtn,
+.__flipBlock .__flipBtn {
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-family: var(--g-font);
+    line-height: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+.__flipSwiper .__flipBtn {
+    margin-left: 49px;
+    margin-bottom: 38.23px;
+    max-width: 250px;
+    margin-right: 49px;
+}
+
+.__flipBlock .__flipBtn {
+    width: max-content;
+    font-weight: 500;
+}
+
+/* Important Flip Animation */
+.__flipSwiper .__cardWrapper,
+.__flipBlock .__cardWrapper {
+    position: relative;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+/* .__cardCase:hover .__cardWrapper {
+  transform: rotateY(180deg);
+} */
+
+.__flipSwiper .flip-active,
+.__flipBlock .flip-active {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.__flipSwiper .__front,
+.__flipSwiper .__back,
+.__flipBlock .__front,
+.__flipBlock .__back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    height: 100%;
+}
+
+.__flipSwiper .__hideFront
+.__flipBlock .__hideFront {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .__headingCase {
+        align-items: flex-start;
+        padding-bottom: 23px;
+    }
+
+    h3.__recoHeading {
+        font-size: 4rem;
+        line-height: 113%;
+    }
+    
+    .__flipSwiper .__cardWrapper,
+    .__flipBlock .__cardWrapper {
+        height: 100%;
+        min-height: 27.5rem;
+        max-height: 40rem;
+    }
+
+    .__flipBlock .__content {
+        padding: 2.75rem 2.25rem;
+    }
+
+    .__flipSwiper .__h6,
+    .__flipBlock .__h6 {
+        font-size: 11.5px;
+        font-weight: 500;
+        line-height: 113%;
+        padding-bottom: 10px;
+    }
+
+    .__flipSwiper .__h4,
+    .__flipBlock .__h4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 113%;
+        padding-bottom: 4rem;
+    }
+
+    .__flipSwiper .__flipBtn,
+    .__flipBlock .__flipBtn {
+        border: 1.5px solid white;
+        padding: 5px 10px;
+        font-size: 14.5px;
+        line-height: 113%;
+        font-weight: 500;
+    }
+
+    .__flipSwiper .__closeBtn,
+    .__flipBlock .__closeBtn {
+        transform: scale(0.75);
+        right: 0px;
+        top: 8px;
+    }
+
+    .__flipSwiper .__bodyText {
+        height: 216.5px;
+        font-size: 12.5px;
+        line-height: 113%;
+        font-weight: 300;
+    }
+
+    .__flipBlock {
+        gap: 10px;
+    }
+
+    .__flipBlock .__bodyText {
+        font-size: 12.5px;
+        line-height: 113%;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 1439px) {
+    .__flipBlock {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(10px, 2vw, 40px);
+    }
+}
+
+@media (max-width: 543px) {
+    .__flipBlock .__h4 {
+        /* min-height: 167px; */
+        font-size: 14px;
+        line-height: 121%;
+    }
+
+    .__flipBlock .__flipBtn {
+        font-size: 10px;
+    }
+
+    .__flipBlock .__bodyText {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+
+    .__flipBlock .__front,
+    .__flipBlock .__back {
+        height: 275px;
+    }
+
+    .__flipBlock .__content {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .__flipBlock .__closeBtn {
+        transform: scale(0.4);
+        top: -2px;
+    }
+}
+
+.__defaultCardBlocks {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 41px;
+}
+
+.__recoEachBlock {
+    height: 664px;
+    max-width: 304px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.__recoEachBlock .__blockImageCase {
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.__recoEachBlock:nth-of-type(odd) .__blockImageCase {
+    justify-content: flex-start;
+}
+
+.__recoEachBlock:nth-of-type(even) .__blockImageCase {
+    justify-content: flex-end;
+}
+
+.__recoEachBlock svg,
+.__recoEachBlock img {
+    width: 100%;
+    max-width: 304px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: rgb(var(--clr-dark) / 25%);
+    height: 400px;
+}
+
+.__teamContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.__teamMember {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: var(--g-font);
+    text-transform: capitalize;
+    line-height: 44px;
+    letter-spacing: -1px;
+    padding-top: 24px;
+    color: #202223;
+}
+
+.__jobTitle {
+    padding-top: 6px;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: var(--g-font);
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #202223;
+}
+
+.__teamMemberUrl {
+    margin-top: 34px;
+    color: #202223;
+    display: block;
+    border: 2px solid #202223;
+    width: 100%;
+    border-radius: 5rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.__teamMemberInfo {
+    min-width: 265px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+@media (max-width: 1199px) {
+    .__defaultCardBlocks {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 870px) {
+    .__defaultCardBlocks {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .__recoEachBlock:nth-of-type(even) .__blockImageCase {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+    .__recoEachBlock {
+        height: fit-content;
+    }
+    
+    .__defaultCardBlocks {
+        gap: 2rem;
+    }
+
+    .__recoEachBlock svg,
+    .__recoEachBlock img {
+        height: 200px;
+    }
+
+    .__teamMember {
+        font-size: 21px;
+        padding-top: 12px;
+        line-height: 113%;
+    }
+
+    .__jobTitle,
+    .__teamMemberInfo {
+        font-size: 15px;
+        line-height: 113%;
+    }
+
+    .__teamMemberUrl {
+        padding: 5px 10px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "04a9a305-d962-4262-ba21-26a50d83612e": {
+          "type": "content_1",
+          "settings": {
+            "heading": "Industry RELATED HEADLINE HERE",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "04a9a305-d962-4262-ba21-26a50d83612e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-optimized.png",
+        "bg_opacity": 20
+      }
+    },
+    "dde03d91-88e3-4aa8-b14c-91587339fe52": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15394489466980__dde03d91-88e3-4aa8-b14c-91587339fe52-16653844223d0c7c8d-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "<br> HEADLINE GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "48",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "422"
+          }
+        },
+        "template--15394489466980__dde03d91-88e3-4aa8-b14c-91587339fe52-16653844223d0c7c8d-1": {
+          "type": "image",
+          "settings": {
+            "heading": "HEADLINE GOES HERE",
+            "image": "shopify:\/\/shop_images\/image-left1-optimized.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15394489466980__dde03d91-88e3-4aa8-b14c-91587339fe52-16653844223d0c7c8d-0",
+        "template--15394489466980__dde03d91-88e3-4aa8-b14c-91587339fe52-16653844223d0c7c8d-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "collection": {
+      "type": "bfj-collection",
+      "blocks": {
+        "0a09c469-1082-451e-94d2-bb8913159d61": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hospital-collection.png",
+            "heading": "Hospitals",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "6dbe3a4c-0613-410e-9fdc-a45834c94084": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Food-manufacturers-collection.png",
+            "heading": "Food manufacturers",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "1035bd3b-5b87-427e-a89e-1aa6a7be7294": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/childcarecenters-collection.png",
+            "heading": "Childcare centres",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "5b872598-994f-4ca4-ba88-7984ac5c1233": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/school-_-unis.png",
+            "heading": "Schools  & Unis",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "05c816a6-aa68-44ea-be78-79e50dc56830": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/commercial-_-offices.png",
+            "heading": "Commercial offices",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "85637afa-aed1-4be8-8750-2528730295b1": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-_-home-office.png",
+            "heading": "Home & home office",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "1144974b-20a3-4d27-bfd5-32df30004032": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/construction.png",
+            "heading": "Construction",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        },
+        "12d7ce7c-c047-4111-9a13-ae850da01f1f": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/public-spaces.png",
+            "heading": "Public spaces",
+            "btn": "Explore",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "0a09c469-1082-451e-94d2-bb8913159d61",
+        "6dbe3a4c-0613-410e-9fdc-a45834c94084",
+        "1035bd3b-5b87-427e-a89e-1aa6a7be7294",
+        "5b872598-994f-4ca4-ba88-7984ac5c1233",
+        "05c816a6-aa68-44ea-be78-79e50dc56830",
+        "85637afa-aed1-4be8-8750-2528730295b1",
+        "1144974b-20a3-4d27-bfd5-32df30004032",
+        "12d7ce7c-c047-4111-9a13-ae850da01f1f"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_bot": 160,
+        "bg_color": "#ffffff",
+        "section_heading": "SHOP BY <br> INDUSTRY"
+      }
+    },
+    "e37c7e10-c74e-4278-bee0-74db43bd85e8": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15394489466980__e37c7e10-c74e-4278-bee0-74db43bd85e8-16653844223d0c7c8d-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "<br>PLanet EartH <br> Cross Promotion <br> CALL OUT HERE",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur  <\/p><p>adipiscing elit. Aliquet ut mi lobortis  <\/p><p>aliquet commodo nullam. Orci, laoreet  <\/p><p>pharetra, elementum, urna, sit. Tellus eu  <\/p><p>egestas tristique adipiscing urna,  <\/p><p>egestas interdum.<\/p><p><\/p><p>test<\/p>",
+            "para_padding": "29",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "442"
+          }
+        },
+        "template--15394489466980__e37c7e10-c74e-4278-bee0-74db43bd85e8-16653844223d0c7c8d-1": {
+          "type": "image",
+          "settings": {
+            "heading": "PLanet EartH  Cross Promotion CALL OUT HERE",
+            "image": "shopify:\/\/shop_images\/image-left2-optimized.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15394489466980__e37c7e10-c74e-4278-bee0-74db43bd85e8-16653844223d0c7c8d-0",
+        "template--15394489466980__e37c7e10-c74e-4278-bee0-74db43bd85e8-16653844223d0c7c8d-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dde03d91-88e3-4aa8-b14c-91587339fe52",
+    "collection",
+    "e37c7e10-c74e-4278-bee0-74db43bd85e8"
+  ]
+}

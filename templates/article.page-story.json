@@ -1,0 +1,110 @@
+{
+  "sections": {
+    "d4778925-b29a-4df7-8967-b80a28258336": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15449428820068__d4778925-b29a-4df7-8967-b80a28258336-16653898022e4f0c38-1": {
+          "type": "image",
+          "settings": {
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15449428820068__d4778925-b29a-4df7-8967-b80a28258336-16653898022e4f0c38-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "39",
+            "heading": "HEADLINE GOES HERE",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "47",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15449428820068__d4778925-b29a-4df7-8967-b80a28258336-16653898022e4f0c38-1",
+        "template--15449428820068__d4778925-b29a-4df7-8967-b80a28258336-16653898022e4f0c38-0"
+      ],
+      "settings": {
+        "dynamic_page_content": true,
+        "padding_top": 140,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start"
+      }
+    },
+    "each_blog_content": {
+      "type": "bfj-article",
+      "settings": {
+      }
+    },
+    "d5387f2a-e57c-4cd7-8617-c9b3daf6aaf3": {
+      "type": "bfj-collections",
+      "settings": {
+        "product_collection": "bundles",
+        "heading": "RELATED products",
+        "heading_width": 331,
+        "btn_text": "All products",
+        "btn_url": "",
+        "bg_clr": "#ffffff"
+      }
+    },
+    "c2eec4ab-f995-4d1e-9543-1ac081bb019f": {
+      "type": "bfj-featured-articles",
+      "settings": {
+        "blogs": "blog",
+        "heading": "More Like This",
+        "heading_width": 508,
+        "btn_text": "All Stories",
+        "btn_url": "",
+        "bg_clr": "#ffffff",
+        "cards_per_view": "3",
+        "limit": "3"
+      }
+    },
+    "a43887db-0860-4031-ab5c-f987a19fd4bf": {
+      "type": "bfj-banner",
+      "blocks": {
+        "198fdb54-5e68-40a6-9a1b-56cc2190aa97": {
+          "type": "content_2",
+          "settings": {
+            "heading": "“Product Review or testimonials Can Go here for specific Products and\/or link to case studies pages”",
+            "paragraph": "<p>O’SHEA FAMILY — Purchased HOME BINS<\/p>",
+            "btn": "",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "198fdb54-5e68-40a6-9a1b-56cc2190aa97"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eco-banner-2.png",
+        "bg_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "d4778925-b29a-4df7-8967-b80a28258336",
+    "each_blog_content",
+    "d5387f2a-e57c-4cd7-8617-c9b3daf6aaf3",
+    "c2eec4ab-f995-4d1e-9543-1ac081bb019f",
+    "a43887db-0860-4031-ab5c-f987a19fd4bf"
+  ]
+}

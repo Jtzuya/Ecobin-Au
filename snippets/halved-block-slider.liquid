@@ -1,0 +1,90 @@
+{%- liquid 
+    assign image_1 = block.settings.image_1
+    assign image_2 = block.settings.image_2
+    assign image_3 = block.settings.image_3
+    assign image_4 = block.settings.image_4
+-%}
+
+{% if image_1 != blank %}
+    <div class="swiper-slide">
+        <div class="__imageSwiperCase">
+            {% if image_1 != blank %}
+                {%-liquid
+                    assign image_height = image_1.width | divided_by: image_1.aspect_ratio
+                -%}
+                {{ image_1 | image_url: width: 1440 | image_tag:
+                    loading: 'lazy',
+                    width: image_1.width,
+                    height: image_height,
+                    widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                    alt: image_1.alt | escape
+                }}
+            {%- else -%}
+                {{ 'lifestyle-1' | placeholder_svg_tag }}
+            {%- endif -%}
+        </div>
+    </div><!-- end of slide 1 -->
+{%- endif -%}
+
+{% if image_2 != blank %}
+    <div class="swiper-slide">
+        <div class="__imageSwiperCase">
+            {% if image_2 != blank %}
+                {%-liquid
+                    assign image_height = image_2.width | divided_by: image_2.aspect_ratio
+                -%}
+                {{ image_2 | image_url: width: 1440 | image_tag:
+                    loading: 'lazy',
+                    width: image_2.width,
+                    height: image_height,
+                    widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                    alt: image_2.alt | escape
+                }}
+            {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag }}
+            {%- endif -%}
+        </div>
+    </div><!-- end of slide 2 -->
+{%- endif -%}
+
+{% if image_3 != blank %}
+    <div class="swiper-slide">
+        <div class="__imageSwiperCase">
+            {% if image_3 != blank %}
+                {%-liquid
+                    assign image_height = image_3.width | divided_by: image_3.aspect_ratio
+                -%}
+                {{ image_3 | image_url: width: 1440 | image_tag:
+                    loading: 'lazy',
+                    width: image_3.width,
+                    height: image_height,
+                    widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                    alt: image_3.alt | escape
+                }}
+            {%- else -%}
+                {{ 'lifestyle-1' | placeholder_svg_tag }}
+            {%- endif -%}
+        </div>
+    </div><!-- end of slide 3 -->
+{%- endif -%}
+
+{% if image_4 != blank %}
+    <div class="swiper-slide">
+        <div class="__imageSwiperCase">
+            {% if image_4 != blank %}
+                {%-liquid
+                    assign image_height = image_4.width | divided_by: image_4.aspect_ratio
+                -%}
+                {{ image_4 | image_url: width: 1440 | image_tag:
+                    loading: 'lazy',
+                    width: image_4.width,
+                    height: image_height,
+                    widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                    alt: image_4.alt | escape
+                }}
+            {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag }}
+            {%- endif -%}
+        </div>
+    </div><!-- end of slide 4 -->
+{%- endif -%}

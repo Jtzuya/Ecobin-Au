@@ -1,0 +1,19 @@
+{%- comment -%}
+    Media responsive styling starting 768px to 1439px
+{%- endcomment -%}
+{{ 'respFlipcard-tweaks.css' | asset_url | stylesheet_tag -}}
+{{ 'respFlipcard-resp.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid 
+  assign ss = section.settings
+-%}
+
+{%- style -%}
+  .__bgWrapper--{{ section.id }} {
+    background-color: {{ ss.bg_clr -}};
+  }
+
+  .__setDefaults--{{ section.id }} .__recoHeading {
+    max-width: {{ ss.heading_width | append: 'px' -}};
+  }
+{%- endstyle -%}

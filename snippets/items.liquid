@@ -1,0 +1,38 @@
+{%- for product in product_collection limit: limit -%}
+    <div class="swiper-slide __recoEachSlide">
+        {% comment %} image {% endcomment %}
+        <a href="{{ product.url }}" target="blank">
+            <div class="__imageSwiperCase" data-card>
+                {%-liquid
+                    assign image_height = product.featured_image.width | divided_by: product.featured_image.aspect_ratio
+                -%}
+                {{ product.featured_image | image_url: width: 1440 | image_tag:
+                    loading: 'lazy',
+                    width: product.featured_image.width,
+                    height: image_height,
+                    widths: '256',
+                    alt: product.featured_image.alt | escape
+                }}
+            </div>
+        </a>
+        
+        {% comment %} product rating {% endcomment %}
+        <div class="__ratingCase">
+            {%- render 'star-rating-ico' -%}
+            <span class="__ratingCount">128</span>
+        </div>
+
+        {% comment %} product title {% endcomment %}
+        <a href="{{ product.url }}" target="blank"><h5 class="__productTitle">{{ product.title }}</h5></a>
+        
+        {% comment %} product starting price  {% endcomment %}
+        <div class="__priceCase">
+            {%- if product.price_min != blank -%}
+                <span class="__from">From</span>
+                <span class="__price">{{ product.price_min | money -}}</span>
+            {%- else -%}
+                <span class="__price">{{ product.price_min | money -}}</span>
+            {%- endif -%}
+        </div>
+    </div><!-- end of each slide -->
+{%- endfor -%}

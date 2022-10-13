@@ -1,0 +1,81 @@
+@media (max-width: 767px) {
+    .__flipcardCase {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    .__flipcardCase h3 {
+        padding-top: 100px;
+    }
+
+    .__flipSwiper .__cardWrapper {
+        min-height: 488px;
+    }
+
+    .__flipSwiper .__flipBtn {
+        width: 100%;
+        display: block;
+        margin-inline: auto;
+        padding: 16px 35px;
+    }
+
+    .__flipSwiper .__h6 {
+        font-weight: 600;
+        font-size: 11.8px;
+        padding-bottom: 31.96px;
+        padding-left: 32.33px;
+        padding-top: 36.53px;
+    }
+
+    .__flipSwiper .__h4 {
+        padding-left: 32.33px;
+        padding-right: 35.63px;
+        font-size: 25.07px;
+        letter-spacing: -0.66px;
+        line-height: 29px;
+    }
+
+    .__flipSwiper .__bodyText {
+        padding-left: 32.33px;
+        padding-right: 35.63px;
+        font-size: 16px;
+        line-height: 20px;
+        height: 100%;
+        padding-bottom: 38px;
+    }
+
+    .__flipSwiper .__imageCase {
+        padding-top: 0px;
+    }
+
+    .__headingCase.__desk > .__allProductsUrl {
+        display: none;
+    }
+
+    .__headingCase.__mob {
+        display: flex;
+        gap: 14px;
+    }
+
+    .__headingCase.__mob .__allProductsUrl {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 18px 35px;
+    }
+
+    .__headingCase.__desk {
+        padding-bottom: 0px;
+    }
+
+    .__flipSwiper {
+        padding-top: 37px;
+        padding-bottom: 50px;
+    }
+
+    .__miscCase {
+        padding-bottom: 50.23px;
+    }
+}

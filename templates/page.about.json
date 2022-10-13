@@ -1,0 +1,441 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "04a9a305-d962-4262-ba21-26a50d83612e": {
+          "type": "content_1",
+          "settings": {
+            "heading": "Well Hello There",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "04a9a305-d962-4262-ba21-26a50d83612e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-banner.png",
+        "bg_opacity": 20
+      }
+    },
+    "166462011035699a2f": {
+      "type": "rich-text",
+      "blocks": {
+        "16646201107c499c3a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>WE'RE HERE TO HELP YOU MAKE AN IMPACT<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "16646201107c499c3a-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "select_option": "default_state"
+      }
+    },
+    "8913f187-9925-4783-9bf7-3a18f497b5a3": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420144943204__8913f187-9925-4783-9bf7-3a18f497b5a3-1665386282868f763a-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Once upon a time, in a far away place called Melbourne, Victoria, Ecobin was born. <\/p><p><\/p><p>The year was 2008 and it was World Environment Day, when a green-loving, future-conscious, environmentalist had a dream to save the world. <\/p><p><\/p><p>“But how?” He thought to himself. <\/p><p><\/p><p>Then, a lightbulb appeared (metaphorically, of course) above his head. <\/p><p><\/p><p>CEO and founder, John Engelander, noticed that, unlike at home, waste was not being separated properly in the workplace. <\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        },
+        "8b8923ea-a31d-4e04-8714-71661a4f98bb": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "cover_image": "shopify:\/\/shop_images\/video-text.png",
+            "full_width": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15420144943204__8913f187-9925-4783-9bf7-3a18f497b5a3-1665386282868f763a-0",
+        "8b8923ea-a31d-4e04-8714-71661a4f98bb"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 30,
+        "padding_bot": 70,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "3c4e0601-5f3d-4217-942a-9994fb0ed79b": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710851684__3c4e0601-5f3d-4217-942a-9994fb0ed79b-1665553330ca13d787-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/John_Profile-700x700.jpg",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15482710851684__3c4e0601-5f3d-4217-942a-9994fb0ed79b-1665553330ca13d787-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>John knew he could create a product that was sustainable, would make waste separation simpler and was, dare he say it, cool! <\/p><p><\/p><p>Today, our locally made, sustainable bins can be found in homes and workplaces around the country. <\/p><p><\/p><p>Sustainability is at the core of everything we do and diversion from landfill is our mission. We are so proud of the work we have done to reduce the amount of waste that ends up in landfill. <\/p><p><\/p><p>Want to be part of the green revolution? Starting is easy! <\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "SHOP THE FULL RANGE",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710851684__3c4e0601-5f3d-4217-942a-9994fb0ed79b-1665553330ca13d787-1",
+        "template--15482710851684__3c4e0601-5f3d-4217-942a-9994fb0ed79b-1665553330ca13d787-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 30,
+        "padding_bot": 70,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "166471694782094fed": {
+      "type": "bjf-flipcard",
+      "blocks": {
+        "96ddceb5-2186-4f5b-916e-2f29e61b9b5c": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  01 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "177f964f-6282-4f16-ad66-3a4f37aa61a8": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  02\/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p><p><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "15b9a77d-aa1d-4b4e-947a-458f4c9e8964": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  03 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "762b8788-f6bc-49ad-b166-7c478a9b05fe": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  04\/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "1a412cb9-89ab-4e28-b955-ff18d43bd3a9": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  05 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "96ddceb5-2186-4f5b-916e-2f29e61b9b5c",
+        "177f964f-6282-4f16-ad66-3a4f37aa61a8",
+        "15b9a77d-aa1d-4b4e-947a-458f4c9e8964",
+        "762b8788-f6bc-49ad-b166-7c478a9b05fe",
+        "1a412cb9-89ab-4e28-b955-ff18d43bd3a9"
+      ],
+      "settings": {
+        "heading": "RECYCLING JOURNEY INFORMATION WILL GO RIGHT HERE.",
+        "heading_width": 442,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_text_2": "Learn More",
+        "btn_url_2": "",
+        "bg_clr": "#f4f4f2",
+        "format": "slider",
+        "text_extra": ""
+      }
+    },
+    "8d3da922-e65b-4d6e-8e89-b19860daa7a6": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710851684__8d3da922-e65b-4d6e-8e89-b19860daa7a6-1665553928b523cbba-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "The Mission",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -2,
+            "paragraph": "<p>If you’re here, we have it on pretty good authority that you want to do more to help the environment. You know it is important but it seems like such a mammoth task and frankly, a little overwhelming. We get it. <\/p><p><\/p><p>Our mission is to make waste separation easier and reduce the amount of waste that ends up in landfill. Yup, it is as simple as that. <\/p><p><\/p><p>You probably separate your landfill and recycling at home, but we don’t seem to do that at work, at schools or just about anywhere else, for that matter. That didn’t sit right with us, so we decided to do something about it. <\/p><p><\/p><p>When you use your Ecobin, we want you to know you are making a difference with just a small action. We know change is scary, but in this case, it is so important and before you know it, proper waste separation will become second nature!<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        },
+        "template--15482710851684__8d3da922-e65b-4d6e-8e89-b19860daa7a6-1665553928b523cbba-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/blog-banner.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710851684__8d3da922-e65b-4d6e-8e89-b19860daa7a6-1665553928b523cbba-0",
+        "template--15482710851684__8d3da922-e65b-4d6e-8e89-b19860daa7a6-1665553928b523cbba-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 50,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "23da5fd2-5422-48b5-9af7-e5e51b7521f9": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710851684__23da5fd2-5422-48b5-9af7-e5e51b7521f9-166555404973f38c11-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/img_19b306dc-7bde-4638-9314-65dbe203c5a7.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        },
+        "template--15482710851684__23da5fd2-5422-48b5-9af7-e5e51b7521f9-166555404973f38c11-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Our bins are locally made with a carbon offset program so using Ecobins is a pretty great step towards being green. And feeling a little smug about all the good you’re doing is just a nice bonus. <\/p><p><\/p><p>Who knew the humble bin could make you so happy? (Us. We knew.) <\/p><p><\/p><p>We want to inspire not only you to make a change, but those around you! With every person who adopts the Ecobin method, the amount of waste that ends up in landfill is less and less. That’s pretty incredible, hey? <\/p><p><\/p><p>So, the next time someone says recycling is “just too hard”, send them our way. Seriously, we really love talking about bins. <\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "SHOP ALL BINS",
+            "btn_url": "shopify:\/\/collections",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710851684__23da5fd2-5422-48b5-9af7-e5e51b7521f9-166555404973f38c11-1",
+        "template--15482710851684__23da5fd2-5422-48b5-9af7-e5e51b7521f9-166555404973f38c11-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 30,
+        "padding_bot": 60,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "fcc0d935-9d70-4100-88a6-9b81fb58c8ba": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420144943204__fcc0d935-9d70-4100-88a6-9b81fb58c8ba-1665386282868f763a-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "The Ecobin Family",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Here at Ecobin we’re a big family and now, that includes you - welcome! <\/p><p><\/p><p>Seems only right that you should get to know your other family members, right? <\/p>",
+            "para_padding": "29",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "MEET THE TEAM",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "442"
+          }
+        },
+        "82a4e8ee-8e9c-42ac-9962-cc6fd0b372bc": {
+          "type": "slider",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/team-banner-optimize.png",
+            "image_2": "shopify:\/\/shop_images\/Group_39973.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15420144943204__fcc0d935-9d70-4100-88a6-9b81fb58c8ba-1665386282868f763a-0",
+        "82a4e8ee-8e9c-42ac-9962-cc6fd0b372bc"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 30,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "5e17ca90-70b4-40cf-8c9c-b6578424041e": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420144943204__5e17ca90-70b4-40cf-8c9c-b6578424041e-1665386282868f763a-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "<br> PLanet EartH <br>  Cross Promotion <br> CALL OUT HERE",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>pharetra, elementum, urna, sit. Tellus eu <\/p><p>egestas tristique adipiscing urna, <\/p><p>egestas interdum.<\/p>",
+            "para_padding": "29",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "442"
+          }
+        },
+        "template--15420144943204__5e17ca90-70b4-40cf-8c9c-b6578424041e-1665386282868f763a-1": {
+          "type": "image",
+          "settings": {
+            "heading": "PLanet EartH  Cross Promotion CALL OUT HERE",
+            "image": "shopify:\/\/shop_images\/03-02-image-2.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15420144943204__5e17ca90-70b4-40cf-8c9c-b6578424041e-1665386282868f763a-0",
+        "template--15420144943204__5e17ca90-70b4-40cf-8c9c-b6578424041e-1665386282868f763a-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166462011035699a2f",
+    "8913f187-9925-4783-9bf7-3a18f497b5a3",
+    "3c4e0601-5f3d-4217-942a-9994fb0ed79b",
+    "166471694782094fed",
+    "8d3da922-e65b-4d6e-8e89-b19860daa7a6",
+    "23da5fd2-5422-48b5-9af7-e5e51b7521f9",
+    "fcc0d935-9d70-4100-88a6-9b81fb58c8ba",
+    "5e17ca90-70b4-40cf-8c9c-b6578424041e"
+  ]
+}

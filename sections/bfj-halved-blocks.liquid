@@ -1,0 +1,584 @@
+{%- render 'bfj-halved-blocks-css', section: section -%}
+
+<div class="__bgWrapper--{{ section.id }}">
+  <div class="__halvedBlocksCase common-display --g-px --custom-padding--{{ section.id }}
+      {%- if section.settings.align_items == 'center' -%}__flexCenter
+      {%- elsif section.settings.align_items == 'end' -%}__flexEnd
+      {%- else -%}__flexStart{%- endif -%}" id="Image-Text--{{ section.id }}">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'image' -%}
+              {% style %}
+                {%- if block.settings.flex != false -%}
+                  #ImageCase--{{ block.id }} {
+                    flex: revert;
+                  }
+                {%- endif -%}
+              {% endstyle %}
+
+              <div class="__wrapper" id="#ImageCase--{{ block.id }}">
+                {%- assign bs = block.settings -%}
+                {%- if template.name == 'article' and section.settings.dynamic_page_content != false -%}
+                  {%- render 'article-image', article: article, block: block -%}
+                {%- else -%}
+                  {%- if bs.heading != blank -%}
+                      <h3 class="__contentHeading __mob __contentHeading--{{ block.id }}">{{ bs.heading -}}</h3>
+                  {%- endif -%}
+
+                  {%- if bs.image != blank -%}
+                    <div class="__imageCase" id="ImageCase--{{ block.id }}">
+                      {{ bs.image | image_url: width: '805' | image_tag:
+                        loading: 'lazy',
+                        class: '__image-textImage',
+                        widths: '150, 200, 250, 300, 400, 500',
+                        alt: bs.image.alt
+                      }}
+
+                      {%- if bs.name != blank -%}
+                        <p class="__imageName">{{ bs.name -}}</p>
+                      {%- endif -%}
+                      {%- if bs.position != blank -%}
+                        <span class="__namePosition">{{ bs.position -}}</span>
+                      {%- endif -%}
+                    </div>
+                  {%- else -%}
+                    <div class="__imageTextPlaceholder">
+                      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' -}}
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            {%- comment -%} End of Image {%- endcomment -%}
+
+            {%- when 'content' -%}
+                {%- assign bs = block.settings -%}
+                {%- style -%}
+                    .__contentHeading--{{ block.id }} {
+                      font-size: {{ bs.heading_size | append: 'px' -}};
+                      letter-spacing: {{ bs.heading_letterSpacing | append: 'px' -}};
+                      line-height: {{ bs.heading_lineHeight | append: 'px' -}};
+                    }
+
+                    {%- if bs.font_weight != false -%}
+                      .__contentParagraph {
+                        font-weight: 500;
+                      }
+                    {%- endif -%}
+
+                    {%- if bs.heading_width != blank -%}
+                      .__contentHeading--{{ block.id }} {
+                        max-width: {{ bs.heading_width | times: 1 | append: 'px' -}}!important;
+                      }
+                    {%- endif -%}
+
+                    @media (min-width: 1201px) {
+                      {%- if bs.para_padding != blank -%}
+                        .__contentParagraph.__overRide--{{ block.id }} {
+                          padding-top: {{ bs.para_padding | times: 1 | append: 'px' -}};
+                        }
+                      {%- endif -%}
+                      {%- if bs.btn_padding != blank -%}
+                        .__contentBtnCase.__overRide--{{ block.id }} {
+                          padding-top: {{ bs.btn_padding | times: 1 | append: 'px' -}};
+                        }
+                      {%- endif -%}
+                      {%- if bs.tag_padding != blank -%}
+                        .__contentTag.__overRide--{{ block.id }} {
+                          margin-bottom: {{ bs.tag_padding | times: 1 | append: 'px' -}};
+                          display: block;
+                          width: max-content;
+                        }
+                      {%- endif -%}
+
+                      {%- if bs.heading_width != blank -%}
+                        .__image-textContent--{{ block.id }} {
+                          max-width: {{ bs.heading_width | times: 1 | append: 'px' -}};
+                        }
+                      {%- endif -%}
+                    }
+                {%- endstyle -%}
+
+                <div class="__image-textContent __image-textContent--{{ block.id }}" id="__image-textContent--{{ block.id }}">
+                  {%- if template.name == 'article' and section.settings.dynamic_page_content != false -%}
+                    {%- render 'article-content', article: article, block: block -%}
+                  {%- else -%}
+                    {%- if bs.tag != blank -%}
+                      <span class="__contentTag __overRide--{{ block.id }}">{{ bs.tag }}</span>
+                    {%- endif -%}
+
+                    {%- if bs.heading != blank -%}
+                        <h3 class="__contentHeading __contentHeading--{{ block.id }}">{{ bs.heading -}}</h3>
+                    {%- endif -%}
+
+                    {%- if bs.paragraph != blank -%}
+                        <div class="__contentParagraph __overRide--{{ block.id }} {% if bs.p_sm != false %}__sm{% endif %}">{{ bs.paragraph }}</div>
+                    {%- endif -%}
+
+                    <div class="__contentBtnCase __overRide--{{ block.id }}">
+                      {%- if bs.btn != blank -%}
+                        <a href="{%- if bs.btn_url != blank -%}{{ bs.btn_url -}}{%- else -%}#{%- endif -%}" class="__contentUrl inverse {% if block.settings.stretch_btn != false %} __stretchBtn--{{ section.id }}{% endif %}">
+                          <span class="__contentText">{{ bs.btn }}</span>
+                        </a>
+                      {%- endif -%}
+                      {%- if bs.btn_2 != blank -%}
+                        <a href="{%- if bs.btn_url_2 != blank -%}{{ bs.btn_url_2 -}}{%- else -%}#{%- endif -%}" class="__contentUrl inverse button button--secondary">
+                        <span class="__contentText">{{ bs.btn_2 }}</span>
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                </div>
+            {%- comment -%} End of content {%- endcomment -%}
+
+            {%- when 'content_v2' -%}
+              {%- assign bs = block.settings -%}
+                <div class="__contentV2">
+                  {%- if bs.long_text_1 != blank -%}
+                    <div class="__longText">{{ bs.long_text_1 -}}</div>
+                  {%- endif -%}
+
+                  {%- if bs.heading_v2 != blank -%}
+                    <h3 class="__HeadingV2 __contentHeading--{{ block.id }}">{{ bs.heading_v2 | escape -}}</h3>
+                  {%- endif -%}
+
+                  {%- if bs.long_text_2 != blank -%}
+                    <div class="__longText">{{ bs.long_text_2 -}}</div>
+                  {%- endif -%}
+                </div>
+            {%- comment -%} End of Content_v2 {%- endcomment -%}
+
+            {%- when 'slider' -%}
+              <div class="__imageSliderCase">
+                <div class="swiper-wrapper">
+                  {%- render 'halved-block-slider', block: block -%}
+                </div>
+
+                <div class="__miscCase">
+                  <div class="__imageSliderPrevBtn">{%- render 'arrow-prev' -%}</div>
+                  <div class="__imageSliderPagination"></div>
+                  <div class="__imageSliderNextBtn">{%- render 'arrow-next' -%}</div>
+                </div>
+              </div>
+            {%- comment -%} End of Slider {%- endcomment -%}
+
+            {%- when 'video' -%}
+              <div class="__videoCase">
+                {%- render 'component-video', block.settings: block.settings, block: block, section: section, section.settings: section.settings -%}
+              </div>
+        {%- endcase -%}
+      {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJM - Halved Blocks",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "dynamic_page_content",
+      "label": "Show Dynamic Content From Page?",
+      "default": false,
+      "info": "Only works for blog posts"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bot",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "block_width",
+      "options": [
+        {
+          "value": "equal",
+          "label": "Equal Width Each Block"
+        },
+        {
+          "value": "unset",
+          "label": "Unset Width"
+        }
+      ],
+      "default": "unset",
+      "label": "Set Width"
+    },
+    {
+      "type": "select",
+      "id": "align_items",
+      "options": [
+        {
+          "value": "start",
+          "label": "Flex Start"
+        },
+        {
+          "value": "center",
+          "label": "Flex Center"
+        },
+        {
+          "value": "end",
+          "label": "Flex End"
+        }
+      ],
+      "default": "start",
+      "label": "Align Items"
+    },
+    {
+      "type": "select",
+      "id": "justify_content",
+      "options": [
+        {
+          "value": "start",
+          "label": "Flex Start"
+        },
+        {
+          "value": "space_between",
+          "label": "Space Between"
+        },
+        {
+          "value": "end",
+          "label": "Flex End"
+        }
+      ],
+      "default": "start",
+      "label": "Justify Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "reversed",
+      "label": "Reverse Blocks",
+      "default": false,
+      "info": "Only works on mobile"
+    }
+  ],
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Extra Heading (on mobile)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "checkbox",
+          "id": "flex",
+          "label": "Adjust space",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "tag_padding",
+          "label": "Tag's bottom padding (desktop)",
+          "info": "Input (number)"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "HEADLINE GOES HERE"
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading font size",
+          "default": 42
+        },
+        {
+          "type": "range",
+          "id": "heading_lineHeight",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading line-height",
+          "default": 64
+        },
+        {
+          "type": "range",
+          "id": "heading_letterSpacing",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading letter spacing",
+          "default": -3
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.</p>"
+        },
+        {
+          "type": "text",
+          "id": "para_padding",
+          "label": "Control paragraph's top padding (works on desktop only)",
+          "info": "Input (number)"
+        },
+        {
+          "type": "checkbox",
+          "id": "font_weight",
+          "label": "Font weight",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "p_sm",
+          "label": "Small type?",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "btn_padding",
+          "label": "Button padding top (desktop)",
+          "info": "Input (number)"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button Text",
+          "default": "CONTINUE YOUR JOURNEY",
+          "info": "Remove text to hide"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "stretch_btn",
+          "label": "Wide button (mobile)",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "btn_2",
+          "label": "Button Text",
+          "info": "Remove text to hide"
+        },
+        {
+          "type": "url",
+          "id": "btn_url_2",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "heading_width",
+          "label": "Content case width (desktop)",
+          "info": "Input (number)"
+        }
+      ]
+    },
+    {
+      "type": "content_v2",
+      "name": "content_v2",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "long_text_1",
+          "label": "Paragraph"
+        },
+        {
+          "type": "text",
+          "id": "heading_v2",
+          "label": "Heading",
+          "default": "HEADLINE GOES HERE"
+        },
+        {
+          "type": "range",
+          "id": "heading_size_v2",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Font Size",
+          "default": 42
+        },
+        {
+          "type": "range",
+          "id": "heading_lineHeight_v2",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Line Height",
+          "default": 64
+        },
+        {
+          "type": "range",
+          "id": "heading_letterSpacing_v2",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Letter Spacing",
+          "default": -3
+        },
+        {
+          "type": "richtext",
+          "id": "long_text_2",
+          "label": "Paragraph"
+        }
+      ]
+    },
+    {
+      "type": "slider",
+      "name": "slider",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "placeholder": "t:sections.video.settings.video_url.placeholder",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.video.settings.cover_image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "label": "t:sections.video.settings.full_width.label",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "t:sections.all.colors.accent_1.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.all.colors.accent_2.label"
+            },
+            {
+              "value": "background-1",
+              "label": "t:sections.all.colors.background_1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.all.colors.background_2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
+          ],
+          "default": "background-1",
+          "label": "t:sections.all.colors.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJM - Halved Blocks",
+      "blocks": [
+        {
+          "type": "content",
+          "settings": {
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

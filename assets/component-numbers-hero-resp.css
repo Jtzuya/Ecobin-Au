@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+    .wrap-col {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 1rem;
+    }
+
+    .animated-num {
+        font-size: 48.17px;
+        line-height: 42.8px;
+        letter-spacing: -2.01px;
+    }
+
+    .item-col {
+        font-size: 12.25px;
+        line-height: 15.6px;
+    }
+}

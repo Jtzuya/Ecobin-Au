@@ -1,0 +1,81 @@
+{{ 'component-numbers-hero.css' | asset_url | stylesheet_tag }}
+{{ 'component-numbers-hero-resp.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-numbers">
+    <div class="wrap-col page-width">
+        <div class="item-col">{{ section.settings.left_text}}</div>
+        <div id="counter" class="countup animated-num">{{ section.settings.number}}</div>
+        <div class="item-col">{{ section.settings.right_text}}</div>
+    </div>
+</div>
+{% assign numAnimate = section.settings.number %}
+
+<script>
+
+const animationDuration = 2000;
+const frameDuration = 1000 / 60;
+const totalFrames = Math.round( animationDuration / frameDuration );
+const easeOutQuad = t => t * ( 2 - t );
+
+const animateCountUp = el => {
+  let frame = 0;
+  const countTo = parseInt( el.innerHTML, 10 );
+  const counter = setInterval( () => {
+    frame++;
+    const progress = easeOutQuad( frame / totalFrames );
+    const currentCount = commaSeparateNumber(Math.round( countTo * progress ));
+
+    if ( parseInt( el.innerHTML, 10 ) !== currentCount ) {
+      el.innerHTML = currentCount;
+    }
+
+    if ( frame === totalFrames ) {
+      clearInterval( counter );
+    }
+  }, frameDuration );
+};
+
+const runAnimations = () => {
+  const countupEls = document.querySelectorAll( '.countup' );
+  countupEls.forEach( animateCountUp );
+};
+
+function commaSeparateNumber(val) {
+  while (/(\d+)(\d{3})/.test(val.toString())) {
+    val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+  }
+  return val;
+}
+
+runAnimations();
+</script>
+
+{% schema %}
+{
+  "name": "Numbers Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "text",
+        "id": "left_text",
+        "label": "Left side text"
+    },
+    {
+        "type": "text",
+        "id": "number",
+        "label": "Stats Number"
+    },
+    {
+        "type": "text",
+        "id": "right_text",
+        "label": "Right side text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Numbers Hero"
+    }
+  ]
+}
+{% endschema %}

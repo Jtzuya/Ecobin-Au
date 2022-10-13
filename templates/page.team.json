@@ -1,0 +1,325 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "04a9a305-d962-4262-ba21-26a50d83612e": {
+          "type": "content_1",
+          "settings": {
+            "heading": "Meet OUR  TEAM HEADING",
+            "btn": "Back to about",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "04a9a305-d962-4262-ba21-26a50d83612e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/team-banner-optimize.png",
+        "bg_opacity": 20
+      }
+    },
+    "166462011035699a2f": {
+      "type": "rich-text",
+      "blocks": {
+        "16646201107c499c3a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>INTRO MESSAGE GOES HERE.<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "16646201107c499c3a-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "select_option": "default_state"
+      }
+    },
+    "111de452-767b-4f9d-8040-ecc94245b864": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420157034596__111de452-767b-4f9d-8040-ecc94245b864-1665386732963c8389-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p><p><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CTA BUTTON",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15420157034596__111de452-767b-4f9d-8040-ecc94245b864-1665386732963c8389-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/image-text-team.png",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15420157034596__111de452-767b-4f9d-8040-ecc94245b864-1665386732963c8389-0",
+        "template--15420157034596__111de452-767b-4f9d-8040-ecc94245b864-1665386732963c8389-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "529fadea-d7f1-4281-898b-4705d22d092c": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420157034596__529fadea-d7f1-4281-898b-4705d22d092c-1665386732963c8389-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/image-q.png",
+            "name": "John Engelander",
+            "position": "CEO and founder ecobin",
+            "flex": false
+          }
+        },
+        "template--15420157034596__529fadea-d7f1-4281-898b-4705d22d092c-1665386732963c8389-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobor  alique.”",
+            "heading_size": 72,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.<\/p>",
+            "para_padding": "68",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "LEARN MORE",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "646"
+          }
+        }
+      },
+      "block_order": [
+        "template--15420157034596__529fadea-d7f1-4281-898b-4705d22d092c-1665386732963c8389-1",
+        "template--15420157034596__529fadea-d7f1-4281-898b-4705d22d092c-1665386732963c8389-0"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "start",
+        "reversed": false
+      }
+    },
+    "8a4ab703-3a14-4a2b-bd48-bf164d20d571": {
+      "type": "bjf-flipcard",
+      "blocks": {
+        "57b44020-9dcc-43ea-9415-9d6fd2724d6b": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-1_6a73c85c-1d92-4757-a122-25319d28a8f4.png",
+            "span_text": "Job Title",
+            "heading_text": "Sarah Smith",
+            "back_text": "",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "a50e767e-8075-41f7-b2de-9970053c241d": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-2_cf405319-d54f-45d2-86d3-aed44535bd12.png",
+            "span_text": "Job Title",
+            "heading_text": "Sam Smith",
+            "back_text": "",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "57f796b3-9c6c-4b3f-b84b-bcd6a921d552": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-3_f6775ff5-1f85-4b18-85a7-aded489d7796.png",
+            "span_text": "Job Title",
+            "heading_text": "Katherine Jones",
+            "back_text": "",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "b9c15a05-493c-4e17-9075-0c3fb3647ba7": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-4_c4b90c19-f6bb-4550-bc14-f7f80b6670a8.png",
+            "span_text": "Job Title",
+            "heading_text": "Mitchell Clarke",
+            "back_text": "",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "28977c35-4748-4782-971b-99c2a6d85fbe": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-1_6a73c85c-1d92-4757-a122-25319d28a8f4.png",
+            "span_text": "Sarah Smith",
+            "heading_text": "Sarah Smith",
+            "back_text": "",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "6034552d-5d42-4dcb-bc2e-157d56b13220": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-2_cf405319-d54f-45d2-86d3-aed44535bd12.png",
+            "span_text": "Celeb",
+            "heading_text": "Sam Smith",
+            "back_text": "",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "d2c20146-1c6b-4c68-9eb3-d20a2eefbc4c": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-3_f6775ff5-1f85-4b18-85a7-aded489d7796.png",
+            "span_text": "Job Title",
+            "heading_text": "Katherine Jones",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "87f7b294-7780-460e-8961-0ba57f98ef99": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member-4_c4b90c19-f6bb-4550-bc14-f7f80b6670a8.png",
+            "span_text": "Job Title",
+            "heading_text": "Mitchell Clarke",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "57b44020-9dcc-43ea-9415-9d6fd2724d6b",
+        "a50e767e-8075-41f7-b2de-9970053c241d",
+        "57f796b3-9c6c-4b3f-b84b-bcd6a921d552",
+        "b9c15a05-493c-4e17-9075-0c3fb3647ba7",
+        "28977c35-4748-4782-971b-99c2a6d85fbe",
+        "6034552d-5d42-4dcb-bc2e-157d56b13220",
+        "d2c20146-1c6b-4c68-9eb3-d20a2eefbc4c",
+        "87f7b294-7780-460e-8961-0ba57f98ef99"
+      ],
+      "settings": {
+        "heading": "TEAM HEADLINE  GOES HERE",
+        "heading_width": 331,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_text_2": "Learn More",
+        "btn_url_2": "",
+        "bg_clr": "#ffffff",
+        "format": "default_blocks",
+        "text_extra": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet.<\/p>"
+      }
+    },
+    "b836b76c-a04c-460c-99f5-b15bbb1fa43c": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420157034596__b836b76c-a04c-460c-99f5-b15bbb1fa43c-1665386732963c8389-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "<br>Looking to <br>  Join Our Team?",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>pharetra, elementum, urna, sit. Tellus eu <\/p><p>egestas tristique adipiscing urna, <\/p><p>egestas interdum.<\/p>",
+            "para_padding": "30",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTINUE YOUR JOURNEY",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "442"
+          }
+        },
+        "template--15420157034596__b836b76c-a04c-460c-99f5-b15bbb1fa43c-1665386732963c8389-1": {
+          "type": "image",
+          "settings": {
+            "heading": "Looking to <br>  Join Our Team?",
+            "image": "shopify:\/\/shop_images\/img_19b306dc-7bde-4638-9314-65dbe203c5a7.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15420157034596__b836b76c-a04c-460c-99f5-b15bbb1fa43c-1665386732963c8389-0",
+        "template--15420157034596__b836b76c-a04c-460c-99f5-b15bbb1fa43c-1665386732963c8389-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#f4f4f2",
+        "block_width": "unset",
+        "align_items": "start",
+        "justify_content": "space_between",
+        "reversed": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166462011035699a2f",
+    "111de452-767b-4f9d-8040-ecc94245b864",
+    "529fadea-d7f1-4281-898b-4705d22d092c",
+    "8a4ab703-3a14-4a2b-bd48-bf164d20d571",
+    "b836b76c-a04c-460c-99f5-b15bbb1fa43c"
+  ]
+}

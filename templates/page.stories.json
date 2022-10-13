@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "04a9a305-d962-4262-ba21-26a50d83612e": {
+          "type": "content_1",
+          "settings": {
+            "heading": "Stories RELATED HEADLINE HERE",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "04a9a305-d962-4262-ba21-26a50d83612e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/stories-banner.png",
+        "bg_opacity": 20
+      }
+    },
+    "1664621501f3760c10": {
+      "type": "rich-text",
+      "blocks": {
+        "166462150177f1ac76-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>INTRO MESSAGE GOES HERE.<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "166462150177f1ac76-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "select_option": "default_state"
+      }
+    },
+    "e9e2853f-984f-4643-a000-c64defd63765": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420182200420__e9e2853f-984f-4643-a000-c64defd63765-1665387989bb6f79e4-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p><p><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": ""
+          }
+        },
+        "template--15420182200420__e9e2853f-984f-4643-a000-c64defd63765-1665387989bb6f79e4-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/image-text-stories.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15420182200420__e9e2853f-984f-4643-a000-c64defd63765-1665387989bb6f79e4-0",
+        "template--15420182200420__e9e2853f-984f-4643-a000-c64defd63765-1665387989bb6f79e4-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 40,
+        "padding_bot": 0,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "3003ffb0-76fa-47a5-b2b0-a6fd593c0b89": {
+      "type": "bfj-featured-articles",
+      "settings": {
+        "blogs": "blog",
+        "heading": "FEATURED <br>  STORIES",
+        "heading_width": 442,
+        "btn_text": "",
+        "btn_url": "",
+        "bg_clr": "#ffffff",
+        "cards_per_view": "2.25",
+        "limit": "5"
+      }
+    },
+    "166473789186b2ce2c": {
+      "type": "bfj-browse",
+      "settings": {
+        "blogs": "blog",
+        "limit": 12,
+        "heading": "BROWSE  <br> ALL STORIES",
+        "padding_top": 150,
+        "padding_bot": 140,
+        "bg_color": "#f4f4f2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1664621501f3760c10",
+    "e9e2853f-984f-4643-a000-c64defd63765",
+    "3003ffb0-76fa-47a5-b2b0-a6fd593c0b89",
+    "166473789186b2ce2c"
+  ]
+}

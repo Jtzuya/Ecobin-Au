@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "166462011035699a2f": {
+      "type": "rich-text",
+      "blocks": {
+        "16646201107c499c3a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>KATHERINE JONES<\/p>",
+            "heading_size": "h0"
+          }
+        },
+        "8a8fe83a-bf05-4d79-9e46-71d96c927f5b": {
+          "type": "button",
+          "settings": {
+            "button_label": "BACK TO TEAM",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16646201107c499c3a-0",
+        "8a8fe83a-bf05-4d79-9e46-71d96c927f5b"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "select_option": "flex_it"
+      }
+    },
+    "357fd981-048a-4840-8d77-a76234bbc66c": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15420182167652__357fd981-048a-4840-8d77-a76234bbc66c-16653875733e409165-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "JOB TITLE <br>  GOES HERE",
+            "heading_size": 42,
+            "heading_lineHeight": 40,
+            "heading_letterSpacing": -1,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur <\/p><p>adipiscing elit. Aliquet ut mi lobortis <\/p><p>aliquet commodo nullam. Orci, laoreet <\/p><p>pharetra, elementum, urna, sit. Tellus eu <\/p><p>egestas tristique adipiscing urna, <\/p><p>egestas interdum.<\/p>",
+            "para_padding": "30",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CONTACT",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "442"
+          }
+        },
+        "be717334-0675-42d1-a1bd-ff3b7ee529b8": {
+          "type": "slider",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/staff-profile.png",
+            "image_2": "shopify:\/\/shop_images\/Group_39973.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--15420182167652__357fd981-048a-4840-8d77-a76234bbc66c-16653875733e409165-0",
+        "be717334-0675-42d1-a1bd-ff3b7ee529b8"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "space_between",
+        "reversed": true
+      }
+    },
+    "5fc50687-67c8-45b7-8a25-1d4228f6a0ea": {
+      "type": "bjf-flipcard",
+      "blocks": {
+        "a743f267-5384-4b8b-9dd1-e206b5b884f6": {
+          "type": "flip",
+          "settings": {
+            "span_text": "Question 01",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam?",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "a2822785-1500-4c55-b19b-4499a81cd92e": {
+          "type": "flip",
+          "settings": {
+            "span_text": "Question 02",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p><p><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "7bdc2fa0-d484-4253-b33f-c3353c802371": {
+          "type": "flip",
+          "settings": {
+            "span_text": "Question 03",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur ur adipiscing elitnullam?",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "490c87c2-5fbf-4940-913e-58b654ae6cf2": {
+          "type": "flip",
+          "settings": {
+            "span_text": "Question 04",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam?",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "b972755e-b939-451d-b0d3-cc9103bc4533": {
+          "type": "flip",
+          "settings": {
+            "span_text": "Question 05",
+            "heading_text": "Lorem elit. Rhoncus, dignissim nisl, sed proin quis lacus mattis natoque doling elitor?",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "ecaaf458-1ea7-497d-9471-8e1c3fa0c181": {
+          "type": "flip",
+          "settings": {
+            "span_text": "Question 06",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem elit. Rhoncus, dignissim nisl, sed proin quis lacus mattis natoque doling elitor?<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "a743f267-5384-4b8b-9dd1-e206b5b884f6",
+        "a2822785-1500-4c55-b19b-4499a81cd92e",
+        "7bdc2fa0-d484-4253-b33f-c3353c802371",
+        "490c87c2-5fbf-4940-913e-58b654ae6cf2",
+        "b972755e-b939-451d-b0d3-cc9103bc4533",
+        "ecaaf458-1ea7-497d-9471-8e1c3fa0c181"
+      ],
+      "settings": {
+        "heading": "QUESTIONS  <br> HEADLINE",
+        "heading_width": 442,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_text_2": "Learn More",
+        "btn_url_2": "",
+        "bg_clr": "#f4f4f2",
+        "format": "default_flip_blocks",
+        "text_extra": ""
+      }
+    },
+    "16646211462e4275ba": {
+      "type": "bfj-collections",
+      "settings": {
+        "product_collection": "food-waste",
+        "heading": "Favourite products",
+        "heading_width": 331,
+        "btn_text": "All products",
+        "btn_url": "",
+        "bg_clr": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "166462011035699a2f",
+    "357fd981-048a-4840-8d77-a76234bbc66c",
+    "5fc50687-67c8-45b7-8a25-1d4228f6a0ea",
+    "16646211462e4275ba"
+  ]
+}

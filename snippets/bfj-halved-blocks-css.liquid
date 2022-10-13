@@ -1,0 +1,73 @@
+{%- comment -%}
+    Default CSS Styling
+{%- endcomment -%}
+{{ 'section-bfj-halved-blocks.css' | asset_url | stylesheet_tag -}}
+
+{%- comment -%}
+    Media responsive styling starting 768px to 1439px
+{%- endcomment -%}
+{{ 'respHalved-tweaks.css' | asset_url | stylesheet_tag -}}
+
+{%- comment -%}
+    Media responsive (max-width: 767px)
+{%- endcomment -%}
+{{ 'respHalved-mx-767.css' | asset_url | stylesheet_tag -}}
+
+{%- comment -%}
+    Dynamic styling
+{%- endcomment -%}
+{%- style -%}
+    .__bgWrapper--{{ section.id }} {
+        background-color: {{ section.settings.bg_color }};
+    }
+
+    @media (max-width: 767px) {
+        {%- if section.settings.reversed != false -%}
+            #Image-Text--{{ section.id }} {
+                flex-direction: column-reverse;
+            }
+        {%- endif -%}
+
+
+        .__stretchBtn--{{ section.id }} {
+            width: 100%!important;
+        }
+
+        .__contentText {
+            margin-inline: auto;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        #Image-Text--{{ section.id }} {
+            {%- if section.settings.justify_content == 'space_between' -%}
+                justify-content: space-between;
+            {%- elsif section.settings.justify_content == 'end' -%}
+                justify-content: flex-end;
+            {%- else -%}
+                justify-content: flex-start;
+            {%- endif -%}
+        }
+
+        .--custom-padding--{{ section.id }} {
+            padding-top: {{ section.settings.padding_top | append: 'px' -}};
+            padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+            background-color: {{ section.settings.bg_color }};
+        }
+    }
+
+    @media (min-width: 900px) {
+        {%- if section.settings.block_width == 'equal' -%}
+            #Image-Text--{{ section.id }} > * {
+                width: 50%;
+            }
+        {%- endif -%}
+    }
+
+
+    @media (min-width: 1441px) {
+        .__image-textContent {
+            width: 50%;
+        }
+    }
+{%- endstyle -%}

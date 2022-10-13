@@ -1,0 +1,168 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "06dfa5e6-ad3f-4a07-bb67-1394ca49bafc": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482710458468__06dfa5e6-ad3f-4a07-bb67-1394ca49bafc-16655478633d56caf1-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>NEED COPY<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "CTA",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15482710458468__06dfa5e6-ad3f-4a07-bb67-1394ca49bafc-16655478633d56caf1-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/Group_39986.png",
+            "name": "",
+            "position": "",
+            "flex": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15482710458468__06dfa5e6-ad3f-4a07-bb67-1394ca49bafc-16655478633d56caf1-0",
+        "template--15482710458468__06dfa5e6-ad3f-4a07-bb67-1394ca49bafc-16655478633d56caf1-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 100,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1a7cc507-58bb-4906-9bdd-9e34c65796f4": {
+      "type": "bfj-featured-products",
+      "blocks": {
+        "172b61cf-83ad-4a94-917f-2741a425cd34": {
+          "type": "image",
+          "settings": {
+            "prod": "12-litre-compostable-tidy-bags-12-rolls-per-box",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "cf23137b-2508-4580-b07b-997d92eba51f": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-bin-yellow-home-recycling-ecobin-12-litre",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "1fca66a5-a46d-4f69-b902-f4abd699db22": {
+          "type": "image",
+          "settings": {
+            "prod": "co-mingle-mixed-recycling-wheelie-bin-yellow-240-litres",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "58adf870-4448-4218-aa5a-e0935e39c0ea": {
+          "type": "image",
+          "settings": {
+            "prod": "8-litre-compostable-kitchen-tidy-bags-bulk-box",
+            "collection_title": "",
+            "link": ""
+          }
+        },
+        "4560aa43-e3bd-47f2-9f47-38b057b2677a": {
+          "type": "image",
+          "settings": {
+            "prod": "blue-paper-and-cardboard-recycling-educational-laminated-poster-with-new-chalkboard-images",
+            "collection_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "172b61cf-83ad-4a94-917f-2741a425cd34",
+        "cf23137b-2508-4580-b07b-997d92eba51f",
+        "1fca66a5-a46d-4f69-b902-f4abd699db22",
+        "58adf870-4448-4218-aa5a-e0935e39c0ea",
+        "4560aa43-e3bd-47f2-9f47-38b057b2677a"
+      ],
+      "settings": {
+        "title": "Featured products",
+        "link_btn": "",
+        "text_btn": "BROWSE ALL PRODUCTS"
+      }
+    },
+    "23efe9ce-1a3a-40cb-b473-8252d17da014": {
+      "type": "bfj-banner",
+      "blocks": {
+        "8e6c5bc6-8546-4679-b4d0-b9ac4d9e64a7": {
+          "type": "content_2",
+          "settings": {
+            "heading": "“Product Review or testimonials Can Go here for specific Products and\/or link to case studies pages”",
+            "paragraph": "<p>O’SHEA FAMILY — Purchased HOME BINS<\/p>",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "8e6c5bc6-8546-4679-b4d0-b9ac4d9e64a7"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_39973.png",
+        "bg_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "06dfa5e6-ad3f-4a07-bb67-1394ca49bafc",
+    "product-grid",
+    "1a7cc507-58bb-4906-9bdd-9e34c65796f4",
+    "23efe9ce-1a3a-40cb-b473-8252d17da014"
+  ]
+}

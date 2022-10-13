@@ -1,0 +1,36 @@
+{{ 'section-browse.css' | asset_url | stylesheet_tag -}}
+
+{%- for blog in allBlog limit: limit -%}
+    {%- assign handle = blog.handle -%}
+    {%- assign urlConstruct = shop.url | append: '/blogs/' | append: handle -%}
+
+    <div class="swiper-slide __recoEachSlide">
+        {% comment %} Images {% endcomment %}
+        <div class="__imageSwiperCase __articlesUrl">
+            {%-liquid
+                assign image_height = blog.image.src.width | divided_by: blog.image.src.aspect_ratio
+            -%}
+            {{ blog.image.src | image_url: width: 550 | image_tag:
+                class: '__articlesImage',
+                loading: 'lazy',
+                width: blog.image.src.width,
+                height: image_height,
+                widths: '550, 750',
+                alt: blog.image.src.alt | escape
+            -}}
+            <div class="__articlesUrlHoverCase">
+                <a href="{{ urlConstruct -}}" target="blank" class="__articlesUrlHover">Learn more</a>
+            </div>
+        </div>
+
+        {% comment %} Titles {% endcomment %}
+        <a href="{{ urlConstruct -}}" target="blank"><h5 class="__productTitle">{{ blog.title -}}</h5></a>
+        
+        {% comment %} Tags {% endcomment %}
+        <div class="__eachArticleTags">
+            {%- for tag in blog.tags -%}
+                <span class="__tag">{{ tag | replace: '_', ' ' -}}</span>
+            {%- endfor -%}
+        </div>
+    </div><!-- end of each slide -->
+{%- endfor -%}

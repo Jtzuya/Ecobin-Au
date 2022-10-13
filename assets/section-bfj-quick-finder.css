@@ -1,0 +1,35 @@
+.__quickFinderOuterWrapper {
+    max-width: 765px;
+}
+
+.__quickFinderCase .__contentText {
+    min-width: 170px;
+    text-align: center;
+}
+
+.quick-finder {
+    background-color: #F4F4F2;
+    border-radius: 2rem;
+    flex: 1.6;
+}
+.quick-finder-wrapper {
+    padding: 2em 4em 4em;
+}
+.__image-textContent {
+    flex: 1;
+}
+.quick-finder-form p {
+    font-size: 42px;
+    font-weight: 700;
+    color: #202223;
+    line-height: 60px;
+}
+.quick-finder-form select {
+    font-size: 42px;
+    font-weight: 700 !important;
+    color: #0DB14B;
+    line-height: 60px;
+    background-color: transparent;
+    border: unset;
+    text-decoration: underline;
+}

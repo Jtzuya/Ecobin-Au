@@ -1,0 +1,322 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient mx-w --g-px">
+  <div class="__contactWrapper">
+    <div class="contact section-{{ section.id }}-padding">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+      {%- else -%}
+        <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+      {%- endif -%}
+      {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
+        {%- if form.posted_successfully? -%}
+          <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
+        {%- elsif form.errors -%}
+          <div class="form__message">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+          </div>
+          <ul class="form-status-list caption-large" role="list">
+            <li>
+              <a href="#ContactForm-email" class="link">
+                {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+              </a>
+            </li>
+          </ul>
+        {%- endif -%}
+        <div class="contact__fields">
+          <div class="field">
+            <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          </div>
+          <div class="field field--with-error">
+            <input
+              autocomplete="email"
+              type="email"
+              id="ContactForm-email"
+              class="field__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true"
+              {% if form.errors contains 'email' %}
+                aria-invalid="true"
+                aria-describedby="ContactForm-email-error"
+              {% endif %}
+              placeholder="{{ 'templates.contact.form.email' | t }}"
+            >
+            <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+            {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+              </small>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="field">
+          <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+        </div>
+        <div class="field ContactForm-inquire">
+          <span class="__contactArrow">{%- render 'contact-arrow-ico' -%}</span> 
+          <select id="ContactForm-inquire" class="field__input" name="contact[{{ 'templates.contact.form.inquire' | t }}]" placeholder="contact[{{ 'templates.contact.form.inquire' | t }}]" required>
+            {%- for i in (1..5) -%}
+              {%- capture option -%}
+                {%- cycle "Type of enquiry", "Inquire 1", "Inquire 2", "Inquire 3", "Other" -%}
+              {%- endcapture -%}
+              <option value="{%- if forloop.index != 1 -%}{{ option -}}{%- endif -%}" {%- if forloop.index == 1 -%}selected="true" disabled="disabled"{%- endif -%}>{{ option -}}</option>
+            {%- endfor -%}
+          </select>
+        </div>
+        <div class="field">
+          <textarea
+            rows="10"
+            id="ContactForm-body"
+            class="text-area field__input"
+            name="contact[{{ 'templates.contact.form.message' | t }}]"
+            placeholder="{{ 'templates.contact.form.message' | t }}"
+          >
+            {{- form.body -}}
+          </textarea>
+          <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.message' | t }}</label>
+        </div>
+        <div class="field">
+          <input type="hidden" name="contact[{{ 'templates.contact.form.policy' | t }}]" value="No">
+          <input required type="checkbox" name="contact[{{ 'templates.contact.form.policy' | t }}]" value="Yes">
+          <label>{{ 'templates.contact.form.policy' | t }}</label>
+        </div>
+        <div class="contact__button">
+          <button type="submit" class="button">
+            {{ 'templates.contact.form.send' | t }}
+          </button>
+        </div>
+      {%- endform -%}
+    </div>
+
+    {%- comment -%}
+      Blocks Below
+    {%- endcomment -%}
+    <div class="__extraInfoCase section-{{ section.id }}-padding">
+      {%- for block in section.blocks -%}
+        {%- case block.type %}
+          {%- when 'contact_details' -%}
+            <div class="__contactDetailsCase">
+              <h2 class="__contactHeading">{{ block.settings.contact_heading }}</h2>
+              <div class="__contactContent">{{ block.settings.address_text -}}</div>
+              <p class="__contactContent">{{ block.settings.address_phone -}}</p>
+              <p class="__contactContent">{{ block.settings.address_email -}}</p>
+            </div>
+          {%- when 'opening_hours' -%}
+            <div class="__openingHoursCase">
+              <h2 class="__contactHeading">{{ block.settings.opening_heading }}</h2>
+              <p class="__contactContent">{{ block.settings.hours }}</p>
+            </div>
+    
+          {%- when 'socials' -%}
+            <div class="__socialsCase">
+              <h2 class="__contactHeading">{{ block.settings.socials }}</h2>
+              <div class="__icons">
+                <a href="{{ block.settings.fb }}">
+                  {% render 'icon-fb' %}
+                </a>
+                <a href="{{ block.settings.linkedin }}">
+                  {% render 'icon-linkedin' %}
+                </a>
+                <a href="{{ block.settings.insta }}">
+                  {% render 'icon-insta' %}
+                </a>
+              </div>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "contact_details",
+      "name": "Contact Details",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "contact_heading",
+          "label": "Heading",
+          "default": "Contact Details"
+        },
+        {
+          "type": "richtext",
+          "id": "address_text",
+          "label": "Address",
+          "default": "<p>42 Clifton Street Prahran VIC 3181</p>"
+        },
+        {
+          "type": "text",
+          "id": "address_phone",
+          "label": "Phone",
+          "default": "Call: 1300 669 441"
+        },
+        {
+          "type": "text",
+          "id": "address_email",
+          "label": "Email",
+          "default": "Email: trashtazlk@ecobin.com.au"
+        }
+      ]
+    },
+    {
+      "type": "opening_hours",
+      "name": "Opening Hours",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "opening_heading",
+          "label": "Heading",
+          "default": "Opening Hours"
+        },
+        {
+          "type": "text",
+          "id": "hours",
+          "label": "Heading",
+          "default": "Mon – Fri: 09:00 – 17:00"
+        }
+      ]
+    },
+    {
+      "type": "socials",
+      "name": "Socials",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "socials",
+          "label": "Heading",
+          "default": "Follow"
+        },
+        {
+          "type": "url",
+          "id": "fb",
+          "label": "Facebook URL"
+        },
+        {
+          "type": "url",
+          "id": "linkedin",
+          "label": "Linkedin URL"
+        },
+        {
+          "type": "url",
+          "id": "insta",
+          "label": "Instagram URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

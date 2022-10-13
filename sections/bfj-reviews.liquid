@@ -1,0 +1,306 @@
+{{ 'section-bfj-reviews.css' | asset_url | stylesheet_tag }}
+{{ 'section-bfj-reviews-resp.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+    .--custom-padding--{{ section.id }} {
+        padding-top: {{ section.settings.padding_top | append: 'px' -}};
+        padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+    }
+    .--background-collor--{{ section.id }} {
+      background-color: {{ section.settings.bg_color }};
+    }
+
+    #Image-Text--{{ section.id }} {
+      gap: {{ section.settings.gap | append: 'px' -}};
+    }
+
+    @media (max-width: 767px) {
+        .--custom-padding--{{ section.id }} {
+            padding-top: calc({{ section.settings.padding_top | append: 'px' -}} / 2.5);
+            padding-bottom: calc({{ section.settings.padding_bot | append: 'px' -}} / 2.5);
+        }
+
+        #Image-Text--{{ section.id }} {
+          gap: calc({{ section.settings.gap | append: 'px ' -}} / 5);
+        }
+    }
+
+    @media (min-width: 900px) {
+        {%- if section.settings.block_width == 'equal' -%}
+          #Image-Text--{{ section.id }} > * {
+            width: 50%;
+          }
+        {%- endif -%}
+    }
+
+{%- endstyle -%}
+
+    <div class="--background-collor--{{ section.id }}">
+    <div class="__imageTextCase reviews-section-slider common-display --g-px --custom-padding--{{ section.id }}
+      {%- if section.settings.align_items == 'center' -%}__flexCenter
+      {%- elsif section.settings.align_items == 'end' -%}__flexEnd
+      {%- else -%}__flexStart{%- endif -%}" id="Image-Text--{{ section.id }}">
+                {%- assign bs = section.settings -%}
+                {%- style -%}
+                    .__contentHeading--{{ block.id }} {
+                        font-size: {{ bs.heading_size | append: 'px' -}};
+                        letter-spacing: {{ bs.heading_letterSpacing | append: 'px' -}};
+                        line-height: {{ bs.heading_lineHeight | append: 'px' -}};
+                    }
+
+                    @media (max-width: 767px) {
+                      .__contentHeading--{{ block.id }} {
+                          font-size: 5rem;
+                          letter-spacing: {{ bs.heading_letterSpacing | append: 'px' -}};
+                          line-height: 85%;
+                      } 
+                    }
+                {%- endstyle -%}
+                <div class="__image-textContent">
+                    {%- if bs.tag != blank -%}
+                      <span class="__contentTag">{{ bs.tag | escape }}</span>
+                    {%- endif -%}
+
+                    {%- if bs.heading != blank -%}
+                        <h3 class="__contentHeading __reviews __contentHeading--{{ block.id }}">{{ bs.heading | escape -}}</h3>
+                    {%- endif -%}
+
+                    {%- if bs.paragraph != blank -%}
+                        <div class="__contentParagraph">{{ bs.paragraph | strip_html }}</div>
+                    {%- endif -%}
+
+                    {%- if bs.btn != blank -%}
+                        <div class="__contentBtnCase">
+                            <a href="{%- if bs.btn_url != blank -%}{{ bs.btn_url -}}{%- else -%}#{%- endif -%}" class="button button--primary">
+                            <span class="__contentText">{{ bs.btn }}</span>
+                            </a>
+                        </div>
+                    {%- endif -%}
+
+                </div>
+
+              <div class="reviews-swiper">
+                <div class="swiper-wrapper">
+
+                {%- for block in section.blocks -%}
+                  <div class="swiper-slide reviews-slide">
+                    <div class="swiper-image">
+                        {%-liquid
+                            assign image_1 = block.settings.image_1
+                            assign image_height = image_1.width | divided_by: image_1.aspect_ratio
+                        -%}
+                        {{ image_1 | image_url: width: 1440 | image_tag:
+                            loading: 'lazy',
+                            width: image_1.width,
+                            height: image_height,
+                            widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                            alt: image_1.alt | escape
+                        }}
+                    </div>
+                    <div class="info-card">
+                      <div class="dn-wrapper">
+                        <div class="name">{{ block.settings.card_name }}</div>
+                        <div class="date">{{ block.settings.card_date }}</div>
+                      </div>
+                      <div class="review-title">{{ block.settings.card_title }}</div>
+                      <div class="review-text">{{ block.settings.review_text }}</div>
+                    </div>
+                  </div><!-- end of slide 1 -->
+                {%- endfor -%}
+                </div>
+
+                <div class="__miscCase">
+                  <div class="reviews-button-prev">{%- render 'arrow-prev' -%}</div>
+                  <div class="reviews-pagination"></div>
+                  <div class="reviews-button-next">{%- render 'arrow-next' -%}</div>
+                </div>
+              </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "BFJ - Reviews",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bot",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "block_width",
+      "options": [
+        {
+          "value": "equal",
+          "label": "Equal Width Each Block"
+        },
+        {
+          "value": "unset",
+          "label": "Unset Width"
+        }
+      ],
+      "default": "unset",
+      "label": "Set Width"
+    },
+    {
+      "type": "select",
+      "id": "align_items",
+      "options": [
+        {
+          "value": "start",
+          "label": "Flex Start"
+        },
+        {
+          "value": "center",
+          "label": "Flex Center"
+        },
+        {
+          "value": "end",
+          "label": "Flex End"
+        }
+      ],
+      "default": "start",
+      "label": "Align Items"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 100,
+      "max": 200,
+      "step": 1,
+      "unit": "px",
+      "label": "Gap Between Each Block",
+      "default": 113
+    },
+   
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "HEADLINE GOES HERE"
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "min": 0,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Font Size",
+          "default": 42
+        },
+        {
+          "type": "range",
+          "id": "heading_lineHeight",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Line Height",
+          "default": 64
+        },
+        {
+          "type": "range",
+          "id": "heading_letterSpacing",
+          "min": -5,
+          "max": 72,
+          "step": 1,
+          "unit": "px",
+          "label": "Heading Letter Spacing",
+          "default": -3
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet phm ipsum dolor sit amet, aretra.</p>"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button Text",
+          "default": "CONTINUE YOUR JOURNEY",
+          "info": "Just remove the text above in order to hide the button"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button URL"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "slider",
+      "name": "slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "card_name",
+          "label": "Reviewer name",
+          "default": "Jane Smith"
+        },
+        {
+          "type": "text",
+          "id": "card_date",
+          "label": "Review date",
+          "default": "02/06/2022"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Review title"
+        },
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BFJ - Reviews",
+      "blocks": [
+        {
+          "type": "slider",
+          "settings": {
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

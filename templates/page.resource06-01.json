@@ -1,0 +1,259 @@
+{
+  "sections": {
+    "main": {
+      "type": "bfj-banner",
+      "blocks": {
+        "04a9a305-d962-4262-ba21-26a50d83612e": {
+          "type": "content_1",
+          "settings": {
+            "heading": "Resources HEADLINE HERE",
+            "btn": "Back to home",
+            "btn_url": "",
+            "btn_2": "",
+            "btn_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "04a9a305-d962-4262-ba21-26a50d83612e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/resource-banner.png",
+        "bg_opacity": 20
+      }
+    },
+    "166462011035699a2f": {
+      "type": "rich-text",
+      "blocks": {
+        "16646201107c499c3a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>INTRO MESSAGE GOES HERE.<\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "16646201107c499c3a-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "select_option": "default_state"
+      }
+    },
+    "75f996cf-dde8-470e-b928-d63ef967306d": {
+      "type": "bfj-halved-blocks",
+      "blocks": {
+        "template--15482711048292__75f996cf-dde8-470e-b928-d63ef967306d-1665538558af59a3b9-0": {
+          "type": "content",
+          "settings": {
+            "tag": "",
+            "tag_padding": "",
+            "heading": "",
+            "heading_size": 42,
+            "heading_lineHeight": 64,
+            "heading_letterSpacing": -3,
+            "paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p><p><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum, urna, sit. Tellus eu egestas tristique adipiscing urna, egestas interdum.<\/p>",
+            "para_padding": "",
+            "font_weight": false,
+            "p_sm": true,
+            "btn_padding": "",
+            "btn": "",
+            "btn_url": "",
+            "stretch_btn": false,
+            "btn_2": "",
+            "btn_url_2": "",
+            "heading_width": "419"
+          }
+        },
+        "template--15482711048292__75f996cf-dde8-470e-b928-d63ef967306d-1665538558af59a3b9-1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/image-text-resource_1.png",
+            "name": "",
+            "position": "",
+            "flex": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15482711048292__75f996cf-dde8-470e-b928-d63ef967306d-1665538558af59a3b9-0",
+        "template--15482711048292__75f996cf-dde8-470e-b928-d63ef967306d-1665538558af59a3b9-1"
+      ],
+      "settings": {
+        "dynamic_page_content": false,
+        "padding_top": 0,
+        "padding_bot": 100,
+        "bg_color": "#ffffff",
+        "block_width": "unset",
+        "align_items": "center",
+        "justify_content": "start",
+        "reversed": true
+      }
+    },
+    "16646219163b94498f": {
+      "type": "bjf-flipcard",
+      "blocks": {
+        "7216bf2c-24f1-4d8d-9efd-230e0955d0ad": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  01 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "47cd2114-5555-4d93-884b-b381a33bab90": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  02 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "d0a1f39b-8161-43b1-872a-9fdb7897e010": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  03 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "6d47d357-a8c1-4d3c-937f-71ea0b51d7db": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  04 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        },
+        "6533bdd0-72ab-46ef-83fd-e4abde08f4cd": {
+          "type": "flip",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flip-card.png",
+            "span_text": "GOAL  05 \/ 05",
+            "heading_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.",
+            "back_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet ut mi lobortis aliquet commodo nullam. Orci, laoreet pharetra, elementum.<\/p>",
+            "btn_text": "Learn More",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "7216bf2c-24f1-4d8d-9efd-230e0955d0ad",
+        "47cd2114-5555-4d93-884b-b381a33bab90",
+        "d0a1f39b-8161-43b1-872a-9fdb7897e010",
+        "6d47d357-a8c1-4d3c-937f-71ea0b51d7db",
+        "6533bdd0-72ab-46ef-83fd-e4abde08f4cd"
+      ],
+      "settings": {
+        "heading": "WHY WE PROVIDE RESOURCES INFORMATION  HERE.",
+        "heading_width": 442,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_text_2": "Learn More",
+        "btn_url_2": "",
+        "bg_clr": "#f4f4f2",
+        "format": "slider",
+        "text_extra": ""
+      }
+    },
+    "166462207165437163": {
+      "type": "bfj-collection",
+      "blocks": {
+        "166462207119d3a3ff-0": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/resource-1.png",
+            "heading": "Bin Assembly",
+            "btn": "View",
+            "btn_url": "shopify:\/\/blogs\/blog\/top-5-tips-for-eco-friendly-grocery-shopping"
+          }
+        },
+        "166462207119d3a3ff-1": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/resource-2.png",
+            "heading": "Home Recycling  Dos AND DONT’s",
+            "btn": "View",
+            "btn_url": "shopify:\/\/blogs\/blog\/what-are-the-types-of-green-energy"
+          }
+        },
+        "166462207119d3a3ff-2": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/resource-3.png",
+            "heading": "PRINTABLES",
+            "btn": "View",
+            "btn_url": "shopify:\/\/blogs\/blog\/safe-disposal-of-waste"
+          }
+        },
+        "166462207119d3a3ff-3": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-text-stories.png",
+            "heading": "DOWNLOADS",
+            "btn": "Explore",
+            "btn_url": "shopify:\/\/blogs\/blog\/what-are-the-three-rs-of-recycling"
+          }
+        },
+        "166462207119d3a3ff-4": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/resource-4.png",
+            "heading": "Resource",
+            "btn": "View",
+            "btn_url": "shopify:\/\/blogs\/blog\/how-can-we-save-the-earth"
+          }
+        },
+        "166462207119d3a3ff-5": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/resource-5.png",
+            "heading": "Resource",
+            "btn": "View",
+            "btn_url": "shopify:\/\/blogs\/blog\/eco-friendly-business"
+          }
+        }
+      },
+      "block_order": [
+        "166462207119d3a3ff-0",
+        "166462207119d3a3ff-1",
+        "166462207119d3a3ff-2",
+        "166462207119d3a3ff-3",
+        "166462207119d3a3ff-4",
+        "166462207119d3a3ff-5"
+      ],
+      "settings": {
+        "padding_top": 150,
+        "padding_bot": 160,
+        "bg_color": "#ffffff",
+        "section_heading": "ACCESS OUR  <br> RESOURCES"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166462011035699a2f",
+    "75f996cf-dde8-470e-b928-d63ef967306d",
+    "16646219163b94498f",
+    "166462207165437163"
+  ]
+}

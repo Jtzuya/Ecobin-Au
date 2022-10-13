@@ -1,0 +1,66 @@
+{{ 'section-search.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #__searchFormCase--{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | append: 'px' -}};
+    padding-bottom: {{ section.settings.padding_bot | append: 'px' -}};
+  }
+{%- endstyle -%}
+
+<div class="__searchFormCase --g-px mx-w" id="__searchFormCase--{{ section.id }}">
+    <form id="__formCase" data-shop-url="{{ shop.url }}">
+        {%- render 'search-ico' -%}
+        <input type="hidden" name="type" value="article" />
+        <input id="__inputField" value="{{ search.terms | escape }}" placeholder="{{ 'templates.search.placeholder' | t }}" aria-label="{{ 'templates.search.placeholder' | t }}" autocomplete="off" spellcheck="false">
+        <button type="submit" id="__searchSubmitBtn">{{ 'templates.search.button' | t -}}</button>
+    </form>
+
+    <div class="__searchedTags">
+        <span class="__searchedTag __activeTag">Education</span>
+        <span class="__searchedTag">Recycling</span>
+        <span class="__searchedTag">Pick For Me</span>
+    </div>
+
+    <div class="__searchLoaderCase">
+      <div id="__searchTitle"></div>
+      <span class="__searchLoader"></span>
+    </div>
+
+    <div class="__insertDatas">
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Search",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 130
+    },
+    {
+      "type": "range",
+      "id": "padding_bot",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 130
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Search"
+    }
+  ]
+}
+{% endschema %}
+
+<script src="{{ 'search.js' | asset_url }}" async></script>

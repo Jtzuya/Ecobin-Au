@@ -1,0 +1,59 @@
+{{ 'component-flip-items.css' | asset_url | stylesheet_tag }}
+{%- render 'bfj-flipcard-css', section: section -%}
+
+{%- for block in section.blocks -%}
+    {%- case block.type %}
+        {%- when 'flip' -%}
+            {%- liquid 
+                assign bs = block.settings
+            -%}
+            <div class="swiper-slide __recoEachSlide">
+                <div class="__cardCase">
+                    <div class="__cardWrapper" data-card>
+                    
+                        <div class="__front" style="">
+                            <div class="__imageCase">
+                                {%- if bs.image != blank -%}
+                                    {%-liquid
+                                        assign image_height = bs.image.width | divided_by: bs.image.aspect_ratio
+                                    -%}
+                                    {{ bs.image | image_url: width: 1440 | image_tag:
+                                        loading: 'lazy',
+                                        width: bs.image.width,
+                                        height: image_height,
+                                        widths: '375, 550, 750, 1440, 1500, 1780, 2000, 3000, 3840',
+                                        alt: bs.image.alt | escape
+                                    -}}
+                                {%- else -%}
+                                    <div class="image__case">
+                                    {{ 'lifestyle-2' | placeholder_svg_tag -}}
+                                    </div>
+                                {%- endif -%}
+
+                                <div class="__content">
+                                    <p class="__goal __h6">{{ bs.span_text | escape -}}</p>
+                                    <h2 class="__h4">{{ bs.heading_text -}}</h2>
+                                    {%- if section.settings.format == 'slider' -%}
+                                        <button class="__flipBtn" data-flip>Flip for more</button>
+                                    {%- else -%}
+                                        <button class="__flipBtn" data-flip>Flip for answer</button>
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                        </div><!-- end of front -->
+
+                        <div class="__back">
+                            <div class="__content">
+                                <div class="__goalCloseBtn"><p class="__goal __h6">{{ bs.span_text | escape -}}</p></div>
+                                <button class="__closeBtn" data-close>{%- render 'flip-close-ico' -%}</button>
+                                <div class="__bodyText">{{ bs.back_text -}}</div>
+                            </div>
+                        </div><!-- end of back -->
+                    
+                    </div>
+                </div>
+            </div><!-- end of each slide -->
+    {%- endcase -%}
+{%- endfor -%}
+
+<script type="text/javascript" src="{{ 'flip.js' | asset_url }}" async></script>
