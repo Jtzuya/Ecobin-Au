@@ -50,6 +50,11 @@
           "settings": {
           }
         },
+        "3961a711-ec67-45e0-a490-d9185834904d": {
+          "type": "product_form",
+          "settings": {
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -102,6 +107,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "3961a711-ec67-45e0-a490-d9185834904d",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
