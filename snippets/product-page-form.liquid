@@ -26,31 +26,61 @@
     width: 0;
   }
 
+  .each__radio fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
   .each__radio input[type='radio'] {
-    /* opacity: 0;
+    opacity: 0;
     position: fixed;
-    width: 0;*/
-    cursor: pointer;
+    width: 0;
+    transition: all 0.25s ease;
+  }
+
+  fieldset {
+    border: none;
   }
 
   .each__radio label {
     display: inline-block;
-    background-color: #ddd;
+    background-color: transparent;
     padding: 10px 20px;
     font-family: sans-serif, Arial;
     font-size: 16px;
     border: 2px solid #444;
     border-radius: 4px;
+    z-index: 1;
+    position: relative;
+    cursor: pointer !important;
   }
 
   .each__radio input[type='radio']:checked + label {
     background-color: palegreen;
     border-color: #4c4;
   }
-  .each__radio input[type='radio']:focus + label,
-  .each__radio label:hover {
-    background-color: #palegreen;
+
+  .each__radio input[type='radio']:focus + label {
+    background-color: palegreen;
     border-color: #4c4;
+  }
+
+  .each__radio label:hover {
+    border-color: #4c4;
+    background-color: palegreen;
+  }
+
+  .checccc fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .text-center {
+    text-align: center;
   }
 {% endstyle %}
 
@@ -89,23 +119,40 @@
         {%- endif -%}
         <div class="contact__fields">
           <div class="fields jtzuya--radio">
-            <p>How many Cartridges do you want a quote for?</p>
-            <div>
+            <p class="text-center">How many Cartridges do you want a quote for?</p>
+            <div class="checccc">
               <div class="each__radio">
-                <input type="radio" name="properties1[_How many Cartridges do you want a quote for?]" value="5000">
-                <label for="properties1[_How many Cartridges do you want a quote for?]"><span>5,000</span></label>
-              </div>
-              <div class="each__radio">
-                <input type="radio" name="properties2[_How many Cartridges do you want a quote for?]" value="25000">
-                <label for="properties2[_How many Cartridges do you want a quote for?]"><span>25,000</span></label>
-              </div>
-              <div class="each__radio">
-                <input type="radio" name="properties3[_How many Cartridges do you want a quote for?]" value="50000">
-                <label for="properties3[_How many Cartridges do you want a quote for?]"><span>50,000</span></label>
-              </div>
-              <div class="each__radio">
-                <input type="radio" name="properties4[_How many Cartridges do you want a quote for?]" value="100000">
-                <label for="properties4[_How many Cartridges do you want a quote for?]"><span>100,000</span></label>
+                <fieldset>
+                  <input
+                    type="radio"
+                    name="properties[_How many Cartridges do you want a quote for?]"
+                    id="spot1"
+                    value="5000"
+                    checked="checked"
+                  >
+                  <label for="spot1"><span>5,000</span></label>
+                  <input
+                    type="radio"
+                    name="properties[_How many Cartridges do you want a quote for?]"
+                    id="spot2"
+                    value="25000"
+                  >
+                  <label for="spot2"><span>25,000</span></label>
+                  <input
+                    type="radio"
+                    name="properties[_How many Cartridges do you want a quote for?]"
+                    id="spot3"
+                    value="50000"
+                  >
+                  <label for="spot3"><span>50,000</span></label>
+                  <input
+                    type="radio"
+                    name="properties[_How many Cartridges do you want a quote for?]"
+                    id="spot4"
+                    value="100000"
+                  >
+                  <label for="spot4"><span>100,000</span></label>
+                </fieldset>
               </div>
             </div>
           </div>
