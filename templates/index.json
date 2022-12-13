@@ -6,8 +6,8 @@
         "image": "shopify:\/\/shop_images\/banner-optimized.jpg",
         "bg_opacity": 20,
         "heading": "Industry RELATED HEADLINE HERE",
-        "btn": "Back to home",
-        "btn_url": ""
+        "btn": "See products",
+        "btn_url": "shopify:\/\/products\/the-starter"
       }
     },
     "166428837723723fdd": {
